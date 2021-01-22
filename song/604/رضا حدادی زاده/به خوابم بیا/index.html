@@ -428,7 +428,7 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%A7%D9%85%DB%8C%D8%B1%20%D8%AD%D8%B3%D9%86%20%D8%B2%D8%A7%D8%AF%D9%87" class="text-xs text-muted" asb="boz">امیر حسن زاده</a>
 </div>
-</div>
+ </div>
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/933/%D8%A7%D9%88%D9%89%20%D8%A8%D8%A7%D9%86%D8%AF/%D8%AF%D9%84%20%D9%85%D9%86" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50576/Away-Band-Dele-Man_FIVETAMUSIC_.jpg" alt="دل من اوى باند FIVETAMUSIC"> </a>
@@ -437,7 +437,7 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%A7%D9%88%D9%89%20%D8%A8%D8%A7%D9%86%D8%AF" class="text-xs text-muted" asb="boz">اوى باند</a>
 </div>
- </div>
+</div>
 </article>
 </div>
 </div>
@@ -463,7 +463,7 @@
 <div class="jp-controls">
 <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
 <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
-<div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
+ <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
 <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
 <div><a class="" data-toggle="dropdown" data-target="#playlist" asb="boz"><i class="icon-list"></i></a></div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

@@ -220,7 +220,7 @@
 
 
 
- 
+
 
 
 
@@ -310,7 +310,7 @@
 </div>
 </div>
 <div class="col-sm-4">
- <div class="panel panel-default">
+<div class="panel panel-default">
 <div class="panel-heading">پیشنهادات</div>
 <div class="panel-body">
 <article class="media">
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

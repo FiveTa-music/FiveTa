@@ -267,7 +267,7 @@
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
-<div class="pos-rlt">
+ <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="1095" data-title="بزار بره" data-artist="حمیدرضا علیزاده" data-music="/file/31892/Hamidreza Alizadeh - Bezar Bere (128)_FIVETAMUSIC_.mp3" data-photo="/file/270892/Hamidreza-Alizadeh-Bezar-Bere_FIVETAMUSIC_.jpg" onclick="window.open('/file/31892/Hamidreza Alizadeh - Bezar Bere (128)_FIVETAMUSIC_.mp3', '_blank')">
@@ -309,7 +309,7 @@
 </a>
 </div>
 </div>
- <a href="/song/8078/%D8%AD%D9%85%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%B9%D9%84%DB%8C%D8%B2%D8%A7%D8%AF%D9%87/%D9%85%D8%A7%D8%AF%D8%B1" asb="boz"><img src="/file/54735/Hamidreza-Alizadeh-Madar_FIVETAMUSIC_.jpg" alt="مادر حمیدرضا علیزاده FIVETAMUSIC" class="r r-2x img-full"></a></div>
+<a href="/song/8078/%D8%AD%D9%85%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%B9%D9%84%DB%8C%D8%B2%D8%A7%D8%AF%D9%87/%D9%85%D8%A7%D8%AF%D8%B1" asb="boz"><img src="/file/54735/Hamidreza-Alizadeh-Madar_FIVETAMUSIC_.jpg" alt="مادر حمیدرضا علیزاده FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
 <a href="/song/8078/%D8%AD%D9%85%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%B9%D9%84%DB%8C%D8%B2%D8%A7%D8%AF%D9%87/%D9%85%D8%A7%D8%AF%D8%B1" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">مادر</a>
 <a data-pjax="on" href="/singer/%D8%AD%D9%85%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%B9%D9%84%DB%8C%D8%B2%D8%A7%D8%AF%D9%87" class="text-ellipsis text-xs text-muted" asb="boz">حمیدرضا علیزاده</a>
@@ -435,14 +435,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

@@ -153,29 +153,29 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -244,10 +244,10 @@
 </div>
 <a href="/song/49551/%D8%AD%D8%A7%D9%85%D8%AF%20%D9%86%DB%8C%DA%A9%D9%BE%DB%8C/%D9%85%DB%8C%D9%85%DB%8C%D8%B1%D9%85" asb="boz"><img src="/file/325728/3f5041771bea85f_FIVETAMUSIC_.jpg" alt="میمیرم حامد نیکپی FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
- <a href="/song/49551/%D8%AD%D8%A7%D9%85%D8%AF%20%D9%86%DB%8C%DA%A9%D9%BE%DB%8C/%D9%85%DB%8C%D9%85%DB%8C%D8%B1%D9%85" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">میمیرم</a>
+<a href="/song/49551/%D8%AD%D8%A7%D9%85%D8%AF%20%D9%86%DB%8C%DA%A9%D9%BE%DB%8C/%D9%85%DB%8C%D9%85%DB%8C%D8%B1%D9%85" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">میمیرم</a>
 <a data-pjax="on" href="/singer/%D8%AD%D8%A7%D9%85%D8%AF%20%D9%86%DB%8C%DA%A9%D9%BE%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">حامد نیکپی</a>
 </div>
-</div>
+ </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
@@ -289,7 +289,7 @@
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="45779" data-title="ساقی ساقی" data-artist="حامد نیکپی" data-music="/file/306315/Hamed-Nikpay-Saaghi-Saaghi_FIVETAMUSIC_.mp3" data-photo="/file/357666/3ad58461ed6bce8_FIVETAMUSIC_.jpg" onclick="window.open('/file/306315/Hamed-Nikpay-Saaghi-Saaghi_FIVETAMUSIC_.mp3', '_blank')">
-</i>
+ </i>
 </a>
 </div>
 </div>
@@ -375,7 +375,7 @@
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="31387" data-title="آتشی" data-artist="حامد نیکپی" data-music="/file/285039/Hamed-Nikpay-Aatashi_FIVETAMUSIC_.mp3" data-photo="/file/334594/fc92990b_FIVETAMUSIC_.jpg" onclick="window.open('/file/285039/Hamed-Nikpay-Aatashi_FIVETAMUSIC_.mp3', '_blank')">
 </i>
- </a>
+</a>
 </div>
 </div>
 <a href="/song/31387/%D8%AD%D8%A7%D9%85%D8%AF%20%D9%86%DB%8C%DA%A9%D9%BE%DB%8C/%D8%A2%D8%AA%D8%B4%DB%8C" asb="boz"><img src="/file/334594/fc92990b_FIVETAMUSIC_.jpg" alt="آتشی حامد نیکپی FIVETAMUSIC" class="r r-2x img-full"></a></div>
@@ -403,7 +403,7 @@
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
+ <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
@@ -487,7 +487,6 @@
 </div>
 </div>
 </div>
-
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
 <div class="pos-rlt">
@@ -544,7 +543,7 @@
 
 
 </div>
-<div class="jp-gui">
+ <div class="jp-gui">
 <div class="jp-video-play hide" style="display: block;"><a class="jp-video-play-icon" asb="boz">play</a></div>
 <div class="jp-interface">
 <div class="jp-controls">
@@ -615,14 +614,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

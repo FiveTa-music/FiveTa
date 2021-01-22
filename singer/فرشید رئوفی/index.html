@@ -373,7 +373,7 @@
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="14836" data-title="بی تو" data-artist="فرشید رئوفی" data-music="/file/4098/Farshid Raoofi - Bi To (128)_FIVETAMUSIC_.mp3" data-photo="/file/269525/Farshid-Raoofi-Bi-To_FIVETAMUSIC_.jpg" onclick="window.open('/file/4098/Farshid Raoofi - Bi To (128)_FIVETAMUSIC_.mp3', '_blank')">
-</i>
+ </i>
 </a>
 </div>
 </div>
@@ -421,7 +421,7 @@
 </div>
 </section>
 </section>
-</section>
+ </section>
 </section>
 </section>
 <footer class="footer bg-info dker">
@@ -503,14 +503,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

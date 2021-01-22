@@ -184,11 +184,11 @@
 
 
 
+
+
+
+
  
-
-
-
-
 
 
 
@@ -267,6 +267,11 @@
 
 
 
+
+
+
+
+
  
 
 
@@ -301,13 +306,8 @@
 
 
 
-
-
-
-
-
 </div>
-</div>
+ </div>
 <div class="col-sm-4">
 <div class="panel panel-default">
 <div class="panel-heading">پیشنهادات</div>
@@ -350,10 +350,10 @@
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/404/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2008%20EhsaseSard" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/753270/Farshid-Mousavi-Aksaye-Dotayi_FIVETAMUSIC_.jpg" alt="FarshidMousavi 08 EhsaseSard فرشید موسوی FIVETAMUSIC"> </a>
- <div class="media-body"> <a href="/song/404/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2008%20EhsaseSard" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">FarshidMousavi 08 EhsaseSard</a>
+<div class="media-body"> <a href="/song/404/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2008%20EhsaseSard" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">FarshidMousavi 08 EhsaseSard</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C" class="text-xs text-muted" asb="boz">فرشید موسوی</a>
+ <a data-pjax="on" href="/singer/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C" class="text-xs text-muted" asb="boz">فرشید موسوی</a>
 </div>
 </div>
 </article>
@@ -395,10 +395,10 @@
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/861/%D8%A7%D9%87%D9%88%D8%B1%D8%A7/%D8%AA%DA%A9%D8%B1%D8%A7%D8%B1%20%D8%AF%D8%B1%20%D8%AA%DA%A9%D8%B1%D8%A7%D8%B1" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/53060/Ahoura-Tekrar-Dar-Tekrar_FIVETAMUSIC_.jpg" alt="تکرار در تکرار اهورا FIVETAMUSIC"> </a>
- <div class="media-body"> <a href="/song/861/%D8%A7%D9%87%D9%88%D8%B1%D8%A7/%D8%AA%DA%A9%D8%B1%D8%A7%D8%B1%20%D8%AF%D8%B1%20%D8%AA%DA%A9%D8%B1%D8%A7%D8%B1" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">تکرار در تکرار</a>
+<div class="media-body"> <a href="/song/861/%D8%A7%D9%87%D9%88%D8%B1%D8%A7/%D8%AA%DA%A9%D8%B1%D8%A7%D8%B1%20%D8%AF%D8%B1%20%D8%AA%DA%A9%D8%B1%D8%A7%D8%B1" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">تکرار در تکرار</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D8%A7%D9%87%D9%88%D8%B1%D8%A7" class="text-xs text-muted" asb="boz">اهورا</a>
+ <a data-pjax="on" href="/singer/%D8%A7%D9%87%D9%88%D8%B1%D8%A7" class="text-xs text-muted" asb="boz">اهورا</a>
 </div>
 </div>
 </article>
@@ -481,7 +481,7 @@
 <div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
- </div>
+</div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
 <div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
@@ -527,15 +527,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

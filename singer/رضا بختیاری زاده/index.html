@@ -343,7 +343,7 @@
 </a>
 </div>
 </div>
- <a href="/song/17066/%D8%B1%D8%B6%D8%A7%20%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C%20%D8%B2%D8%A7%D8%AF%D9%87/Reza%20Bakhtiari%20Zadeh%2008%20Kelide%20Khoone" asb="boz"><img src="/file/51447/Reza-Bakhtiari-Zadeh-Harfaye Nagofte_FIVETAMUSIC_.jpg" alt="Reza Bakhtiari Zadeh 08 Kelide Khoone رضا بختیاری زاده FIVETAMUSIC" class="r r-2x img-full"></a></div>
+<a href="/song/17066/%D8%B1%D8%B6%D8%A7%20%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C%20%D8%B2%D8%A7%D8%AF%D9%87/Reza%20Bakhtiari%20Zadeh%2008%20Kelide%20Khoone" asb="boz"><img src="/file/51447/Reza-Bakhtiari-Zadeh-Harfaye Nagofte_FIVETAMUSIC_.jpg" alt="Reza Bakhtiari Zadeh 08 Kelide Khoone رضا بختیاری زاده FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
 <a href="/song/17066/%D8%B1%D8%B6%D8%A7%20%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C%20%D8%B2%D8%A7%D8%AF%D9%87/Reza%20Bakhtiari%20Zadeh%2008%20Kelide%20Khoone" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">Reza Bakhtiari Zadeh 08 Kelide Khoone</a>
 <a data-pjax="on" href="/singer/%D8%B1%D8%B6%D8%A7%20%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C%20%D8%B2%D8%A7%D8%AF%D9%87" class="text-ellipsis text-xs text-muted" asb="boz">رضا بختیاری زاده</a>
@@ -404,12 +404,12 @@
 
 
 
-
-
-
-
-
  
+
+
+
+
+
 
 
 </ul>
@@ -435,14 +435,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

@@ -101,7 +101,7 @@
 
 
 
- 
+
 
 
 
@@ -179,7 +179,7 @@
 
 
 
-
+ 
 
 
 
@@ -226,7 +226,7 @@
 </div>
 <a href="/song/21795/%D8%A7%D9%85%DB%8C%D9%86%20%D8%B5%D8%A7%D8%AF%D9%82%DB%8C%20%D8%A2%D8%B0%D8%B1/%D8%AF%D9%87%D8%A7%D8%B1%D8%AF%D8%A7%D8%B3%D8%A7%D9%86" asb="boz"><img src="/file/272115/Amin-Sadeghi-Azar-De-Hardasan_FIVETAMUSIC_.jpg" alt="دهارداسان امین صادقی آذر FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
-<a href="/song/21795/%D8%A7%D9%85%DB%8C%D9%86%20%D8%B5%D8%A7%D8%AF%D9%82%DB%8C%20%D8%A2%D8%B0%D8%B1/%D8%AF%D9%87%D8%A7%D8%B1%D8%AF%D8%A7%D8%B3%D8%A7%D9%86" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">دهارداسان</a>
+ <a href="/song/21795/%D8%A7%D9%85%DB%8C%D9%86%20%D8%B5%D8%A7%D8%AF%D9%82%DB%8C%20%D8%A2%D8%B0%D8%B1/%D8%AF%D9%87%D8%A7%D8%B1%D8%AF%D8%A7%D8%B3%D8%A7%D9%86" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">دهارداسان</a>
 <a data-pjax="on" href="/singer/%D8%A7%D9%85%DB%8C%D9%86%20%D8%B5%D8%A7%D8%AF%D9%82%DB%8C%20%D8%A2%D8%B0%D8%B1" class="text-ellipsis text-xs text-muted" asb="boz">امین صادقی آذر</a>
 </div>
 </div>
@@ -369,7 +369,7 @@
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
- <div class="pos-rlt">
+<div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="17074" data-title="Amin Sadeghi Azar 08 Malaklar Hasrat Gali" data-artist="امین صادقی آذر" data-music="/file/33842/Amin Sadeghi Azar - 08 - Malaklar Hasrat Galib (128)_FIVETAMUSIC_.mp3" data-photo="/file/756341/Amin-Sadeghi-Azar-Bir-Uragim-Var_FIVETAMUSIC_.jpg" onclick="window.open('/file/33842/Amin Sadeghi Azar - 08 - Malaklar Hasrat Galib (128)_FIVETAMUSIC_.mp3', '_blank')">
@@ -407,7 +407,7 @@
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="17076" data-title="Amin Sadeghi Azar 10 Harda Galmisa" data-artist="امین صادقی آذر" data-music="/file/33847/Amin Sadeghi Azar - 10 - Harda Galmisan_FIVETAMUSIC_.mp3" data-photo="/file/756343/Amin-Sadeghi-Azar-Bir-Uragim-Var_FIVETAMUSIC_.jpg" onclick="window.open('/file/33847/Amin Sadeghi Azar - 10 - Harda Galmisan_FIVETAMUSIC_.mp3', '_blank')">
- </i>
+</i>
 </a>
 </div>
 </div>
@@ -464,7 +464,7 @@
 <div class="jp-play-bar bg-info" style="width: 0%;"></div>
 <div class="jp-title text-lt" style="display: none;">FIVETA</div>
 </div>
- </div>
+</div>
 <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
 </div>
 <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
@@ -520,14 +520,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

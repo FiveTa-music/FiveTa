@@ -475,12 +475,12 @@
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="6043" data-title="تنها مرا رها کن" data-artist="پرواز همای" data-music="/file/23837/Parvaz Homay - Tanha Mara Raha Kon (128)_FIVETAMUSIC_.mp3" data-photo="/file/53264/Parvaz-Homay-Tanha-Mara-Raha-Kon_FIVETAMUSIC_.jpg" onclick="window.open('/file/23837/Parvaz Homay - Tanha Mara Raha Kon (128)_FIVETAMUSIC_.mp3', '_blank')">
- </i>
+</i>
 </a>
 </div>
 </div>
 <a href="/song/6043/%D9%BE%D8%B1%D9%88%D8%A7%D8%B2%20%D9%87%D9%85%D8%A7%DB%8C/%D8%AA%D9%86%D9%87%D8%A7%20%D9%85%D8%B1%D8%A7%20%D8%B1%D9%87%D8%A7%20%DA%A9%D9%86" asb="boz"><img src="/file/53264/Parvaz-Homay-Tanha-Mara-Raha-Kon_FIVETAMUSIC_.jpg" alt="تنها مرا رها کن پرواز همای FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
+ <div class="padder-v">
 <a href="/song/6043/%D9%BE%D8%B1%D9%88%D8%A7%D8%B2%20%D9%87%D9%85%D8%A7%DB%8C/%D8%AA%D9%86%D9%87%D8%A7%20%D9%85%D8%B1%D8%A7%20%D8%B1%D9%87%D8%A7%20%DA%A9%D9%86" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">تنها مرا رها کن</a>
 <a data-pjax="on" href="/singer/%D9%BE%D8%B1%D9%88%D8%A7%D8%B2%20%D9%87%D9%85%D8%A7%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">پرواز همای</a>
 </div>
@@ -501,7 +501,7 @@
 <a href="/song/8414/%D9%BE%D8%B1%D9%88%D8%A7%D8%B2%20%D9%87%D9%85%D8%A7%DB%8C/%D8%A8%D8%A7%D8%B2%20%DA%86%D9%87%20%D8%AE%D9%88%D8%B1%D8%AF%D9%87%20%D8%A7%DB%8C%D8%9F%20%D8%A8%DA%AF%D9%88" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">باز چه خورده ای؟ بگو</a>
 <a data-pjax="on" href="/singer/%D9%BE%D8%B1%D9%88%D8%A7%D8%B2%20%D9%87%D9%85%D8%A7%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">پرواز همای</a>
 </div>
-</div>
+ </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
@@ -519,7 +519,7 @@
 <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%D8%B1%D8%B6%D8%A7%20%D9%82%D8%B1%D8%A8%D8%A7%D9%86%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">علیرضا قربانی</a>
 </div>
 </div>
- </div>
+</div>
 </div>
 <ul class="pagination">
 <li class="page-item disabled"><span class="page-link">&lsaquo;</span></li>
@@ -555,7 +555,7 @@
 <div class="jp-controls">
 <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
 <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
-<div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
+ <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
 <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
 <div><a class="" data-toggle="dropdown" data-target="#playlist" asb="boz"><i class="icon-list"></i></a></div>
@@ -588,7 +588,7 @@
 
 
 
-
+ 
 
 
 
@@ -620,14 +620,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

@@ -442,7 +442,7 @@
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="72904" data-title="پاشو بیا" data-artist="شهاب موزاففری" data-music="/file/763513/96052-277d5c4c68cd25e_FIVETAMUSIC_.mp3" data-photo="/file/763514/41c84c9e0fc0dd1_FIVETAMUSIC_.jpg" onclick="window.open('/file/763513/96052-277d5c4c68cd25e_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
-</div>
+ </div>
 </div>
 <a href="/song/72904/%D8%B4%D9%87%D8%A7%D8%A8%20%D9%85%D9%88%D8%B2%D8%A7%D9%81%D9%81%D8%B1%DB%8C/%D9%BE%D8%A7%D8%B4%D9%88%20%D8%A8%DB%8C%D8%A7" asb="boz"><img src="/file/763514/41c84c9e0fc0dd1_FIVETAMUSIC_.jpg" alt="پاشو بیا شهاب موزاففری FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
@@ -526,7 +526,7 @@
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=2">2</a></li>
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=3">3</a></li>
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=4">4</a></li>
- <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=5">5</a></li>
+<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=5">5</a></li>
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=6">6</a></li>
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=7">7</a></li>
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=8">8</a></li>
@@ -534,7 +534,7 @@
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=4028">4028</a></li>
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=4029">4029</a></li>
 <li class="page-item"><a class="page-link" href="https://fiveta.ir?page=2" rel="next">&rsaquo;</a></li>
-</ul>
+ </ul>
 </section>
 </section>
 </section>
@@ -574,7 +574,7 @@
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
 </div>
-<div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
+ <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
 <div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
 </div>
@@ -619,14 +619,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

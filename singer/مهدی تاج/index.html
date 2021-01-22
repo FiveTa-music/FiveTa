@@ -185,7 +185,6 @@
 
 
 
-
 <aside class="aside bg-light dk  hidden-xs" id="sidebar">
 <section class="vbox animated fadeInUp">
 <section class="scrollable hover">
@@ -222,13 +221,13 @@
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="113" data-title="بی تابی" data-artist="مهدی تاج" data-music="/file/28241/Mehdi Taj - Bi Tabi_FIVETAMUSIC_.mp3" data-photo="/file/52465/Mehdi-Taj-Bi-Tabi_FIVETAMUSIC_.jpg" onclick="window.open('/file/28241/Mehdi Taj - Bi Tabi_FIVETAMUSIC_.mp3', '_blank')">
 </i>
-</a>
+ </a>
 </div>
 </div>
 <a href="/song/113/%D9%85%D9%87%D8%AF%DB%8C%20%D8%AA%D8%A7%D8%AC/%D8%A8%DB%8C%20%D8%AA%D8%A7%D8%A8%DB%8C" asb="boz"><img src="/file/52465/Mehdi-Taj-Bi-Tabi_FIVETAMUSIC_.jpg" alt="بی تابی مهدی تاج FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
 <a href="/song/113/%D9%85%D9%87%D8%AF%DB%8C%20%D8%AA%D8%A7%D8%AC/%D8%A8%DB%8C%20%D8%AA%D8%A7%D8%A8%DB%8C" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">بی تابی</a>
- <a data-pjax="on" href="/singer/%D9%85%D9%87%D8%AF%DB%8C%20%D8%AA%D8%A7%D8%AC" class="text-ellipsis text-xs text-muted" asb="boz">مهدی تاج</a>
+<a data-pjax="on" href="/singer/%D9%85%D9%87%D8%AF%DB%8C%20%D8%AA%D8%A7%D8%AC" class="text-ellipsis text-xs text-muted" asb="boz">مهدی تاج</a>
 </div>
 </div>
 </div>
@@ -269,7 +268,7 @@
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
 <div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
+ <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="24464" data-title="رویایی دور" data-artist="محمد مهدی درتاج" data-music="/file/363227/Mohammad Mahdi Dortaj - Royaye Door_FIVETAMUSIC_.mp3" data-photo="/file/363229/Mohammad-Mahdi-Dortaj-Royaye-Door_FIVETAMUSIC_.jpg" onclick="window.open('/file/363227/Mohammad Mahdi Dortaj - Royaye Door_FIVETAMUSIC_.mp3', '_blank')">
 </i>
@@ -295,7 +294,7 @@
 <div id="jplayer_N" class="jp-jplayer hide" style="width: 480px; height: 270px;">
 
 
-
+ 
 </div>
 <div class="jp-gui">
 <div class="jp-video-play hide" style="display: block;"><a class="jp-video-play-icon" asb="boz">play</a></div>
@@ -368,14 +367,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

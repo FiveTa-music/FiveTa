@@ -331,7 +331,7 @@
 </div>
 </div>
 </article>
- <article class="media">
+<article class="media">
 <a data-pjax="on" href="/song/144/%D8%A7%D9%85%DB%8C%D8%B1%20%D8%A8%D8%B1%D8%A7/%DB%8C%D8%A7%D9%86%D8%AF%D9%85%20%D9%87%D8%B1%20%DA%AF%D8%A6%D8%AC%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/53006/Amir-Borra-Yandim-Her-Gece_FIVETAMUSIC_.jpg" alt="یاندم هر گئجه امیر برا FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/144/%D8%A7%D9%85%DB%8C%D8%B1%20%D8%A8%D8%B1%D8%A7/%DB%8C%D8%A7%D9%86%D8%AF%D9%85%20%D9%87%D8%B1%20%DA%AF%D8%A6%D8%AC%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">یاندم هر گئجه</a>
 
@@ -345,7 +345,7 @@
 <div class="media-body"> <a href="/song/247/%D8%B3%D8%B9%DB%8C%D8%AF%20%D9%85%D8%A8%D8%B1%D9%87%D9%86/%D8%B9%D8%B4%D9%82%20%D8%A8%DB%8C%20%D9%86%D8%B8%DB%8C%D8%B1%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">عشق بی نظیرم</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D8%B3%D8%B9%DB%8C%D8%AF%20%D9%85%D8%A8%D8%B1%D9%87%D9%86" class="text-xs text-muted" asb="boz">سعید مبرهن</a>
+ <a data-pjax="on" href="/singer/%D8%B3%D8%B9%DB%8C%D8%AF%20%D9%85%D8%A8%D8%B1%D9%87%D9%86" class="text-xs text-muted" asb="boz">سعید مبرهن</a>
 </div>
 </div>
 </article>
@@ -373,7 +373,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%A7%D8%B1%D8%B3%D9%84%D8%A7%D9%86%20%D8%AE%D9%84%D8%AC" class="text-xs text-muted" asb="boz">ارسلان خلج</a>
- </div>
+</div>
 </div>
 </article>
 <article class="media">
@@ -410,13 +410,13 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%88%DB%8C%D8%B3%DB%8C%20%D8%A8%D9%86%D8%AF" class="text-xs text-muted" asb="boz">ویسی بند</a>
 </div>
-</div>
+ </div>
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/596/%D8%B9%D8%A7%D8%A8%D8%AF%20%D8%A2%D9%88%D8%A7/%D8%B9%D8%A7%D8%B4%D9%82%D8%A7%D9%86%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52855/Abed-Ava-&amp;-Javad-Najafi-Asheghaneh_FIVETAMUSIC_.jpg" alt="عاشقانه عابد آوا FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/596/%D8%B9%D8%A7%D8%A8%D8%AF%20%D8%A2%D9%88%D8%A7/%D8%B9%D8%A7%D8%B4%D9%82%D8%A7%D9%86%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">عاشقانه</a>
 
- <div class="text-xs block m-t-xs">
+<div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B9%D8%A7%D8%A8%D8%AF%20%D8%A2%D9%88%D8%A7" class="text-xs text-muted" asb="boz">عابد آوا</a>
 </div>
 </div>
@@ -441,7 +441,7 @@
 </article>
 </div>
 </div>
- </div>
+</div>
 </div>
 </section>
 </section>
@@ -479,7 +479,7 @@
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
- <div class="jp-volume-bar dk">
+<div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
 </div>
@@ -501,7 +501,7 @@
 
 
 
-
+ 
 
 
 
@@ -515,7 +515,7 @@
 </footer>
 </section>
 
- </section>
+</section>
 </section>
 </section>
 </section>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

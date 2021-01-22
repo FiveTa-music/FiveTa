@@ -164,12 +164,12 @@
 <section class="vbox" id="bjax-el">
 <section class="scrollable wrapper-lg">
 <div class="row">
- <div class="col-sm-8">
+<div class="col-sm-8">
 <div class="panel wrapper-lg">
 <div class="row">
 <div class="col-sm-5"> <img src="/file/358305/6b998d914ef7030_FIVETAMUSIC_.jpg" alt="برگرد محمد فخاری FIVETAMUSIC" class="img-full m-b"> </div>
 <div class="col-sm-7">
-<h1 class="m-t-none text-black">برگرد</h1>
+ <h1 class="m-t-none text-black">برگرد</h1>
 <div class="clearfix m-b-lg">
 <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/358305/6b998d914ef7030_FIVETAMUSIC_.jpg" alt="برگرد محمد فخاری FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D9%85%D8%AD%D9%85%D8%AF%20%D9%81%D8%AE%D8%A7%D8%B1%DB%8C" class="text-info" asb="boz">محمد فخاری</a>
@@ -216,31 +216,6 @@
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
@@ -302,7 +277,32 @@
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -329,7 +329,7 @@
 <a data-pjax="on" href="/singer/%D9%85%D8%B3%DB%8C%D8%AD" class="text-xs text-muted" asb="boz">مسیح</a>
 </div>
 </div>
- </article>
+</article>
 <article class="media">
 <a data-pjax="on" href="/song/10215/%DA%A9%D8%A7%D9%85%D8%B1%D8%A7%D9%86%20%D8%B9%D8%B7%D8%A7/%D8%A7%D8%AA%D9%88%D8%A8%D8%A7%D9%86" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51353/Kamran-Atta-Autoban_FIVETAMUSIC_.jpg" alt="اتوبان کامران عطا FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/10215/%DA%A9%D8%A7%D9%85%D8%B1%D8%A7%D9%86%20%D8%B9%D8%B7%D8%A7/%D8%A7%D8%AA%D9%88%D8%A8%D8%A7%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">اتوبان</a>
@@ -375,9 +375,9 @@
 </div>
 </div>
 </article>
- <article class="media">
+<article class="media">
 <a data-pjax="on" href="/song/46837/%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86/%D8%A8%D9%87%20%D8%AE%D9%88%D8%AF%D8%AA%20%D8%A8%DB%8C%D8%A7" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/321141/57cf5da8600dc1f_FIVETAMUSIC_.jpg" alt="به خودت بیا امیرحسین FIVETAMUSIC"> </a>
-<div class="media-body"> <a href="/song/46837/%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86/%D8%A8%D9%87%20%D8%AE%D9%88%D8%AF%D8%AA%20%D8%A8%DB%8C%D8%A7" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">به خودت بیا</a>
+ <div class="media-body"> <a href="/song/46837/%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86/%D8%A8%D9%87%20%D8%AE%D9%88%D8%AF%D8%AA%20%D8%A8%DB%8C%D8%A7" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">به خودت بیا</a>
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86" class="text-xs text-muted" asb="boz">امیرحسین</a>
@@ -399,7 +399,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%86%D9%88%DB%8C%D8%AF" class="text-xs text-muted" asb="boz">نوید</a>
-</div>
+ </div>
 </div>
 </article>
 <article class="media">
@@ -518,15 +518,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

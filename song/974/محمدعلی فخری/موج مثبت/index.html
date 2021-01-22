@@ -326,7 +326,7 @@
 <a data-pjax="on" href="/song/161/%DB%8C%D9%88%D9%86%D8%A7%20%D9%81%D9%87%DB%8C%D9%85/%D8%A2%D8%B1%D9%88%D9%85%20%D8%A2%D8%B1%D9%88%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/53155/Yuna-Fahim- Aroom-Aroom_FIVETAMUSIC_.jpg" alt="آروم آروم یونا فهیم FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/161/%DB%8C%D9%88%D9%86%D8%A7%20%D9%81%D9%87%DB%8C%D9%85/%D8%A2%D8%B1%D9%88%D9%85%20%D8%A2%D8%B1%D9%88%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">آروم آروم</a>
 
- <div class="text-xs block m-t-xs">
+<div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%DB%8C%D9%88%D9%86%D8%A7%20%D9%81%D9%87%DB%8C%D9%85" class="text-xs text-muted" asb="boz">یونا فهیم</a>
 </div>
 </div>
@@ -363,7 +363,7 @@
 <div class="media-body"> <a href="/song/590/%D8%A7%D8%B4%DA%A9%D8%A7%D9%86%20%D8%AA%D8%B1%DA%A9%20%D8%B2%D8%A8%D8%A7%D9%86/%D9%85%D9%86%20%D8%B9%D8%A7%D8%B4%D9%82%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">من عاشقم</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D8%A7%D8%B4%DA%A9%D8%A7%D9%86%20%D8%AA%D8%B1%DA%A9%20%D8%B2%D8%A8%D8%A7%D9%86" class="text-xs text-muted" asb="boz">اشکان ترک زبان</a>
+ <a data-pjax="on" href="/singer/%D8%A7%D8%B4%DA%A9%D8%A7%D9%86%20%D8%AA%D8%B1%DA%A9%20%D8%B2%D8%A8%D8%A7%D9%86" class="text-xs text-muted" asb="boz">اشکان ترک زبان</a>
 </div>
 </div>
 </article>
@@ -394,7 +394,7 @@
 </div>
 </div>
 </article>
- <article class="media">
+<article class="media">
 <a data-pjax="on" href="/song/765/%D9%85%D9%87%D8%B1%D8%AF%D8%A7%D8%AF%20%D9%81%D9%88%D8%A7%D8%AF%DB%8C%D8%A7%D9%86/%D8%AF%D9%88%D8%B3%D9%90%D8%AA%20%D8%AF%D8%A7%D8%B1%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51691/Mehrdad-Foadian-Dooset-Daram_FIVETAMUSIC_.jpg" alt="دوسِت دارم مهرداد فوادیان FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/765/%D9%85%D9%87%D8%B1%D8%AF%D8%A7%D8%AF%20%D9%81%D9%88%D8%A7%D8%AF%DB%8C%D8%A7%D9%86/%D8%AF%D9%88%D8%B3%D9%90%D8%AA%20%D8%AF%D8%A7%D8%B1%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دوسِت دارم</a>
 
@@ -430,7 +430,7 @@
 </div>
 </div>
 </article>
-</div>
+ </div>
 </div>
 </div>
 </div>
@@ -504,7 +504,7 @@
 </div>
 </div>
 </footer>
-</section>
+ </section>
 
 </section>
 </section>
@@ -519,15 +519,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

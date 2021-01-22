@@ -219,6 +219,23 @@
 
 
 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -289,24 +306,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 </div>
 </div>
 <div class="col-sm-4">
@@ -332,7 +332,7 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/118/%DA%A9%D9%88%D9%84%D8%A7%DA%A9%20%D8%A8%D9%86%D8%AF/%D8%B9%D8%B1%D9%88%D8%B3" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52569/Kolak-Band-Aroos_FIVETAMUSIC_.jpg" alt="عروس کولاک بند FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/118/%DA%A9%D9%88%D9%84%D8%A7%DA%A9%20%D8%A8%D9%86%D8%AF/%D8%B9%D8%B1%D9%88%D8%B3" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52569/Kolak-Band-Aroos_FIVETAMUSIC_.jpg" alt="عروس کولاک بند FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/118/%DA%A9%D9%88%D9%84%D8%A7%DA%A9%20%D8%A8%D9%86%D8%AF/%D8%B9%D8%B1%D9%88%D8%B3" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">عروس</a>
 
 <div class="text-xs block m-t-xs">
@@ -384,7 +384,7 @@
 <a data-pjax="on" href="/singer/%D8%A7%D8%AD%D8%B3%D8%A7%D9%86%20%DA%A9%D8%B1%DB%8C%D9%85%DB%8C" class="text-xs text-muted" asb="boz">احسان کریمی</a>
 </div>
 </div>
- </article>
+</article>
 <article class="media">
 <a data-pjax="on" href="/song/706/%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D8%B1%D8%A7%D8%AF/%D9%84%D8%AD%D8%B8%D9%87%20%D9%87%D8%A7" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51539/Milad-Rad-Lahzeha_FIVETAMUSIC_.jpg" alt="لحظه ها میلاد راد FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/706/%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D8%B1%D8%A7%D8%AF/%D9%84%D8%AD%D8%B8%D9%87%20%D9%87%D8%A7" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">لحظه ها</a>
@@ -405,7 +405,7 @@
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/863/%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D9%82%D8%AF%D8%B1%D8%AA%DB%8C/%D8%B1%D9%88%DB%8C%D8%A7%DB%8C%20%D9%85%D8%AD%D8%A7%D9%84" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52582/Milad-Ghodrati-Royaye-Mahal_FIVETAMUSIC_.jpg" alt="رویای محال میلاد قدرتی FIVETAMUSIC"> </a>
- <div class="media-body"> <a href="/song/863/%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D9%82%D8%AF%D8%B1%D8%AA%DB%8C/%D8%B1%D9%88%DB%8C%D8%A7%DB%8C%20%D9%85%D8%AD%D8%A7%D9%84" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">رویای محال</a>
+<div class="media-body"> <a href="/song/863/%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D9%82%D8%AF%D8%B1%D8%AA%DB%8C/%D8%B1%D9%88%DB%8C%D8%A7%DB%8C%20%D9%85%D8%AD%D8%A7%D9%84" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">رویای محال</a>
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D9%82%D8%AF%D8%B1%D8%AA%DB%8C" class="text-xs text-muted" asb="boz">میلاد قدرتی</a>
@@ -439,7 +439,7 @@
 </div>
 </div>
 </article>
-</div>
+ </div>
 </div>
 </div>
 </div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

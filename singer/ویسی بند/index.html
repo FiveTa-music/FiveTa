@@ -178,7 +178,7 @@
 
 
 
-
+ 
 
 
 
@@ -221,7 +221,7 @@
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="58409" data-title="الیه" data-artist="ویسی بند" data-music="/file/311229/Veysi-Band-Aliye_FIVETAMUSIC_.mp3" data-photo="/file/324829/8df7c1da52da1d8_FIVETAMUSIC_.jpg" onclick="window.open('/file/311229/Veysi-Band-Aliye_FIVETAMUSIC_.mp3', '_blank')">
 </i>
- </a>
+</a>
 </div>
 </div>
 <a href="/song/58409/%D9%88%DB%8C%D8%B3%DB%8C%20%D8%A8%D9%86%D8%AF/%D8%A7%D9%84%DB%8C%D9%87" asb="boz"><img src="/file/324829/8df7c1da52da1d8_FIVETAMUSIC_.jpg" alt="الیه ویسی بند FIVETAMUSIC" class="r r-2x img-full"></a></div>
@@ -249,7 +249,7 @@
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
+ <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
@@ -270,7 +270,7 @@
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
- <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="2344" data-title="حرف خاص" data-artist="ویسی بند" data-music="/file/28780/Veysi Band - Harfe Khas (128)_FIVETAMUSIC_.mp3" data-photo="/file/51593/Veysi-Band-Harfe-Khas_FIVETAMUSIC_.jpg" onclick="window.open('/file/28780/Veysi Band - Harfe Khas (128)_FIVETAMUSIC_.mp3', '_blank')">
+<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="2344" data-title="حرف خاص" data-artist="ویسی بند" data-music="/file/28780/Veysi Band - Harfe Khas (128)_FIVETAMUSIC_.mp3" data-photo="/file/51593/Veysi-Band-Harfe-Khas_FIVETAMUSIC_.jpg" onclick="window.open('/file/28780/Veysi Band - Harfe Khas (128)_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
 </div>
@@ -337,7 +337,7 @@
 <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
- <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
+<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="580" data-title="عروس و داماد" data-artist="ویسی بند" data-music="/file/34930/Veysi Band - Aroos O Damad (128)_FIVETAMUSIC_.mp3" data-photo="/file/52156/Veysi-Band-Aroos-O-Damad_FIVETAMUSIC_.jpg" onclick="window.open('/file/34930/Veysi Band - Aroos O Damad (128)_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
@@ -394,7 +394,7 @@
 <div class="jp-progress hidden-xs">
 <div class="jp-seek-bar dk" style="width: 0%;">
 <div class="jp-play-bar bg-info" style="width: 0%;"></div>
-<div class="jp-title text-lt" style="display: none;">FIVETA</div>
+ <div class="jp-title text-lt" style="display: none;">FIVETA</div>
 </div>
 </div>
 <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
@@ -428,7 +428,7 @@
 
 
 
-
+ 
 </ul>
 </div>
 
@@ -452,14 +452,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');
