@@ -426,7 +426,7 @@
 <div class="media-body"> <a href="/song/1372/%D9%85%D8%AD%D9%85%D8%AF%20%DA%86%D9%86%D8%A7%D8%B1%DB%8C/%D9%85%DA%AF%D9%87%20%D8%AF%D8%B3%D8%AA%D9%90%20%D9%85%D9%86%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">مگه دستِ منه</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D9%85%D8%AD%D9%85%D8%AF%20%DA%86%D9%86%D8%A7%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">محمد چناری</a>
+ <a data-pjax="on" href="/singer/%D9%85%D8%AD%D9%85%D8%AF%20%DA%86%D9%86%D8%A7%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">محمد چناری</a>
 </div>
 </div>
 </article>
@@ -436,7 +436,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B9%D9%85%D8%B1%D8%A7%D9%86%20%D8%B7%D8%A7%D9%87%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">عمران طاهری</a>
- </div>
+</div>
 </div>
 </article>
 </div>
@@ -476,7 +476,7 @@
 <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
 </div>
 <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
- <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
+<div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
 <div class="jp-volume-bar dk">
@@ -508,7 +508,7 @@
 </ul>
 </div>
 
- 
+
 
 </div>
 </div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

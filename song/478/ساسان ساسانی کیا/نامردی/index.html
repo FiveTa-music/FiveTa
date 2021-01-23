@@ -437,7 +437,7 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%D8%AD%D8%B3%D9%86%20%D8%A8%D9%87%D9%85%D9%86%DB%8C" class="text-xs text-muted" asb="boz">محسن بهمنی</a>
 </div>
-</div>
+ </div>
 </article>
 </div>
 </div>
@@ -462,7 +462,7 @@
 <div class="jp-interface">
 <div class="jp-controls">
 <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
- <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
+<div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
 <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

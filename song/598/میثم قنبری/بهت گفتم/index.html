@@ -326,7 +326,7 @@
 <a data-pjax="on" href="/song/41/%D9%85%DB%8C%D8%AB%D9%85%20%D9%85%D8%AD%D9%86%D8%A7/%D8%A7%D8%AC%D8%A7%D8%B2%D9%87%20%D9%85%DB%8C%DA%AF%DB%8C%D8%B1%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50524/Meysam-Mohanna-Ejaze-Migiram_FIVETAMUSIC_.jpg" alt="اجازه میگیرم میثم محنا FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/41/%D9%85%DB%8C%D8%AB%D9%85%20%D9%85%D8%AD%D9%86%D8%A7/%D8%A7%D8%AC%D8%A7%D8%B2%D9%87%20%D9%85%DB%8C%DA%AF%DB%8C%D8%B1%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">اجازه میگیرم</a>
 
- <div class="text-xs block m-t-xs">
+<div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%DB%8C%D8%AB%D9%85%20%D9%85%D8%AD%D9%86%D8%A7" class="text-xs text-muted" asb="boz">میثم محنا</a>
 </div>
 </div>
@@ -356,7 +356,7 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%81%D8%B1%D8%B2%D8%A7%D8%AF%20%DA%A9%D8%A7%D8%B8%D9%85%DB%8C" class="text-xs text-muted" asb="boz">فرزاد کاظمی</a>
 </div>
-</div>
+ </div>
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/171/%D9%87%D8%A7%D8%AF%DB%8C%20%D9%85%D8%AD%D9%85%D8%AF%DB%8C/%D8%A8%D8%A7%20%D8%AA%D9%88%20%D8%A2%D8%B1%D9%88%D9%85%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50044/hadi-mohammadi_FIVETAMUSIC_.jpg" alt="با تو آرومم هادی محمدی FIVETAMUSIC"> </a>
@@ -391,7 +391,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%D9%87%D8%B1%D8%A7%D9%86%20%D9%86%D8%B5%DB%8C%D8%B1%D9%BE%D9%88%D8%B1" class="text-xs text-muted" asb="boz">مهران نصیرپور</a>
- </div>
+</div>
 </div>
 </article>
 <article class="media">
@@ -422,7 +422,7 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/851/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%B1%D9%88%D8%B2%D8%A8%D9%87/%D8%A8%DB%8C%D8%B1%D8%A7%D9%87%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52514/Mohammadreza-Rouzbeh-Birahe_FIVETAMUSIC_.jpg" alt="بیراهه محمدرضا روزبه FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/851/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%B1%D9%88%D8%B2%D8%A8%D9%87/%D8%A8%DB%8C%D8%B1%D8%A7%D9%87%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52514/Mohammadreza-Rouzbeh-Birahe_FIVETAMUSIC_.jpg" alt="بیراهه محمدرضا روزبه FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/851/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%B1%D9%88%D8%B2%D8%A8%D9%87/%D8%A8%DB%8C%D8%B1%D8%A7%D9%87%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">بیراهه</a>
 
 <div class="text-xs block m-t-xs">
@@ -453,7 +453,7 @@
 <div id="jp_container_N" class="jp-video-270p">
 <div class="jp-type-playlist">
 <div id="jplayer_N" class="jp-jplayer hide" style="width: 480px; height: 270px;">
-
+ 
 
 
 </div>
@@ -474,7 +474,7 @@
 </div>
 </div>
 <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
- </div>
+</div>
 <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

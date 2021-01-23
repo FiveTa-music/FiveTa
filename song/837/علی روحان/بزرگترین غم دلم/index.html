@@ -113,16 +113,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
  
+
+
+
+
+
+
+
+
+
 
 
 
@@ -162,7 +162,7 @@
 
 <section>
 <section class="vbox" id="bjax-el">
-<section class="scrollable wrapper-lg">
+ <section class="scrollable wrapper-lg">
 <div class="row">
 <div class="col-sm-8">
 <div class="panel wrapper-lg">
@@ -170,7 +170,7 @@
 <div class="col-sm-5"> <img src="/file/753334/Ali-Rohan-Bozorgtarin-Ghame-Delam_FIVETAMUSIC_.JPG" alt="بزرگترین غم دلم علی روحان FIVETAMUSIC" class="img-full m-b"> </div>
 <div class="col-sm-7">
 <h1 class="m-t-none text-black">بزرگترین غم دلم</h1>
- <div class="clearfix m-b-lg">
+<div class="clearfix m-b-lg">
 <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/753334/Ali-Rohan-Bozorgtarin-Ghame-Delam_FIVETAMUSIC_.JPG" alt="بزرگترین غم دلم علی روحان FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%D8%B1%D9%88%D8%AD%D8%A7%D9%86" class="text-info" asb="boz">علی روحان</a>
 
@@ -183,7 +183,7 @@
 
 
 
-
+ 
 
 
 
@@ -238,15 +238,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -307,6 +299,14 @@
 
  
 
+
+
+
+
+
+
+
+
 </div>
 </div>
 <div class="col-sm-4">
@@ -326,7 +326,7 @@
 <a data-pjax="on" href="/song/154/%D9%85%D8%AD%DB%8C/%D8%AF%D9%88%D8%B1%D9%85%20%D9%86%D8%B2%D9%86" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50423/Mohi-Doram-Nazan_FIVETAMUSIC_.jpg" alt="دورم نزن محی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/154/%D9%85%D8%AD%DB%8C/%D8%AF%D9%88%D8%B1%D9%85%20%D9%86%D8%B2%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دورم نزن</a>
 
-<div class="text-xs block m-t-xs">
+ <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%D8%AD%DB%8C" class="text-xs text-muted" asb="boz">محی</a>
 </div>
 </div>
@@ -416,7 +416,7 @@
 <a data-pjax="on" href="/song/757/%D9%81%D8%B1%DB%8C%D8%AF%20%D8%AC%D9%88%D8%A7%D8%AF%DB%8C/%D8%AF%DB%8C%D9%88%D9%88%D9%86%DA%AF%DB%8C" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51190/Farid-Javadi-Divoonegi_FIVETAMUSIC_.jpg" alt="دیوونگی فرید جوادی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/757/%D9%81%D8%B1%DB%8C%D8%AF%20%D8%AC%D9%88%D8%A7%D8%AF%DB%8C/%D8%AF%DB%8C%D9%88%D9%88%D9%86%DA%AF%DB%8C" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دیوونگی</a>
 
-<div class="text-xs block m-t-xs">
+ <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%81%D8%B1%DB%8C%D8%AF%20%D8%AC%D9%88%D8%A7%D8%AF%DB%8C" class="text-xs text-muted" asb="boz">فرید جوادی</a>
 </div>
 </div>
@@ -442,7 +442,7 @@
 </div>
 </div>
 </div>
-</div>
+ </div>
 </section>
 </section>
 <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
@@ -454,7 +454,7 @@
 <div class="jp-type-playlist">
 <div id="jplayer_N" class="jp-jplayer hide" style="width: 480px; height: 270px;">
 
- 
+
 
 </div>
 <div class="jp-gui">
@@ -516,7 +516,7 @@
 </section>
 
 </section>
-</section>
+ </section>
 </section>
 </section>
 
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

@@ -358,7 +358,7 @@
 </div>
 </div>
 </article>
- <article class="media">
+<article class="media">
 <a data-pjax="on" href="/song/364/%D8%B9%D9%84%DB%8C%D8%B1%D8%B6%D8%A7%20%DA%A9%DB%8C%D8%A7/%D8%A8%D8%A7%20%D8%AA%D9%88%20%D9%87%D9%85%D8%AF%D8%B3%D8%AA%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52430/Alireza-Kia-Ba-To-Hamdastam_FIVETAMUSIC_.jpg" alt="با تو همدستم علیرضا کیا FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/364/%D8%B9%D9%84%DB%8C%D8%B1%D8%B6%D8%A7%20%DA%A9%DB%8C%D8%A7/%D8%A8%D8%A7%20%D8%AA%D9%88%20%D9%87%D9%85%D8%AF%D8%B3%D8%AA%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">با تو همدستم</a>
 
@@ -425,7 +425,7 @@
 <a data-pjax="on" href="/song/856/%D9%86%D8%A7%D8%AF%D8%B1/%DB%8C%D8%A7%D8%AF%20%D9%85%D9%86%20%D8%A8%DB%8C%D9%81%D8%AA" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/53042/Nader-Yade-Man-Bioft_FIVETAMUSIC_.jpg" alt="یاد من بیفت نادر FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/856/%D9%86%D8%A7%D8%AF%D8%B1/%DB%8C%D8%A7%D8%AF%20%D9%85%D9%86%20%D8%A8%DB%8C%D9%81%D8%AA" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">یاد من بیفت</a>
 
- <div class="text-xs block m-t-xs">
+<div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%86%D8%A7%D8%AF%D8%B1" class="text-xs text-muted" asb="boz">نادر</a>
 </div>
 </div>
@@ -446,7 +446,7 @@
 </section>
 </section>
 <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
-</section>
+ </section>
 </section>
 </section>
 <footer class="footer bg-info dker">
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

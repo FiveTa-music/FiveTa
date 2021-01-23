@@ -9,6 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="yandex-verification" content="a2480ff4177e4c07" />
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>آهنگ امان از دست تو از محمد همراهی - FiveTa | موسیقی هوشمند</title>
 <meta name="description" content="دانلود و پخش آهنگ امان از دست تو از محمد همراهی">
@@ -269,7 +270,7 @@
 
 
 
- 
+
 
 
 
@@ -495,7 +496,7 @@
 
 
 
- 
+
 
 
 
@@ -528,15 +529,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

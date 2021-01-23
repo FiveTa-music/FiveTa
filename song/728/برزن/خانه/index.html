@@ -489,7 +489,7 @@
 </div>
 </div>
 </div>
- <div class="jp-playlist dropup" id="playlist">
+<div class="jp-playlist dropup" id="playlist">
 <ul class="dropdown-menu aside-xl dker" style="display: block;">
 
 
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

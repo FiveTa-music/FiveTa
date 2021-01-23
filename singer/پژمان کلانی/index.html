@@ -177,7 +177,7 @@
 
 
 
- 
+
 
 
 
@@ -289,8 +289,8 @@
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="8343" data-title="تصویر توئه" data-artist="پژمان کلانی" data-music="/file/14894/Pezhman Kalani - Tasvire Toe (128)_FIVETAMUSIC_.mp3" data-photo="/file/53958/Pezhman-Kalani-Tasvire-Toe_FIVETAMUSIC_.jpg" onclick="window.open('/file/14894/Pezhman Kalani - Tasvire Toe (128)_FIVETAMUSIC_.mp3', '_blank')">
 </i>
-</a>
- </div>
+ </a>
+</div>
 </div>
 <a href="/song/8343/%D9%BE%DA%98%D9%85%D8%A7%D9%86%20%DA%A9%D9%84%D8%A7%D9%86%DB%8C/%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%20%D8%AA%D9%88%D8%A6%D9%87" asb="boz"><img src="/file/53958/Pezhman-Kalani-Tasvire-Toe_FIVETAMUSIC_.jpg" alt="تصویر توئه پژمان کلانی FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
@@ -452,14 +452,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

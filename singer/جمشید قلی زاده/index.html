@@ -101,7 +101,7 @@
 
 
 
-
+ 
 
 
 
@@ -155,7 +155,7 @@
 
 
 
- 
+
 
 
 
@@ -267,7 +267,7 @@
 <div class="jp-interface">
 <div class="jp-controls">
 <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
- <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
+<div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
 <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
@@ -298,7 +298,7 @@
 <ul class="dropdown-menu aside-xl dker" style="display: block;">
 
 
- 
+
 
 
 
@@ -312,7 +312,7 @@
 
 </ul>
 </div>
-
+ 
 
 
 </div>
@@ -333,14 +333,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

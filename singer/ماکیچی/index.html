@@ -308,7 +308,7 @@
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="32531" data-title="قانون" data-artist="ماکیچی" data-music="/file/369973/Makichi - Ghanoon_FIVETAMUSIC_.mp3" data-photo="/file/369975/Makichi-Ghanoon_FIVETAMUSIC_.jpg" onclick="window.open('/file/369973/Makichi - Ghanoon_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
-</div>
+ </div>
 </div>
 <a href="/song/32531/%D9%85%D8%A7%DA%A9%DB%8C%DA%86%DB%8C/%D9%82%D8%A7%D9%86%D9%88%D9%86" asb="boz"><img src="/file/369975/Makichi-Ghanoon_FIVETAMUSIC_.jpg" alt="قانون ماکیچی FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
@@ -360,7 +360,7 @@
 </i>
 </a>
 </div>
- </div>
+</div>
 <a href="/song/49047/%D9%85%D8%A7%DA%A9%DB%8C%DA%86%DB%8C/%D8%B2%D9%85%DB%8C%D9%86" asb="boz"><img src="/file/324761/2207562bb018509_FIVETAMUSIC_.jpg" alt="زمین ماکیچی FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
 <a href="/song/49047/%D9%85%D8%A7%DA%A9%DB%8C%DA%86%DB%8C/%D8%B2%D9%85%DB%8C%D9%86" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">زمین</a>
@@ -382,7 +382,7 @@
 <div class="padder-v">
 <a href="/song/61222/%D9%85%D8%A7%DA%A9%DB%8C%DA%86%DB%8C/%D8%AE%D8%A7%D8%B1" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">خار</a>
 <a data-pjax="on" href="/singer/%D9%85%D8%A7%DA%A9%DB%8C%DA%86%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">ماکیچی</a>
- </div>
+</div>
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
@@ -454,7 +454,7 @@
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
- <div class="item">
+<div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
@@ -524,7 +524,6 @@
 </div>
 <ul class="pagination">
 <li class="page-item disabled"><span class="page-link">&lsaquo;</span></li>
-
 <li class="page-item active"><span class="page-link">1</span></li>
 <li class="page-item"><a class="page-link" href="/singer/%D9%85%D8%A7%DA%A9%DB%8C%DA%86%DB%8C?page=2">2</a></li>
 <li class="page-item"><a class="page-link" href="/singer/%D9%85%D8%A7%DA%A9%DB%8C%DA%86%DB%8C?page=3">3</a></li>
@@ -594,7 +593,7 @@
 </ul>
 </div>
 
- 
+
 
 </div>
 </div>
@@ -614,14 +613,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

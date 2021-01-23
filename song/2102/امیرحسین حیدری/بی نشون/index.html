@@ -75,7 +75,7 @@
 <section class="vbox">
 <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
 <div class="navbar-header navbar-right aside bg-info">
- 
+
 <a data-pjax="on" href="https://FIVETA.ir" class="navbar-brand text-lt" asb="boz"> <i class="icon-earphones"> </i> <span class="hidden-nav-xs m-l-sm">FiveTa</span>
 </a>
 
@@ -272,7 +272,7 @@
 
 
 
-
+ 
 
 
 
@@ -377,7 +377,7 @@
 </div>
 </article>
 <article class="media">
- <a data-pjax="on" href="/song/869/%D8%B9%D9%84%DB%8C%20%D8%A7%DA%A9%D8%A8%D8%B1%20%D9%82%D9%84%DB%8C%DA%86/%D9%82%D8%B1%D8%A7%D8%B1%20%D9%86%D8%A8%D9%88%D8%AF" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50412/Ali-Akbar-Ghelich-Qarar-Nabod_FIVETAMUSIC_.jpg" alt="قرار نبود علی اکبر قلیچ FIVETAMUSIC"> </a>
+<a data-pjax="on" href="/song/869/%D8%B9%D9%84%DB%8C%20%D8%A7%DA%A9%D8%A8%D8%B1%20%D9%82%D9%84%DB%8C%DA%86/%D9%82%D8%B1%D8%A7%D8%B1%20%D9%86%D8%A8%D9%88%D8%AF" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50412/Ali-Akbar-Ghelich-Qarar-Nabod_FIVETAMUSIC_.jpg" alt="قرار نبود علی اکبر قلیچ FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/869/%D8%B9%D9%84%DB%8C%20%D8%A7%DA%A9%D8%A8%D8%B1%20%D9%82%D9%84%DB%8C%DA%86/%D9%82%D8%B1%D8%A7%D8%B1%20%D9%86%D8%A8%D9%88%D8%AF" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">قرار نبود</a>
 
 <div class="text-xs block m-t-xs">
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

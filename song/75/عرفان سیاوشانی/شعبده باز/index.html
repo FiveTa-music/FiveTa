@@ -187,7 +187,7 @@
 
 
 
- 
+
 
 
 
@@ -204,7 +204,7 @@
 <h3>
 <p align="justify"></p>
 </h3>
-</div>
+ </div>
 
 
 
@@ -217,7 +217,6 @@
 
 
 
- 
 
 
 
@@ -270,7 +269,6 @@
 
 
 
- 
 
 
 
@@ -303,7 +301,9 @@
 
 
 
- 
+
+
+
 
 
 
@@ -331,7 +331,7 @@
 </div>
 </div>
 </article>
- <article class="media">
+<article class="media">
 <a data-pjax="on" href="/song/289/%D8%B9%D9%84%DB%8C%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%85%D8%A7%D9%84%DA%A9%DB%8C/%D9%88%D8%A7%D8%B3%D9%87%20%D8%AA%D9%88" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50948/Ali-Abdolmaleki-Vase-To_FIVETAMUSIC_.jpg" alt="واسه تو علی عبدالمالکی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/289/%D8%B9%D9%84%DB%8C%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%85%D8%A7%D9%84%DA%A9%DB%8C/%D9%88%D8%A7%D8%B3%D9%87%20%D8%AA%D9%88" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">واسه تو</a>
 
@@ -373,7 +373,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%82%D8%A7%D8%B3%D9%85%20%D8%B7%D8%A7%D9%84%D8%A8%DB%8C" class="text-xs text-muted" asb="boz">قاسم طالبی</a>
- </div>
+</div>
 </div>
 </article>
 <article class="media">
@@ -430,7 +430,7 @@
 </div>
 </div>
 </article>
-<article class="media">
+ <article class="media">
 <a data-pjax="on" href="/song/925/%D8%B4%D9%87%D8%B1%D8%A7%D9%85%20%D8%B4%DA%A9%D9%88%D9%87%DB%8C/%D9%85%D8%AC%D9%86%D9%88%D9%86%20%D8%AA%D9%86%D9%87%D8%A7" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51293/Shahram-Shokoohi-Majnoone-Tanha_FIVETAMUSIC_.JPG" alt="مجنون تنها شهرام شکوهی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/925/%D8%B4%D9%87%D8%B1%D8%A7%D9%85%20%D8%B4%DA%A9%D9%88%D9%87%DB%8C/%D9%85%D8%AC%D9%86%D9%88%D9%86%20%D8%AA%D9%86%D9%87%D8%A7" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">مجنون تنها</a>
 
@@ -443,7 +443,7 @@
 </div>
 </div>
 </div>
- </section>
+</section>
 </section>
 <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
 </section>
@@ -480,7 +480,7 @@
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
 <div class="jp-volume-bar dk">
- <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
+<div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
 </div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
@@ -494,7 +494,7 @@
 
 
 
-
+ 
 
 
 
@@ -520,7 +520,7 @@
 </section>
 </section>
 
- 
+
 <script src="/static_assets/app_002.js"></script>
 <script type="text/javascript" src="/static_assets/jquery.js"></script>
 <script type="text/javascript" src="/static_assets/jplayer.js"></script>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

@@ -73,7 +73,7 @@
 </head>
 <body>
 <section class="vbox">
- <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
+<header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
 <div class="navbar-header navbar-right aside bg-info">
 
 <a data-pjax="on" href="https://FIVETA.ir" class="navbar-brand text-lt" asb="boz"> <i class="icon-earphones"> </i> <span class="hidden-nav-xs m-l-sm">FiveTa</span>
@@ -377,7 +377,7 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/735/%D8%B9%D9%85%D8%A7%D8%AF%20%D8%B7%D8%A7%D9%84%D8%A8%20%D8%B2%D8%A7%D8%AF%D9%87/RadDadiArteenZamaniRemix" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/753323/Emad-Talebzadeh-Rad-Dadi_FIVETAMUSIC_.jpg" alt="RadDadiArteenZamaniRemix عماد طالب زاده FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/735/%D8%B9%D9%85%D8%A7%D8%AF%20%D8%B7%D8%A7%D9%84%D8%A8%20%D8%B2%D8%A7%D8%AF%D9%87/RadDadiArteenZamaniRemix" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/753323/Emad-Talebzadeh-Rad-Dadi_FIVETAMUSIC_.jpg" alt="RadDadiArteenZamaniRemix عماد طالب زاده FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/735/%D8%B9%D9%85%D8%A7%D8%AF%20%D8%B7%D8%A7%D9%84%D8%A8%20%D8%B2%D8%A7%D8%AF%D9%87/RadDadiArteenZamaniRemix" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">RadDadiArteenZamaniRemix</a>
 
 <div class="text-xs block m-t-xs">
@@ -517,7 +517,7 @@
 
 </section>
 </section>
-</section>
+ </section>
 </section>
 
 
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

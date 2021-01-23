@@ -9,7 +9,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="yandex-verification" content="a2480ff4177e4c07" />
-
 <title>آهنگ های امیرحسین متقیان - FiveTa | موسیقی هوشمند</title>
 <meta name="description" content="دانلود مجموعه گلچین شده از آهنگ های امیرحسین متقیان بهترین موزیک های جدید و قدیمی با صدای امیرحسین متقیان">
 <meta name="keywords" content="آهنگ ایرانی, دانلود آلبوم, دانلود آهنگ جدید, دانلود آهنگ غمگین, دانلود آهنگ شاد, دانلود فول آلبوم, دانلود موزیک ویدیو">
@@ -186,6 +185,7 @@
 
 
 
+
 <aside class="aside bg-light dk  hidden-xs" id="sidebar">
 <section class="vbox animated fadeInUp">
 <section class="scrollable hover">
@@ -252,7 +252,7 @@
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
 <div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
+ <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="6403" data-title="نگرونی" data-artist="امیرحسین متقیان" data-music="/file/11590/Amirhossein Motaghian - Negarooni (128)_FIVETAMUSIC_.mp3" data-photo="/file/54492/Amirhossein-Motaghian-Negarooni_FIVETAMUSIC_.jpg" onclick="window.open('/file/11590/Amirhossein Motaghian - Negarooni (128)_FIVETAMUSIC_.mp3', '_blank')">
 </i>
@@ -270,7 +270,7 @@
 <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
- <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
+<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="5348" data-title="پشیمونی" data-artist="امیرحسین متقیان" data-music="/file/12560/AmirHossein Motaghian - Pashimooni (128)_FIVETAMUSIC_.mp3" data-photo="/file/268014/AmirHossein-Motaghian-Pashimooni_FIVETAMUSIC_.jpg" onclick="window.open('/file/12560/AmirHossein Motaghian - Pashimooni (128)_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
@@ -297,7 +297,7 @@
 
 
 </div>
- <div class="jp-gui">
+<div class="jp-gui">
 <div class="jp-video-play hide" style="display: block;"><a class="jp-video-play-icon" asb="boz">play</a></div>
 <div class="jp-interface">
 <div class="jp-controls">
@@ -368,14 +368,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

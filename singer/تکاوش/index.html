@@ -103,7 +103,7 @@
 
 
 
-
+ 
 
 
 
@@ -148,12 +148,12 @@
 
 
 
-
-
-
-
-
  
+
+
+
+
+
 
 
 
@@ -222,10 +222,10 @@
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="60361" data-title="نشونی" data-artist="تکاوش" data-music="/file/655993/Takavash - Neshouni_FIVETAMUSIC_.mp3" data-photo="/file/655995/Takavash-Neshouni_FIVETAMUSIC_.jpg" onclick="window.open('/file/655993/Takavash - Neshouni_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
-</div>
+ </div>
 </div>
 <a href="/song/60361/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4/%D9%86%D8%B4%D9%88%D9%86%DB%8C" asb="boz"><img src="/file/655995/Takavash-Neshouni_FIVETAMUSIC_.jpg" alt="نشونی تکاوش FIVETAMUSIC" class="r r-2x img-full"></a></div>
- <div class="padder-v">
+<div class="padder-v">
 <a href="/song/60361/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4/%D9%86%D8%B4%D9%88%D9%86%DB%8C" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">نشونی</a>
 <a data-pjax="on" href="/singer/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4" class="text-ellipsis text-xs text-muted" asb="boz">تکاوش</a>
 </div>
@@ -245,14 +245,14 @@
 <div class="padder-v">
 <a href="/song/35674/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4/%D8%AC%D8%A7%D8%B0%D8%A8%D9%87" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">جاذبه</a>
 <a data-pjax="on" href="/singer/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4" class="text-ellipsis text-xs text-muted" asb="boz">تکاوش</a>
-</div>
+ </div>
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
- <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
+<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="25180" data-title="با تو خوشبختم" data-artist="تکاوش" data-music="/file/368503/Takavash - Ba To Khoshbakhtam_FIVETAMUSIC_.mp3" data-photo="/file/368505/Takavash-Ba-To-Khoshbakhtam_FIVETAMUSIC_.jpg" onclick="window.open('/file/368503/Takavash - Ba To Khoshbakhtam_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
@@ -362,7 +362,7 @@
 </div>
 <a href="/song/2890/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4/%D8%AE%D9%88%D8%AF%D8%AE%D9%88%D8%A7%D9%87" asb="boz"><img src="/file/50940/takavash_FIVETAMUSIC_.jpg" alt="خودخواه تکاوش FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
- <a href="/song/2890/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4/%D8%AE%D9%88%D8%AF%D8%AE%D9%88%D8%A7%D9%87" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">خودخواه</a>
+<a href="/song/2890/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4/%D8%AE%D9%88%D8%AF%D8%AE%D9%88%D8%A7%D9%87" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">خودخواه</a>
 <a data-pjax="on" href="/singer/%D8%AA%DA%A9%D8%A7%D9%88%D8%B4" class="text-ellipsis text-xs text-muted" asb="boz">تکاوش</a>
 </div>
 </div>
@@ -434,7 +434,7 @@
 
 
 
- </div>
+</div>
 </div>
 </footer>
 </section>
@@ -452,14 +452,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

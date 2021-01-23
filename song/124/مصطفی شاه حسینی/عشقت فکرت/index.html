@@ -238,7 +238,7 @@
 
 
 
-
+ 
 
 
 
@@ -435,7 +435,7 @@
 <div class="media-body"> <a href="/song/950/%D8%B3%D8%B9%DB%8C%D8%AF%20%D8%A8%D8%A7%D9%82%D8%B1%DB%8C%20%D9%81%D8%B1%D8%AF/%D8%AF%D9%84%20%D9%86%DA%AF%D8%B1%D9%88%D9%86%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دل نگرونم</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D8%B3%D8%B9%DB%8C%D8%AF%20%D8%A8%D8%A7%D9%82%D8%B1%DB%8C%20%D9%81%D8%B1%D8%AF" class="text-xs text-muted" asb="boz">سعید باقری فرد</a>
+ <a data-pjax="on" href="/singer/%D8%B3%D8%B9%DB%8C%D8%AF%20%D8%A8%D8%A7%D9%82%D8%B1%DB%8C%20%D9%81%D8%B1%D8%AF" class="text-xs text-muted" asb="boz">سعید باقری فرد</a>
 </div>
 </div>
 </article>
@@ -473,7 +473,7 @@
 <div class="jp-title text-lt" style="display: none;">FIVETA</div>
 </div>
 </div>
- <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
+<div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
 </div>
 <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
@@ -506,8 +506,8 @@
 
 
 </ul>
- </div>
-
+</div>
+ 
 
 
 </div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

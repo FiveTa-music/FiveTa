@@ -419,7 +419,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer" class="text-xs text-muted" asb="boz"></a>
- </div>
+</div>
 </div>
 </article>
 <article class="media">
@@ -428,7 +428,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B3%D8%B9%DB%8C%D8%AF%20%D9%85%D8%B4%D8%B1%D9%82%DB%8C" class="text-xs text-muted" asb="boz">سعید مشرقی</a>
-</div>
+ </div>
 </div>
 </article>
 <article class="media">
@@ -446,7 +446,7 @@
 </div>
 </section>
 </section>
- <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
+<a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
 </section>
 </section>
 </section>
@@ -493,7 +493,7 @@
 <div class="jp-playlist dropup" id="playlist">
 <ul class="dropdown-menu aside-xl dker" style="display: block;">
 
-
+ 
 
 
 
@@ -529,15 +529,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

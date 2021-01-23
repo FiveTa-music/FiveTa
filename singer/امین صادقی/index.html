@@ -180,7 +180,7 @@
 
 
 
- 
+
 
 
 
@@ -251,7 +251,7 @@
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
- <div class="pos-rlt">
+<div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="64955" data-title="دنیا" data-artist="امین صادقی" data-music="/file/685002/90878-671f1a39f988493_FIVETAMUSIC_.mp3" data-photo="/file/688011/8e1aa549d339737_FIVETAMUSIC_.jpg" onclick="window.open('/file/685002/90878-671f1a39f988493_FIVETAMUSIC_.mp3', '_blank')">
@@ -612,14 +612,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

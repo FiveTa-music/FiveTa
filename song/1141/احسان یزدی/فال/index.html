@@ -483,7 +483,7 @@
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
 </div>
-<div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
+ <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
 <div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
 </div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

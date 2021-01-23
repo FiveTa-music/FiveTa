@@ -174,7 +174,7 @@
 
 
 
-
+ 
 
 
 
@@ -269,7 +269,7 @@
 <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
- <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
+<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="1827" data-title="گمت کردم" data-artist="علیرضا حسین پور" data-music="/file/35129/Alireza Hoseinpoor - Gomet Kardam_FIVETAMUSIC_.mp3" data-photo="/file/753484/Alireza-Hoseinpoor-Gomet-Kardam_FIVETAMUSIC_.jpg" onclick="window.open('/file/35129/Alireza Hoseinpoor - Gomet Kardam_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
@@ -368,14 +368,14 @@
 
 
 
-
-
-
-
-
-
-
  
+
+
+
+
+
+
+
 
 
 </ul>
@@ -401,14 +401,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

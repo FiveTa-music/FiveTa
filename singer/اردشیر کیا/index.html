@@ -177,7 +177,7 @@
 
 
 
-
+ 
 
 
 
@@ -246,8 +246,8 @@
 <a href="/song/61005/%D8%A7%D8%B1%D8%AF%D8%B4%DB%8C%D8%B1%20%DA%A9%DB%8C%D8%A7/%D8%AF%D8%B1%DA%A9%D8%AA%20%DA%A9%D8%B1%D8%AF%D9%85" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">درکت کردم</a>
 <a data-pjax="on" href="/singer/%D8%A7%D8%B1%D8%AF%D8%B4%DB%8C%D8%B1%20%DA%A9%DB%8C%D8%A7" class="text-ellipsis text-xs text-muted" asb="boz">اردشیر کیا</a>
 </div>
-</div>
  </div>
+</div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
 <div class="pos-rlt">
@@ -307,7 +307,7 @@
 </div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
-<div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
+ <div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
 </div>
 </div>
 </div>
@@ -350,14 +350,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

@@ -163,7 +163,7 @@
 <section>
 <section class="vbox" id="bjax-el">
 <section class="scrollable wrapper-lg">
- <div class="row">
+<div class="row">
 <div class="col-sm-8">
 <div class="panel wrapper-lg">
 <div class="row">
@@ -214,6 +214,65 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
@@ -248,67 +307,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
 </div>
-</div>
+ </div>
 <div class="col-sm-4">
 <div class="panel panel-default">
 <div class="panel-heading">پیشنهادات</div>
@@ -372,7 +372,7 @@
 <div class="media-body"> <a href="/song/506/%DB%8C%D8%A7%D8%B3%D8%A7%D9%86/%D8%A2%D8%AA%DB%8C%D8%B4%20%D8%A8%D8%A7%D8%B2%DB%8C" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">آتیش بازی</a>
 
 <div class="text-xs block m-t-xs">
- <a data-pjax="on" href="/singer/%DB%8C%D8%A7%D8%B3%D8%A7%D9%86" class="text-xs text-muted" asb="boz">یاسان</a>
+<a data-pjax="on" href="/singer/%DB%8C%D8%A7%D8%B3%D8%A7%D9%86" class="text-xs text-muted" asb="boz">یاسان</a>
 </div>
 </div>
 </article>
@@ -444,7 +444,7 @@
 </div>
 </div>
 </section>
- </section>
+</section>
 <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
 </section>
 </section>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

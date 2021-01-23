@@ -62,7 +62,7 @@
 <section class="vbox">
 <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
 <div class="navbar-header navbar-right aside bg-info">
- 
+
 <a data-pjax="on" href="https://FIVETA.ir" class="navbar-brand text-lt" asb="boz"> <i class="icon-earphones"> </i> <span class="hidden-nav-xs m-l-sm">FiveTa</span>
 </a>
 
@@ -221,7 +221,7 @@
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="57" data-title="چه خدایی" data-artist="هیچ بند" data-music="/file/28050/Hich Band - Che Kodaei_FIVETAMUSIC_.mp3" data-photo="/file/50777/Hich-Band-Che-Kodaei_FIVETAMUSIC_.jpg" onclick="window.open('/file/28050/Hich Band - Che Kodaei_FIVETAMUSIC_.mp3', '_blank')">
 </i>
-</a>
+ </a>
 </div>
 </div>
 <a href="/song/57/%D9%87%DB%8C%DA%86%20%D8%A8%D9%86%D8%AF/%DA%86%D9%87%20%D8%AE%D8%AF%D8%A7%DB%8C%DB%8C" asb="boz"><img src="/file/50777/Hich-Band-Che-Kodaei_FIVETAMUSIC_.jpg" alt="چه خدایی هیچ بند FIVETAMUSIC" class="r r-2x img-full"></a></div>
@@ -248,7 +248,7 @@
 </div>
 </div>
 </div>
- </div>
+</div>
 </section>
 </section>
 </section>
@@ -287,7 +287,7 @@
 <div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
- </div>
+</div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
 <div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
@@ -317,7 +317,7 @@
 
 </div>
 </div>
-</footer>
+ </footer>
 </section>
 
 </section>
@@ -333,14 +333,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

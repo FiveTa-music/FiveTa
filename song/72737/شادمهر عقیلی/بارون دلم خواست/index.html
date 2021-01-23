@@ -217,7 +217,7 @@
 
 </header>
 <section>
- <section class="hbox stretch">
+<section class="hbox stretch">
 
 <section id="content">
 <section class="vbox">
@@ -320,6 +320,7 @@
 
 
 
+ 
 
 
 
@@ -344,8 +345,7 @@
 
 
 
-
-
+ 
 
 
 
@@ -428,11 +428,11 @@
 <div class="media-body"> <a href="/song/3810/%D9%86%D8%B1%DB%8C%D9%85%D8%A7%D9%86/%D8%A7%D9%84%D8%AA%D9%85%D8%A7%D8%B3" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">التماس</a>
 
 <div class="text-xs block m-t-xs">
- <a data-pjax="on" href="/singer/%D9%86%D8%B1%DB%8C%D9%85%D8%A7%D9%86" class="text-xs text-muted" asb="boz">نریمان</a>
+<a data-pjax="on" href="/singer/%D9%86%D8%B1%DB%8C%D9%85%D8%A7%D9%86" class="text-xs text-muted" asb="boz">نریمان</a>
 </div>
 </div>
 </article>
-<article class="media">
+ <article class="media">
 <a data-pjax="on" href="/song/15700/%D9%85%D9%87%D8%AF%DB%8C%20%D9%85%D8%AF%D8%B1%D8%B3/%D8%A7%D8%AD%D8%B3%D8%A7%D8%B3" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/271647/Mehdi Modarres - Ehsas_FIVETAMUSIC_.jpg" alt="احساس مهدی مدرس FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/15700/%D9%85%D9%87%D8%AF%DB%8C%20%D9%85%D8%AF%D8%B1%D8%B3/%D8%A7%D8%AD%D8%B3%D8%A7%D8%B3" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">احساس</a>
 
@@ -514,9 +514,9 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/67065/%D9%BE%D9%88%D8%B2%D8%B2%D9%84%D9%87/%DB%8C%D8%A7%D8%AF%D9%85%20%D9%86%D8%B1%D9%81%D8%AA%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/353418/352ba78643b8c24_FIVETAMUSIC_.jpg" alt="یادم نرفته پوززله FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/67065/%D9%BE%D9%88%D8%B2%D8%B2%D9%84%D9%87/%DB%8C%D8%A7%D8%AF%D9%85%20%D9%86%D8%B1%D9%81%D8%AA%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/353418/352ba78643b8c24_FIVETAMUSIC_.jpg" alt="یادم نرفته پوززله FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/67065/%D9%BE%D9%88%D8%B2%D8%B2%D9%84%D9%87/%DB%8C%D8%A7%D8%AF%D9%85%20%D9%86%D8%B1%D9%81%D8%AA%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">یادم نرفته</a>
- 
+
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%BE%D9%88%D8%B2%D8%B2%D9%84%D9%87" class="text-xs text-muted" asb="boz">پوززله</a>
 </div>
@@ -552,7 +552,7 @@
 <div class="jp-gui">
 <div class="jp-video-play hide" style="display: block;"><a class="jp-video-play-icon" asb="boz">play</a></div>
 <div class="jp-interface">
- <div class="jp-controls">
+<div class="jp-controls">
 <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
 <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
@@ -580,7 +580,7 @@
 <div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
 </div>
 </div>
- </div>
+</div>
 <div class="jp-playlist dropup" id="playlist">
 <ul class="dropdown-menu aside-xl dker" style="display: block;">
 
@@ -620,15 +620,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

@@ -171,7 +171,7 @@
 <div class="col-sm-7">
 <h1 class="m-t-none text-black">زمستون</h1>
 <div class="clearfix m-b-lg">
- <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/50056/Ehsan-Rostami-Zemestoon_FIVETAMUSIC_.jpg" alt="زمستون احسان رستمی FIVETAMUSIC" class="img-circle"> </a>
+<a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/50056/Ehsan-Rostami-Zemestoon_FIVETAMUSIC_.jpg" alt="زمستون احسان رستمی FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D8%A7%D8%AD%D8%B3%D8%A7%D9%86%20%D8%B1%D8%B3%D8%AA%D9%85%DB%8C" class="text-info" asb="boz">احسان رستمی</a>
 
 </div>
@@ -190,7 +190,7 @@
 
 
 
- 
+
 
 
 
@@ -308,8 +308,8 @@
 
 
 </div>
-</div>
- <div class="col-sm-4">
+ </div>
+<div class="col-sm-4">
 <div class="panel panel-default">
 <div class="panel-heading">پیشنهادات</div>
 <div class="panel-body">
@@ -376,7 +376,7 @@
 </div>
 </div>
 </article>
-<article class="media">
+ <article class="media">
 <a data-pjax="on" href="/song/637/%D9%85%D8%AD%D9%85%D8%AF%20%D8%B2%D9%86%D8%AF/%D9%88%D9%82%D8%AA%DB%8C%20%D9%86%DA%AF%D8%A7%D9%87%D9%85%20%D9%85%DB%8C%DA%A9%D9%86%DB%8C" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52629/Mohammad-Zand-Vaghti-Negaham-Mikoni_FIVETAMUSIC_.jpg" alt="وقتی نگاهم میکنی محمد زند FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/637/%D9%85%D8%AD%D9%85%D8%AF%20%D8%B2%D9%86%D8%AF/%D9%88%D9%82%D8%AA%DB%8C%20%D9%86%DA%AF%D8%A7%D9%87%D9%85%20%D9%85%DB%8C%DA%A9%D9%86%DB%8C" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">وقتی نگاهم میکنی</a>
 
@@ -396,7 +396,7 @@
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/1202/%D8%AD%D9%85%DB%8C%D8%AF%20%D8%AC%D8%A7%D9%85%D8%B9%DB%8C%20%D9%86%D8%B3%D8%A8/%D9%BE%D8%B4%DB%8C%D9%85%D9%88%D9%86" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51705/Hamid-Jamei-Nasab-Pashimoon_FIVETAMUSIC_.jpg" alt="پشیمون حمید جامعی نسب FIVETAMUSIC"> </a>
-<div class="media-body"> <a href="/song/1202/%D8%AD%D9%85%DB%8C%D8%AF%20%D8%AC%D8%A7%D9%85%D8%B9%DB%8C%20%D9%86%D8%B3%D8%A8/%D9%BE%D8%B4%DB%8C%D9%85%D9%88%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">پشیمون</a>
+ <div class="media-body"> <a href="/song/1202/%D8%AD%D9%85%DB%8C%D8%AF%20%D8%AC%D8%A7%D9%85%D8%B9%DB%8C%20%D9%86%D8%B3%D8%A8/%D9%BE%D8%B4%DB%8C%D9%85%D9%88%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">پشیمون</a>
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%AD%D9%85%DB%8C%D8%AF%20%D8%AC%D8%A7%D9%85%D8%B9%DB%8C%20%D9%86%D8%B3%D8%A8" class="text-xs text-muted" asb="boz">حمید جامعی نسب</a>
@@ -481,7 +481,7 @@
 <div class="hidden-xs hidden-sm jp-volume">
 <div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
- </div>
+</div>
 </div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

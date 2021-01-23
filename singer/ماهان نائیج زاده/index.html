@@ -185,7 +185,6 @@
 
 
 
-
 <aside class="aside bg-light dk  hidden-xs" id="sidebar">
 <section class="vbox animated fadeInUp">
 <section class="scrollable hover">
@@ -248,7 +247,7 @@
 <a data-pjax="on" href="/singer/%D9%85%D8%A7%D9%87%D8%A7%D9%86%20%D9%86%D8%A7%D8%A6%DB%8C%D8%AC%20%D8%B2%D8%A7%D8%AF%D9%87" class="text-ellipsis text-xs text-muted" asb="boz">ماهان نائیج زاده</a>
 </div>
 </div>
- </div>
+</div>
 </div>
 </section>
 </section>
@@ -334,14 +333,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

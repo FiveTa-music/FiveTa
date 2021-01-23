@@ -358,7 +358,7 @@
 </div>
 </div>
 </article>
-<article class="media">
+ <article class="media">
 <a data-pjax="on" href="/song/401/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2005%20DelamoShekasti" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/753267/Farshid-Mousavi-Aksaye-Dotayi_FIVETAMUSIC_.jpg" alt="FarshidMousavi 05 DelamoShekasti فرشید موسوی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/401/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2005%20DelamoShekasti" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">FarshidMousavi 05 DelamoShekasti</a>
 
@@ -371,7 +371,7 @@
 <a data-pjax="on" href="/song/457/%D9%85%D8%AD%D9%85%D9%88%D8%AF%20%D8%AE%D8%A7%D9%86%DB%8C/%D8%A2%D8%AE%D8%B1%20%D8%B9%D8%B4%D9%82" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50460/Mahmood-Khani-Akhare-Eshgh_FIVETAMUSIC_.jpg" alt="آخر عشق محمود خانی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/457/%D9%85%D8%AD%D9%85%D9%88%D8%AF%20%D8%AE%D8%A7%D9%86%DB%8C/%D8%A2%D8%AE%D8%B1%20%D8%B9%D8%B4%D9%82" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">آخر عشق</a>
 
- <div class="text-xs block m-t-xs">
+<div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%D8%AD%D9%85%D9%88%D8%AF%20%D8%AE%D8%A7%D9%86%DB%8C" class="text-xs text-muted" asb="boz">محمود خانی</a>
 </div>
 </div>
@@ -400,7 +400,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%A7%D9%85%DB%8C%D8%B1%D9%85%D8%B3%D8%B9%D9%88%D8%AF%20%D8%AD%D8%A8%DB%8C%D8%A8%DB%8C" class="text-xs text-muted" asb="boz">امیرمسعود حبیبی</a>
-</div>
+ </div>
 </div>
 </article>
 <article class="media">
@@ -416,7 +416,7 @@
 <a data-pjax="on" href="/song/815/%D8%B1%D8%B6%D8%A7%20%D8%AA%DB%8C%D9%85%D9%88%D8%B1%DB%8C/%DA%86%D8%B4%D9%85%D8%A7%DB%8C%20%D8%A2%D8%A8%DB%8C" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51823/Reza-Teymoori-&amp;-Avia-Blue-Eyes_FIVETAMUSIC_.jpg" alt="چشمای آبی رضا تیموری FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/815/%D8%B1%D8%B6%D8%A7%20%D8%AA%DB%8C%D9%85%D9%88%D8%B1%DB%8C/%DA%86%D8%B4%D9%85%D8%A7%DB%8C%20%D8%A2%D8%A8%DB%8C" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">چشمای آبی</a>
 
- <div class="text-xs block m-t-xs">
+<div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B1%D8%B6%D8%A7%20%D8%AA%DB%8C%D9%85%D9%88%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">رضا تیموری</a>
 </div>
 </div>
@@ -440,7 +440,7 @@
 </div>
 </article>
 </div>
- </div>
+</div>
 </div>
 </div>
 </section>
@@ -456,7 +456,7 @@
 
 
 
-</div>
+ </div>
 <div class="jp-gui">
 <div class="jp-video-play hide" style="display: block;"><a class="jp-video-play-icon" asb="boz">play</a></div>
 <div class="jp-interface">
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 
