@@ -415,7 +415,7 @@
 <article class="media">
 <a data-pjax="on" href="/song/10052/%D8%A8%DB%8C%20%DA%A9%D9%84%D8%A7%D9%85%20%D8%B1%D9%82%D8%B5%20%D9%87%D8%A7%DB%8C%20%D8%A2%D8%B0%D8%B1%DB%8C/Apardi_Silar_Sarani" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/754904/Azarbaijan_FIVETAMUSIC_.jpg" alt="Apardi_Silar_Sarani بی کلام رقص های آذری FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/10052/%D8%A8%DB%8C%20%DA%A9%D9%84%D8%A7%D9%85%20%D8%B1%D9%82%D8%B5%20%D9%87%D8%A7%DB%8C%20%D8%A2%D8%B0%D8%B1%DB%8C/Apardi_Silar_Sarani" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">Apardi_Silar_Sarani</a>
- 
+
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%A8%DB%8C%20%DA%A9%D9%84%D8%A7%D9%85%20%D8%B1%D9%82%D8%B5%20%D9%87%D8%A7%DB%8C%20%D8%A2%D8%B0%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">بی کلام رقص های آذری</a>
 </div>
@@ -437,7 +437,7 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%D8%B2%D9%86%D8%AF%20%D9%88%DA%A9%DB%8C%D9%84%DB%8C" class="text-xs text-muted" asb="boz">علی زند وکیلی</a>
 </div>
- </div>
+</div>
 </article>
 </div>
 </div>
@@ -509,7 +509,7 @@
 </div>
 
 
- 
+
 </div>
 </div>
 </footer>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

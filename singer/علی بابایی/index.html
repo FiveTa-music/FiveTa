@@ -153,10 +153,10 @@
 
 
 
-
-
-
  
+
+
+
 
 
 
@@ -248,7 +248,7 @@
 <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%D8%A8%D8%A7%D8%A8%D8%A7%DB%8C%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">علی بابایی</a>
 </div>
 </div>
-</div>
+ </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
 <div class="pos-rlt">
@@ -357,7 +357,7 @@
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="18450" data-title="تو که میدونی" data-artist="علی بابایی" data-music="/file/263202/Ali Babaei - To Ke Midoni_FIVETAMUSIC_.mp3" data-photo="/file/270962/Ali-Babaei-To-Ke-Midoni_FIVETAMUSIC_.jpg" onclick="window.open('/file/263202/Ali Babaei - To Ke Midoni_FIVETAMUSIC_.mp3', '_blank')">
-</i>
+ </i>
 </a>
 </div>
 </div>
@@ -403,7 +403,7 @@
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
+ <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
@@ -425,7 +425,7 @@
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="2892" data-title="وقتی هستی" data-artist="علی بابایی" data-music="/file/25366/Ali Babaei - Vaghti Hasti_FIVETAMUSIC_.mp3" data-photo="/file/50977/Ali-Babaei-Vaghti-Hasti_FIVETAMUSIC_.jpg" onclick="window.open('/file/25366/Ali Babaei - Vaghti Hasti_FIVETAMUSIC_.mp3', '_blank')">
- </i>
+</i>
 </a>
 </div>
 </div>
@@ -467,14 +467,14 @@
 <div class="padder-v">
 <a href="/song/46697/%D8%B9%D9%84%DB%8C%20%D8%A8%D8%A7%D8%A8%D8%A7%DB%8C%DB%8C/%D8%A8%D8%B3%D9%85%D9%87" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">بسمه</a>
 <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%D8%A8%D8%A7%D8%A8%D8%A7%DB%8C%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">علی بابایی</a>
-</div>
+ </div>
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
- <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
+<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="46696" data-title="روزهای تنهائی" data-artist="علی بابایی" data-music="/file/307583/Ali-Babaei-Rozhaye-Tanhaee_FIVETAMUSIC_.mp3" data-photo="/file/320881/513ed750231cd19_FIVETAMUSIC_.jpg" onclick="window.open('/file/307583/Ali-Babaei-Rozhaye-Tanhaee_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
@@ -512,7 +512,7 @@
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="46694" data-title="مقصر" data-artist="علی بابایی" data-music="/file/307581/Ali-Babaei-Moghaser_FIVETAMUSIC_.mp3" data-photo="/file/320879/cb176f48a168ed7_FIVETAMUSIC_.jpg" onclick="window.open('/file/307581/Ali-Babaei-Moghaser_FIVETAMUSIC_.mp3', '_blank')">
 </i>
 </a>
-</div>
+ </div>
 </div>
 <a href="/song/46694/%D8%B9%D9%84%DB%8C%20%D8%A8%D8%A7%D8%A8%D8%A7%DB%8C%DB%8C/%D9%85%D9%82%D8%B5%D8%B1" asb="boz"><img src="/file/320879/cb176f48a168ed7_FIVETAMUSIC_.jpg" alt="مقصر علی بابایی FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
@@ -583,7 +583,7 @@
 
 
 
- 
+
 
 
 
@@ -612,14 +612,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

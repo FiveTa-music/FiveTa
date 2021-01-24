@@ -152,7 +152,7 @@
 
 
 
-
+ 
 
 
 
@@ -190,7 +190,7 @@
 <section class="scrollable hover">
 <div class="list-group no-radius no-border no-bg m-t-n-xxs m-b-none auto">
 
-<a href="/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF" class="list-group-item active" asb="boz"> آهنگ شاد </a>
+<a href="/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF" class="list-group-item active" asb="boz">  آهنگ شاد </a>
 <a href="/-2-%D8%AA%DA%A9%20%D8%A2%D9%87%D9%86%DA%AF" class="list-group-item active" asb="boz"> تک آهنگ </a>
 <a href="/-3-%D8%A2%D9%87%D9%86%DA%AF%20%D8%BA%D9%85%DA%AF%DB%8C%D9%86" class="list-group-item active" asb="boz"> آهنگ غمگین </a>
 <a href="/-5-%D8%B9%D9%85%D9%88%D9%85%DB%8C" class="list-group-item active" asb="boz"> عمومی </a>
@@ -331,7 +331,7 @@
 </div>
 
 
- 
+
 </div>
 </div>
 </footer>
@@ -350,14 +350,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

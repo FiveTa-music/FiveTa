@@ -271,7 +271,7 @@
 
 
 
-
+ 
 
 
 
@@ -373,7 +373,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D8%A7%D8%B3%DA%A9%D9%86%D8%AF%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">میلاد اسکندری</a>
-</div>
+ </div>
 </div>
 </article>
 <article class="media">
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

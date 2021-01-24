@@ -164,12 +164,12 @@
 <section class="vbox" id="bjax-el">
 <section class="scrollable wrapper-lg">
 <div class="row">
- <div class="col-sm-8">
+<div class="col-sm-8">
 <div class="panel wrapper-lg">
 <div class="row">
 <div class="col-sm-5"> <img src="/file/370211/Ramin-Bibak-Forsat_FIVETAMUSIC_.jpg" alt="فرصت رامین بی باک FIVETAMUSIC" class="img-full m-b"> </div>
 <div class="col-sm-7">
-<h1 class="m-t-none text-black">فرصت</h1>
+ <h1 class="m-t-none text-black">فرصت</h1>
 <div class="clearfix m-b-lg">
 <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/370211/Ramin-Bibak-Forsat_FIVETAMUSIC_.jpg" alt="فرصت رامین بی باک FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D8%B1%D8%A7%D9%85%DB%8C%D9%86%20%D8%A8%DB%8C%20%D8%A8%D8%A7%DA%A9" class="text-info" asb="boz">رامین بی باک</a>
@@ -215,54 +215,6 @@
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -307,6 +259,54 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 </div>
 </div>
 <div class="col-sm-4">
@@ -332,7 +332,7 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/10181/%D8%A7%D9%84%DA%A9%D8%B3/Alex%2004%20AvazeKhan" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/754960/Alex-Nime-Rahe-Eshgh_FIVETAMUSIC_.jpg" alt="Alex 04 AvazeKhan الکس FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/10181/%D8%A7%D9%84%DA%A9%D8%B3/Alex%2004%20AvazeKhan" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/754960/Alex-Nime-Rahe-Eshgh_FIVETAMUSIC_.jpg" alt="Alex 04 AvazeKhan الکس FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/10181/%D8%A7%D9%84%DA%A9%D8%B3/Alex%2004%20AvazeKhan" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">Alex 04 AvazeKhan</a>
 
 <div class="text-xs block m-t-xs">
@@ -415,11 +415,11 @@
 <article class="media">
 <a data-pjax="on" href="/song/24548/%D9%85%D9%87%D8%B1%D8%A7%D9%86%20%D8%B9%D8%B2%DB%8C%D8%B2%DB%8C/%D8%AE%D8%AA%D9%85%20%DA%A9%D9%84%D8%A7%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/365416/Mehran-Azizi-Khatme-Kalam_FIVETAMUSIC_.jpg" alt="ختم کلام مهران عزیزی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/24548/%D9%85%D9%87%D8%B1%D8%A7%D9%86%20%D8%B9%D8%B2%DB%8C%D8%B2%DB%8C/%D8%AE%D8%AA%D9%85%20%DA%A9%D9%84%D8%A7%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">ختم کلام</a>
- 
+
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%D9%87%D8%B1%D8%A7%D9%86%20%D8%B9%D8%B2%DB%8C%D8%B2%DB%8C" class="text-xs text-muted" asb="boz">مهران عزیزی</a>
 </div>
-</div>
+ </div>
 </article>
 </div>
 </div>
@@ -452,7 +452,7 @@
 <div class="jp-progress hidden-xs">
 <div class="jp-seek-bar dk" style="width: 0%;">
 <div class="jp-play-bar bg-info" style="width: 0%;"></div>
- <div class="jp-title text-lt" style="display: none;">FIVETA</div>
+<div class="jp-title text-lt" style="display: none;">FIVETA</div>
 </div>
 </div>
 <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
@@ -485,13 +485,13 @@
 
 
 
- 
+
 
 </ul>
 </div>
 
 
-
+ 
 </div>
 </div>
 </footer>
@@ -510,15 +510,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

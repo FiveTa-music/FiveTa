@@ -337,7 +337,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%86%D8%A7%D8%B5%D8%B1%20%D9%85%D9%86%D8%B5%D9%88%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">ناصر منصوری</a>
-</div>
+ </div>
 </div>
 </article>
 <article class="media">
@@ -367,7 +367,7 @@
 </div>
 </div>
 </article>
- <article class="media">
+<article class="media">
 <a data-pjax="on" href="/song/570/%D8%AD%D8%A7%D9%85%D8%AF%20%D9%81%D9%82%DB%8C%D9%87%DB%8C/%D8%AC%DB%8C%D9%86%DA%AF%20%D9%88%20%D8%AC%DB%8C%D9%86%DA%AF%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/51990/Hamed-Faghihi-Jingo-jinge_FIVETAMUSIC_.jpg" alt="جینگ و جینگه حامد فقیهی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/570/%D8%AD%D8%A7%D9%85%D8%AF%20%D9%81%D9%82%DB%8C%D9%87%DB%8C/%D8%AC%DB%8C%D9%86%DA%AF%20%D9%88%20%D8%AC%DB%8C%D9%86%DA%AF%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">جینگ و جینگه</a>
 
@@ -381,7 +381,7 @@
 <div class="media-body"> <a href="/song/618/%D8%B1%D8%B6%D8%A7%20%D8%B1%D8%B3%D8%AA%D9%85%20%D8%B2%D8%A7%D8%AF/%D8%A7%D8%AD%D8%B3%D8%A7%D8%B3" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">احساس</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D8%B1%D8%B6%D8%A7%20%D8%B1%D8%B3%D8%AA%D9%85%20%D8%B2%D8%A7%D8%AF" class="text-xs text-muted" asb="boz">رضا رستم زاد</a>
+ <a data-pjax="on" href="/singer/%D8%B1%D8%B6%D8%A7%20%D8%B1%D8%B3%D8%AA%D9%85%20%D8%B2%D8%A7%D8%AF" class="text-xs text-muted" asb="boz">رضا رستم زاد</a>
 </div>
 </div>
 </article>
@@ -404,7 +404,7 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/792/%D9%85%D8%AD%D9%85%D8%AF%D8%B9%D9%84%DB%8C%20%D9%85%D9%88%D9%84%D8%A7%DB%8C%DB%8C/%D8%AF%D8%B3%D8%AA%D8%A7%DB%8C%20%D8%AA%D9%88" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52139/Mohamadali-Molaei-Dastaye-To_FIVETAMUSIC_.jpg" alt="دستای تو محمدعلی مولایی FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/792/%D9%85%D8%AD%D9%85%D8%AF%D8%B9%D9%84%DB%8C%20%D9%85%D9%88%D9%84%D8%A7%DB%8C%DB%8C/%D8%AF%D8%B3%D8%AA%D8%A7%DB%8C%20%D8%AA%D9%88" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52139/Mohamadali-Molaei-Dastaye-To_FIVETAMUSIC_.jpg" alt="دستای تو محمدعلی مولایی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/792/%D9%85%D8%AD%D9%85%D8%AF%D8%B9%D9%84%DB%8C%20%D9%85%D9%88%D9%84%D8%A7%DB%8C%DB%8C/%D8%AF%D8%B3%D8%AA%D8%A7%DB%8C%20%D8%AA%D9%88" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دستای تو</a>
 
 <div class="text-xs block m-t-xs">
@@ -498,7 +498,7 @@
 
 
 
- 
+
 
 
 
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

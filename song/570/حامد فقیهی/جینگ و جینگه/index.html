@@ -202,10 +202,30 @@
 </div>
 </div>
 <div class="m-t">
- <h3>
+<h3>
 <p align="justify"></p>
 </h3>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
@@ -288,26 +308,6 @@
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 </div>
 <div class="col-sm-4">
@@ -333,7 +333,7 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/186/%D9%85%D8%AD%D8%B3%D9%86%20%D8%AC%D9%85%D8%A7%D9%84/%D8%A8%D8%A7%20%D9%85%D9%86%D9%87%20%D8%AF%DB%8C%D9%88%D9%88%D9%86%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50121/Mohsen-Jamal-Ba-Mane-Divoone_FIVETAMUSIC_.jpg" alt="با منه دیوونه محسن جمال FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/186/%D9%85%D8%AD%D8%B3%D9%86%20%D8%AC%D9%85%D8%A7%D9%84/%D8%A8%D8%A7%20%D9%85%D9%86%D9%87%20%D8%AF%DB%8C%D9%88%D9%88%D9%86%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50121/Mohsen-Jamal-Ba-Mane-Divoone_FIVETAMUSIC_.jpg" alt="با منه دیوونه محسن جمال FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/186/%D9%85%D8%AD%D8%B3%D9%86%20%D8%AC%D9%85%D8%A7%D9%84/%D8%A8%D8%A7%20%D9%85%D9%86%D9%87%20%D8%AF%DB%8C%D9%88%D9%88%D9%86%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">با منه دیوونه</a>
 
 <div class="text-xs block m-t-xs">
@@ -363,7 +363,7 @@
 <a data-pjax="on" href="/song/290/%D9%81%D8%A7%D9%86%D8%A7/%DB%8C%D8%A7%D8%AF%D8%AA%20%D9%86%D9%85%DB%8C%D8%A7%D8%AF" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50968/Fana-&amp;-Mahyar-Yadet-Nemiyad_FIVETAMUSIC_.jpg" alt="یادت نمیاد فانا FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/290/%D9%81%D8%A7%D9%86%D8%A7/%DB%8C%D8%A7%D8%AF%D8%AA%20%D9%86%D9%85%DB%8C%D8%A7%D8%AF" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">یادت نمیاد</a>
 
- <div class="text-xs block m-t-xs">
+<div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%81%D8%A7%D9%86%D8%A7" class="text-xs text-muted" asb="boz">فانا</a>
 </div>
 </div>
@@ -377,7 +377,7 @@
 </div>
 </div>
 </article>
-<article class="media">
+ <article class="media">
 <a data-pjax="on" href="/song/379/%D8%A7%D9%85%DB%8C%D8%B1%20%DA%AF%D9%86%D8%AC%DB%8C/%D8%A7%D8%B2%20%D8%AA%D9%88%20%D9%85%D9%85%D9%86%D9%88%D9%86%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52586/Amir-Ganji-Az-To-Mamnonam_FIVETAMUSIC_.jpg" alt="از تو ممنونم امیر گنجی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/379/%D8%A7%D9%85%DB%8C%D8%B1%20%DA%AF%D9%86%D8%AC%DB%8C/%D8%A7%D8%B2%20%D8%AA%D9%88%20%D9%85%D9%85%D9%86%D9%88%D9%86%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">از تو ممنونم</a>
 
@@ -441,7 +441,7 @@
 </div>
 </article>
 </div>
-</div>
+ </div>
 </div>
 </div>
 </section>
@@ -529,15 +529,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

@@ -187,7 +187,7 @@
 
 
 
-
+ 
 
 
 
@@ -205,30 +205,6 @@
 <p align="justify"></p>
 </h3>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -307,6 +283,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
 </div>
 </div>
 <div class="col-sm-4">
@@ -328,7 +328,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D8%AD%D9%85%D8%AF%DB%8C" class="text-xs text-muted" asb="boz">مهران احمدی</a>
-</div>
+ </div>
 </div>
 </article>
 <article class="media">
@@ -349,7 +349,7 @@
 </div>
 </div>
 </article>
- <article class="media">
+<article class="media">
 <a data-pjax="on" href="/song/22010/%D9%85%D8%AD%D8%B3%D9%86%20%DA%A9%D9%86%D9%88%D8%B1%20%D8%AA%D8%A8%D8%B1%DB%8C%D8%B2%DB%8C/%D9%85%DB%8C%D9%86%D8%A7%D8%A8%20%DA%AF%D9%84%D8%B3%D8%AA%D9%88%D9%86" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/273910/Mohsen-Konour-Tabrizi-Minab-Goleston_FIVETAMUSIC_.jpg" alt="میناب گلستون محسن کنور تبریزی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/22010/%D9%85%D8%AD%D8%B3%D9%86%20%DA%A9%D9%86%D9%88%D8%B1%20%D8%AA%D8%A8%D8%B1%DB%8C%D8%B2%DB%8C/%D9%85%DB%8C%D9%86%D8%A7%D8%A8%20%DA%AF%D9%84%D8%B3%D8%AA%D9%88%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">میناب گلستون</a>
 
@@ -390,7 +390,7 @@
 <div class="media-body"> <a href="/song/28457/%D9%85%D9%87%D8%AF%DB%8C%20%DB%8C%D8%BA%D9%85%D8%A7%DB%8C%DB%8C/%DA%86%D9%87%20%DA%A9%D8%B1%D8%AF%DB%8C" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">چه کردی</a>
 
 <div class="text-xs block m-t-xs">
- <a data-pjax="on" href="/singer/%D9%85%D9%87%D8%AF%DB%8C%20%DB%8C%D8%BA%D9%85%D8%A7%DB%8C%DB%8C" class="text-xs text-muted" asb="boz">مهدی یغمایی</a>
+<a data-pjax="on" href="/singer/%D9%85%D9%87%D8%AF%DB%8C%20%DB%8C%D8%BA%D9%85%D8%A7%DB%8C%DB%8C" class="text-xs text-muted" asb="boz">مهدی یغمایی</a>
 </div>
 </div>
 </article>
@@ -411,7 +411,7 @@
 <a data-pjax="on" href="/singer/%D9%85%D8%B3%D8%B9%D9%88%D8%AF%20%D9%85%D8%B1%D8%A7%D8%AF%DB%8C" class="text-xs text-muted" asb="boz">مسعود مرادی</a>
 </div>
 </div>
- </article>
+</article>
 <article class="media">
 <a data-pjax="on" href="/song/37938/%DA%AF%D8%AF%D8%A7%D8%A7%D9%84/%D9%82%D8%A7%D8%B1%D9%82%D8%B4%D9%88%D9%86%20%D9%85%DB%8C%DA%A9%D9%86%DB%8C%D9%85%20%28%D9%81%D8%AA%20%D9%85%D9%87%D8%AA%D8%A7%29" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/340322/a356250be8b9e33_FIVETAMUSIC_.jpg" alt="قارقشون میکنیم (فت مهتا) گداال FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/37938/%DA%AF%D8%AF%D8%A7%D8%A7%D9%84/%D9%82%D8%A7%D8%B1%D9%82%D8%B4%D9%88%D9%86%20%D9%85%DB%8C%DA%A9%D9%86%DB%8C%D9%85%20%28%D9%81%D8%AA%20%D9%85%D9%87%D8%AA%D8%A7%29" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">قارقشون میکنیم (فت مهتا)</a>
@@ -501,7 +501,7 @@
 
 
 
- 
+
 
 
 
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

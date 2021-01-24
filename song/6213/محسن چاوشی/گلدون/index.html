@@ -164,14 +164,14 @@
 <section class="vbox" id="bjax-el">
 <section class="scrollable wrapper-lg">
 <div class="row">
-<div class="col-sm-8">
+ <div class="col-sm-8">
 <div class="panel wrapper-lg">
 <div class="row">
 <div class="col-sm-5"> <img src="/file/56253/Mohsen-Chavoshi-Goldoon_FIVETAMUSIC_.jpg" alt="گلدون محسن چاوشی FIVETAMUSIC" class="img-full m-b"> </div>
 <div class="col-sm-7">
 <h1 class="m-t-none text-black">گلدون</h1>
 <div class="clearfix m-b-lg">
- <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/56253/Mohsen-Chavoshi-Goldoon_FIVETAMUSIC_.jpg" alt="گلدون محسن چاوشی FIVETAMUSIC" class="img-circle"> </a>
+<a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/56253/Mohsen-Chavoshi-Goldoon_FIVETAMUSIC_.jpg" alt="گلدون محسن چاوشی FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D9%85%D8%AD%D8%B3%D9%86%20%DA%86%D8%A7%D9%88%D8%B4%DB%8C" class="text-info" asb="boz">محسن چاوشی</a>
 
 </div>
@@ -185,12 +185,12 @@
 
 
 
-
-
-
-
-
  
+
+
+
+
+
 
 
 
@@ -266,6 +266,7 @@
 
 
 
+ 
 
 
 
@@ -299,8 +300,7 @@
 
 
 
-
-
+ 
 
 
 
@@ -309,7 +309,7 @@
 
 </div>
 </div>
- <div class="col-sm-4">
+<div class="col-sm-4">
 <div class="panel panel-default">
 <div class="panel-heading">پیشنهادات</div>
 <div class="panel-body">
@@ -372,7 +372,7 @@
 <div class="media-body"> <a href="/song/2661/%D8%A2%D9%85%DB%8C%D8%AF%20%D8%B9%D8%A7%D8%A8%D8%AF%DB%8C%D8%A7%D9%86/%D9%88%D9%84%D9%86%D8%AA%D8%A7%DB%8C%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">ولنتاین</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D8%A2%D9%85%DB%8C%D8%AF%20%D8%B9%D8%A7%D8%A8%D8%AF%DB%8C%D8%A7%D9%86" class="text-xs text-muted" asb="boz">آمید عابدیان</a>
+ <a data-pjax="on" href="/singer/%D8%A2%D9%85%DB%8C%D8%AF%20%D8%B9%D8%A7%D8%A8%D8%AF%DB%8C%D8%A7%D9%86" class="text-xs text-muted" asb="boz">آمید عابدیان</a>
 </div>
 </div>
 </article>
@@ -441,7 +441,7 @@
 </article>
 </div>
 </div>
-</div>
+ </div>
 </div>
 </section>
 </section>
@@ -453,7 +453,7 @@
 <div id="jp_container_N" class="jp-video-270p">
 <div class="jp-type-playlist">
 <div id="jplayer_N" class="jp-jplayer hide" style="width: 480px; height: 270px;">
- 
+
 
 
 </div>
@@ -479,7 +479,7 @@
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
-<div class="jp-volume-bar dk">
+ <div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
 </div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

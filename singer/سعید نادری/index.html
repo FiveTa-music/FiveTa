@@ -9,7 +9,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="yandex-verification" content="a2480ff4177e4c07" />
-
 <title>آهنگ های سعید نادری - FiveTa | موسیقی هوشمند</title>
 <meta name="description" content="دانلود مجموعه گلچین شده از آهنگ های سعید نادری بهترین موزیک های جدید و قدیمی با صدای سعید نادری">
 <meta name="keywords" content="آهنگ ایرانی, دانلود آلبوم, دانلود آهنگ جدید, دانلود آهنگ غمگین, دانلود آهنگ شاد, دانلود فول آلبوم, دانلود موزیک ویدیو">
@@ -62,7 +61,7 @@
 <body>
 <section class="vbox">
 <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
- <div class="navbar-header navbar-right aside bg-info">
+<div class="navbar-header navbar-right aside bg-info">
 
 <a data-pjax="on" href="https://FIVETA.ir" class="navbar-brand text-lt" asb="boz"> <i class="icon-earphones"> </i> <span class="hidden-nav-xs m-l-sm">FiveTa</span>
 </a>
@@ -251,7 +250,7 @@
 <div class="jp-interface">
 <div class="jp-controls">
 <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
-<div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
+ <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
 <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
@@ -262,7 +261,7 @@
 <div class="jp-title text-lt" style="display: none;">FIVETA</div>
 </div>
 </div>
- <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
+<div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
 </div>
 <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
@@ -282,7 +281,7 @@
 <ul class="dropdown-menu aside-xl dker" style="display: block;">
 
 
-
+ 
 
 
 
@@ -317,14 +316,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

@@ -572,7 +572,7 @@
 <div class="media-body"> <a href="/song/31434/%D9%85%D8%AD%D8%B3%D9%86%20%D8%A7%D9%85%DB%8C%D8%B1%DB%8C/%D8%AF%D9%88%D9%86%27%D8%AA%20%D9%87%D9%86%DA%AF%20%D8%A7%D9%BE%20%28%D9%81%D8%AA%20%D8%A7%D9%85%DB%8C%D8%B1%20%D8%A8%D9%87%D8%A7%D8%AF%D8%B1%29" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دون&#039;ت هنگ اپ (فت امیر بهادر)</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D9%85%D8%AD%D8%B3%D9%86%20%D8%A7%D9%85%DB%8C%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">محسن امیری</a>
+ <a data-pjax="on" href="/singer/%D9%85%D8%AD%D8%B3%D9%86%20%D8%A7%D9%85%DB%8C%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">محسن امیری</a>
 </div>
 </div>
 </article>
@@ -595,7 +595,7 @@
 </div>
 </article>
 <article class="media">
-<a data-pjax="on" href="/song/35578/%D8%A7%D9%81%D8%B4%DB%8C%D9%86%20%D9%81%D8%B1%D9%87%D8%A7%D8%AF%DB%8C/%DA%A9%D8%A7%D8%B1%20%D8%AF%D8%A7%D8%AF%DB%8C%20%D8%AF%D8%B3%D8%AA%20%D9%85%D9%86" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/395239/Afshin-Farhadi-Kar-Dadi-Daste-Man_FIVETAMUSIC_.jpg" alt="کار دادی دست من افشین فرهادی FIVETAMUSIC"> </a>
+ <a data-pjax="on" href="/song/35578/%D8%A7%D9%81%D8%B4%DB%8C%D9%86%20%D9%81%D8%B1%D9%87%D8%A7%D8%AF%DB%8C/%DA%A9%D8%A7%D8%B1%20%D8%AF%D8%A7%D8%AF%DB%8C%20%D8%AF%D8%B3%D8%AA%20%D9%85%D9%86" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/395239/Afshin-Farhadi-Kar-Dadi-Daste-Man_FIVETAMUSIC_.jpg" alt="کار دادی دست من افشین فرهادی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/35578/%D8%A7%D9%81%D8%B4%DB%8C%D9%86%20%D9%81%D8%B1%D9%87%D8%A7%D8%AF%DB%8C/%DA%A9%D8%A7%D8%B1%20%D8%AF%D8%A7%D8%AF%DB%8C%20%D8%AF%D8%B3%D8%AA%20%D9%85%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">کار دادی دست من</a>
 
 <div class="text-xs block m-t-xs">
@@ -719,15 +719,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

@@ -179,8 +179,8 @@
 
 
 
- 
 
+ 
 
 
 
@@ -226,7 +226,7 @@
 </div>
 <a href="/song/21773/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%BE%D8%A7%D8%B1%D8%B3%D8%A7%DB%8C%DB%8C/%D9%85%D9%86%20%D8%B9%D8%A7%D8%B4%D9%82%D8%AA%20%D8%A8%D9%88%D8%AF%D9%85" asb="boz"><img src="/file/270252/Behzad-Parsaee-Man-Asheghet-Boudam_FIVETAMUSIC_.jpg" alt="من عاشقت بودم بهزاد پارسایی FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
-<a href="/song/21773/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%BE%D8%A7%D8%B1%D8%B3%D8%A7%DB%8C%DB%8C/%D9%85%D9%86%20%D8%B9%D8%A7%D8%B4%D9%82%D8%AA%20%D8%A8%D9%88%D8%AF%D9%85" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">من عاشقت بودم</a>
+ <a href="/song/21773/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%BE%D8%A7%D8%B1%D8%B3%D8%A7%DB%8C%DB%8C/%D9%85%D9%86%20%D8%B9%D8%A7%D8%B4%D9%82%D8%AA%20%D8%A8%D9%88%D8%AF%D9%85" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">من عاشقت بودم</a>
 <a data-pjax="on" href="/singer/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%BE%D8%A7%D8%B1%D8%B3%D8%A7%DB%8C%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">بهزاد پارسایی</a>
 </div>
 </div>
@@ -248,8 +248,8 @@
 </div>
 </div>
 </div>
- <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
+<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+ <div class="item">
 <div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
@@ -288,8 +288,8 @@
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="1427" data-title="مگه میشه" data-artist="بهزاد پارسایی" data-music="/file/31754/Behzad Parsaee - Mage Mishe (128)_FIVETAMUSIC_.mp3" data-photo="/file/50750/Behzad-Parsaee-Mage-Mishe_FIVETAMUSIC_.jpg" onclick="window.open('/file/31754/Behzad Parsaee - Mage Mishe (128)_FIVETAMUSIC_.mp3', '_blank')">
- </i>
-</a>
+</i>
+ </a>
 </div>
 </div>
 <a href="/song/1427/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%BE%D8%A7%D8%B1%D8%B3%D8%A7%DB%8C%DB%8C/%D9%85%DA%AF%D9%87%20%D9%85%DB%8C%D8%B4%D9%87" asb="boz"><img src="/file/50750/Behzad-Parsaee-Mage-Mishe_FIVETAMUSIC_.jpg" alt="مگه میشه بهزاد پارسایی FIVETAMUSIC" class="r r-2x img-full"></a></div>
@@ -332,7 +332,7 @@
 <a data-pjax="on" href="/singer/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%BE%D8%A7%D8%B1%D8%B3%D8%A7%DB%8C%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">بهزاد پارسایی</a>
 </div>
 </div>
-</div>
+ </div>
 </div>
 </section>
 </section>
@@ -371,7 +371,7 @@
 <div class="hidden-xs hidden-sm jp-volume">
 <div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
-</div>
+ </div>
 </div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
@@ -418,14 +418,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

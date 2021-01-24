@@ -168,7 +168,7 @@
 <div class="panel wrapper-lg">
 <div class="row">
 <div class="col-sm-5"> <img src="/file/656386/Alireza-Parsan-Begoo-Chera_FIVETAMUSIC_.jpg" alt="بگو چرا علیرضا پارسان FIVETAMUSIC" class="img-full m-b"> </div>
-<div class="col-sm-7">
+ <div class="col-sm-7">
 <h1 class="m-t-none text-black">بگو چرا</h1>
 <div class="clearfix m-b-lg">
 <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/656386/Alireza-Parsan-Begoo-Chera_FIVETAMUSIC_.jpg" alt="بگو چرا علیرضا پارسان FIVETAMUSIC" class="img-circle"> </a>
@@ -331,7 +331,7 @@
 <a data-pjax="on" href="/singer/%C2%A0%D8%B4%D9%87%D8%B1%D8%A7%D9%85%20%D8%A8%D8%B2%D8%B1%DA%AF%D9%85%D9%87%D8%B1" class="text-xs text-muted" asb="boz"> شهرام بزرگمهر</a>
 </div>
 </div>
-</article>
+ </article>
 <article class="media">
 <a data-pjax="on" href="/song/3761/%D8%AD%D8%B3%DB%8C%D9%86%20%D8%AA%DB%8C%D9%85%D9%88%D8%B1%DB%8C/%D8%A8%D8%AF%20%D8%A8%D9%88%D8%AF%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/753811/Hossein-Teymoori-Bad-Boudam_FIVETAMUSIC_.jpg" alt="بد بودم حسین تیموری FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/3761/%D8%AD%D8%B3%DB%8C%D9%86%20%D8%AA%DB%8C%D9%85%D9%88%D8%B1%DB%8C/%D8%A8%D8%AF%20%D8%A8%D9%88%D8%AF%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">بد بودم</a>
@@ -529,15 +529,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

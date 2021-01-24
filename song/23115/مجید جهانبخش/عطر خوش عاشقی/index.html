@@ -417,7 +417,7 @@
 <div class="media-body"> <a href="/song/20256/Moments%20of%20Relax/Gregory%20Esayan%20%E2%80%93%20Once%20%E2%80%93%20Original%20Mi" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">Gregory Esayan – Once – Original Mi</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/Moments%20of%20Relax" class="text-xs text-muted" asb="boz">Moments of Relax</a>
+ <a data-pjax="on" href="/singer/Moments%20of%20Relax" class="text-xs text-muted" asb="boz">Moments of Relax</a>
 </div>
 </div>
 </article>
@@ -453,7 +453,7 @@
 <div class="jp-interface">
 <div class="jp-controls">
 <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
-<div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
+ <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
 <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
@@ -466,7 +466,7 @@
 </div>
 <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
 </div>
- <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
+<div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
@@ -519,15 +519,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

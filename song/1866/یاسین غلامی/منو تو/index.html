@@ -171,7 +171,7 @@
 <div class="col-sm-7">
 <h1 class="m-t-none text-black">منو تو</h1>
 <div class="clearfix m-b-lg">
- <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/55405/Yasin-Gholami-Mano-To_FIVETAMUSIC_.jpg" alt="منو تو یاسین غلامی FIVETAMUSIC" class="img-circle"> </a>
+<a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/55405/Yasin-Gholami-Mano-To_FIVETAMUSIC_.jpg" alt="منو تو یاسین غلامی FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%DB%8C%D8%A7%D8%B3%DB%8C%D9%86%20%D8%BA%D9%84%D8%A7%D9%85%DB%8C" class="text-info" asb="boz">یاسین غلامی</a>
 
 </div>
@@ -190,7 +190,7 @@
 
 
 
-
+ 
 
 
 
@@ -309,7 +309,7 @@
 
 </div>
 </div>
-<div class="col-sm-4">
+ <div class="col-sm-4">
 <div class="panel panel-default">
 <div class="panel-heading">پیشنهادات</div>
 <div class="panel-body">
@@ -353,7 +353,7 @@
 <a data-pjax="on" href="/song/585/%D8%B3%DB%8C%D8%A7%D9%85%DA%A9%20%D8%A2%D9%87%D9%88%DB%8C%DB%8C/%D8%B5%D8%AF%D8%A7%DB%8C%20%D9%82%D9%84%D8%A8%D9%85" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/753276/Siamak-Ahouei-Sedaye-Ghalbam_FIVETAMUSIC_.jpg" alt="صدای قلبم سیامک آهویی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/585/%D8%B3%DB%8C%D8%A7%D9%85%DA%A9%20%D8%A2%D9%87%D9%88%DB%8C%DB%8C/%D8%B5%D8%AF%D8%A7%DB%8C%20%D9%82%D9%84%D8%A8%D9%85" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">صدای قلبم</a>
 
-<div class="text-xs block m-t-xs">
+ <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B3%DB%8C%D8%A7%D9%85%DA%A9%20%D8%A2%D9%87%D9%88%DB%8C%DB%8C" class="text-xs text-muted" asb="boz">سیامک آهویی</a>
 </div>
 </div>
@@ -419,8 +419,8 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B3%D9%87%DB%8C%D9%84%20%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86%DB%8C" class="text-xs text-muted" asb="boz">سهیل سلیمانی</a>
 </div>
-</div>
- </article>
+ </div>
+</article>
 <article class="media">
 <a data-pjax="on" href="/song/1744/%D8%B9%D9%84%DB%8C%20%D8%A2%D8%A8%D9%86%D9%88%D8%B3%DB%8C/%D8%B9%D8%A7%D8%B4%D9%82%D8%A7%D9%86%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/55506/Ali-Abnoosi-Feat.Dj-Ex3et_FIVETAMUSIC_.jpg" alt="عاشقانه علی آبنوسی FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/1744/%D8%B9%D9%84%DB%8C%20%D8%A2%D8%A8%D9%86%D9%88%D8%B3%DB%8C/%D8%B9%D8%A7%D8%B4%D9%82%D8%A7%D9%86%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">عاشقانه</a>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

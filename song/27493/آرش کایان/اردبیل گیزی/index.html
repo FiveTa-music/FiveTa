@@ -461,7 +461,7 @@
 <div class="jp-video-play hide" style="display: block;"><a class="jp-video-play-icon" asb="boz">play</a></div>
 <div class="jp-interface">
 <div class="jp-controls">
-<div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
+ <div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
 <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
@@ -481,7 +481,7 @@
 <div class="hidden-xs hidden-sm jp-volume">
 <div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
- </div>
+</div>
 </div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
 <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

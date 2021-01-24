@@ -75,7 +75,7 @@
 <section class="vbox">
 <header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
 <div class="navbar-header navbar-right aside bg-info">
- 
+
 <a data-pjax="on" href="https://FIVETA.ir" class="navbar-brand text-lt" asb="boz"> <i class="icon-earphones"> </i> <span class="hidden-nav-xs m-l-sm">FiveTa</span>
 </a>
 
@@ -170,7 +170,7 @@
 <div class="col-sm-5"> <img src="/file/53048/Soheil-Soleymani-Forsat-Bede_FIVETAMUSIC_.jpg" alt="فرصت بده سهیل سلیمانی FIVETAMUSIC" class="img-full m-b"> </div>
 <div class="col-sm-7">
 <h1 class="m-t-none text-black">فرصت بده</h1>
- <div class="clearfix m-b-lg">
+<div class="clearfix m-b-lg">
 <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/53048/Soheil-Soleymani-Forsat-Bede_FIVETAMUSIC_.jpg" alt="فرصت بده سهیل سلیمانی FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D8%B3%D9%87%DB%8C%D9%84%20%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86%DB%8C" class="text-info" asb="boz">سهیل سلیمانی</a>
 
@@ -219,59 +219,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
 
 
@@ -306,7 +253,60 @@
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 </div>
 <div class="col-sm-4">
@@ -454,7 +454,7 @@
 <div class="jp-type-playlist">
 <div id="jplayer_N" class="jp-jplayer hide" style="width: 480px; height: 270px;">
 
- 
+
 
 </div>
 <div class="jp-gui">
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

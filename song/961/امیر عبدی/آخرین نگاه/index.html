@@ -417,7 +417,7 @@
 <div class="media-body"> <a href="/song/701/%D8%B4%D9%87%D8%AF%D8%A7%D8%AF%20%D8%B4%D8%B9%D8%A8%D8%A7%D9%86%20%D9%86%DA%98%D8%A7%D8%AF/%D8%AA%D8%A8%20%D8%B9%D8%B4%D9%82" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">تب عشق</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D8%B4%D9%87%D8%AF%D8%A7%D8%AF%20%D8%B4%D8%B9%D8%A8%D8%A7%D9%86%20%D9%86%DA%98%D8%A7%D8%AF" class="text-xs text-muted" asb="boz">شهداد شعبان نژاد</a>
+ <a data-pjax="on" href="/singer/%D8%B4%D9%87%D8%AF%D8%A7%D8%AF%20%D8%B4%D8%B9%D8%A8%D8%A7%D9%86%20%D9%86%DA%98%D8%A7%D8%AF" class="text-xs text-muted" asb="boz">شهداد شعبان نژاد</a>
 </div>
 </div>
 </article>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

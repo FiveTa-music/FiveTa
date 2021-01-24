@@ -183,7 +183,7 @@
 
 
 
- 
+
 
 
 
@@ -213,63 +213,63 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -369,10 +369,10 @@
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/402/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2006%20Diroomadi" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/753268/Farshid-Mousavi-Aksaye-Dotayi_FIVETAMUSIC_.jpg" alt="FarshidMousavi 06 Diroomadi فرشید موسوی FIVETAMUSIC"> </a>
- <div class="media-body"> <a href="/song/402/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2006%20Diroomadi" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">FarshidMousavi 06 Diroomadi</a>
+<div class="media-body"> <a href="/song/402/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C/FarshidMousavi%2006%20Diroomadi" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">FarshidMousavi 06 Diroomadi</a>
 
 <div class="text-xs block m-t-xs">
-<a data-pjax="on" href="/singer/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C" class="text-xs text-muted" asb="boz">فرشید موسوی</a>
+ <a data-pjax="on" href="/singer/%D9%81%D8%B1%D8%B4%DB%8C%D8%AF%20%D9%85%D9%88%D8%B3%D9%88%DB%8C" class="text-xs text-muted" asb="boz">فرشید موسوی</a>
 </div>
 </div>
 </article>
@@ -415,7 +415,7 @@
 <article class="media">
 <a data-pjax="on" href="/song/817/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87/%D8%B2%D9%86%D8%AF%DA%AF%DB%8C%20%D8%A8%D9%87%20%D8%B3%D8%A8%DA%A9%20%D8%AC%D9%87%D8%A7%D8%AF" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52220/Ali-Yeganeh-Zendegi-Be-Sabke-Jahad_FIVETAMUSIC_.jpg" alt="زندگی به سبک جهاد علی یگانه FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/817/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87/%D8%B2%D9%86%D8%AF%DA%AF%DB%8C%20%D8%A8%D9%87%20%D8%B3%D8%A8%DA%A9%20%D8%AC%D9%87%D8%A7%D8%AF" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">زندگی به سبک جهاد</a>
-
+ 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87" class="text-xs text-muted" asb="boz">علی یگانه</a>
 </div>
@@ -436,7 +436,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B1%D8%B6%D8%A7%20%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C%20%D8%B2%D8%A7%D8%AF%D9%87" class="text-xs text-muted" asb="boz">رضا بختیاری زاده</a>
-</div>
+ </div>
 </div>
 </article>
 </div>
@@ -508,7 +508,7 @@
 </ul>
 </div>
 
-
+ 
 
 </div>
 </div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

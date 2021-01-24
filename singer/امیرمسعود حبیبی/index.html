@@ -179,7 +179,7 @@
 
 
 
-
+ 
 
 
 
@@ -226,7 +226,7 @@
 </div>
 <a href="/song/621/%D8%A7%D9%85%DB%8C%D8%B1%D9%85%D8%B3%D8%B9%D9%88%D8%AF%20%D8%AD%D8%A8%DB%8C%D8%A8%DB%8C/%D9%87%D9%88%D8%A7%DB%8C%20%DB%8C%D8%A7%D8%B1" asb="boz"><img src="/file/52387/AmirMasoud-Habibi-Havaye-Yar_FIVETAMUSIC_.jpg" alt="هوای یار امیرمسعود حبیبی FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
-<a href="/song/621/%D8%A7%D9%85%DB%8C%D8%B1%D9%85%D8%B3%D8%B9%D9%88%D8%AF%20%D8%AD%D8%A8%DB%8C%D8%A8%DB%8C/%D9%87%D9%88%D8%A7%DB%8C%20%DB%8C%D8%A7%D8%B1" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">هوای یار</a>
+ <a href="/song/621/%D8%A7%D9%85%DB%8C%D8%B1%D9%85%D8%B3%D8%B9%D9%88%D8%AF%20%D8%AD%D8%A8%DB%8C%D8%A8%DB%8C/%D9%87%D9%88%D8%A7%DB%8C%20%DB%8C%D8%A7%D8%B1" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">هوای یار</a>
 <a data-pjax="on" href="/singer/%D8%A7%D9%85%DB%8C%D8%B1%D9%85%D8%B3%D8%B9%D9%88%D8%AF%20%D8%AD%D8%A8%DB%8C%D8%A8%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">امیرمسعود حبیبی</a>
 </div>
 </div>
@@ -253,7 +253,7 @@
 <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
- <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
+<div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
 <div><a class="" data-toggle="dropdown" data-target="#playlist" asb="boz"><i class="icon-list"></i></a></div>
 <div class="jp-progress hidden-xs">
 <div class="jp-seek-bar dk" style="width: 0%;">
@@ -263,7 +263,7 @@
 </div>
 <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
 </div>
-<div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
+ <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
@@ -316,14 +316,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

@@ -246,7 +246,7 @@
 <a href="/song/2110/%D8%A7%D9%85%DB%8C%D8%B1%20%D8%B9%D9%84%DB%8C%20%D8%A7%D9%81%D8%B4%D8%A7%D8%B1/%D8%A8%D8%BA%D8%B6" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">بغض</a>
 <a data-pjax="on" href="/singer/%D8%A7%D9%85%DB%8C%D8%B1%20%D8%B9%D9%84%DB%8C%20%D8%A7%D9%81%D8%B4%D8%A7%D8%B1" class="text-ellipsis text-xs text-muted" asb="boz">امیر علی افشار</a>
 </div>
-</div>
+ </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
@@ -350,14 +350,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

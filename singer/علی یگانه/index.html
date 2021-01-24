@@ -179,7 +179,7 @@
 
 
 
- 
+
 
 
 
@@ -226,7 +226,7 @@
 </div>
 <a href="/song/817/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87/%D8%B2%D9%86%D8%AF%DA%AF%DB%8C%20%D8%A8%D9%87%20%D8%B3%D8%A8%DA%A9%20%D8%AC%D9%87%D8%A7%D8%AF" asb="boz"><img src="/file/52220/Ali-Yeganeh-Zendegi-Be-Sabke-Jahad_FIVETAMUSIC_.jpg" alt="زندگی به سبک جهاد علی یگانه FIVETAMUSIC" class="r r-2x img-full"></a></div>
 <div class="padder-v">
- <a href="/song/817/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87/%D8%B2%D9%86%D8%AF%DA%AF%DB%8C%20%D8%A8%D9%87%20%D8%B3%D8%A8%DA%A9%20%D8%AC%D9%87%D8%A7%D8%AF" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">زندگی به سبک جهاد</a>
+<a href="/song/817/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87/%D8%B2%D9%86%D8%AF%DA%AF%DB%8C%20%D8%A8%D9%87%20%D8%B3%D8%A8%DA%A9%20%D8%AC%D9%87%D8%A7%D8%AF" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">زندگی به سبک جهاد</a>
 <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87" class="text-ellipsis text-xs text-muted" asb="boz">علی یگانه</a>
 </div>
 </div>
@@ -245,12 +245,12 @@
 <div class="padder-v">
 <a href="/song/12355/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87/%D9%82%D8%B7%D8%B9%D9%87%20%DB%B4%DB%B4" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">قطعه ۴۴</a>
 <a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87" class="text-ellipsis text-xs text-muted" asb="boz">علی یگانه</a>
-</div>
+ </div>
 </div>
 </div>
 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 <div class="item">
- <div class="pos-rlt">
+<div class="pos-rlt">
 <div class="item-overlay opacity r r-2x bg-black">
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="9000" data-title="ضریح ارغوانی" data-artist="علی یگانه" data-music="/file/8140/Ali Yeganeh - Zarih Arghavani (128)_FIVETAMUSIC_.mp3" data-photo="/file/269475/Ali-Yeganeh-Zarih-Arghavani_FIVETAMUSIC_.jpg" onclick="window.open('/file/8140/Ali Yeganeh - Zarih Arghavani (128)_FIVETAMUSIC_.mp3', '_blank')">
@@ -289,7 +289,7 @@
 <div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
 <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="14542" data-title="جغرافیای سرخ" data-artist="علی یگانه" data-music="/file/9244/Ali Yeganeh - Joghrafiaye Sorkh (128)_FIVETAMUSIC_.mp3" data-photo="/file/266470/Joghrafiaye-Sorkh-Ali-Yeganeh_FIVETAMUSIC_.jpg" onclick="window.open('/file/9244/Ali Yeganeh - Joghrafiaye Sorkh (128)_FIVETAMUSIC_.mp3', '_blank')">
 </i>
-</a>
+ </a>
 </div>
 </div>
 <a href="/song/14542/%D8%B9%D9%84%DB%8C%20%DB%8C%DA%AF%D8%A7%D9%86%D9%87/%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%DB%8C%D8%A7%DB%8C%20%D8%B3%D8%B1%D8%AE" asb="boz"><img src="/file/266470/Joghrafiaye-Sorkh-Ali-Yeganeh_FIVETAMUSIC_.jpg" alt="جغرافیای سرخ علی یگانه FIVETAMUSIC" class="r r-2x img-full"></a></div>
@@ -338,7 +338,7 @@
 </section>
 </section>
 </section>
-</section>
+ </section>
 <footer class="footer bg-info dker">
 <div id="jp_container_N" class="jp-video-270p">
 <div class="jp-type-playlist">
@@ -418,14 +418,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
     (function($) {
-        // Backbone code in here
         $.pjax.defaults.timeout = 5678
         $(document).on("pjax:end", function(event) {
-            // console.log("in pjax end");
             $(event.target).find("script[data-exec-on-popstate]").each(function() {
                 $.globalEval(this.text || this.textContent || this.innerHTML || '');
             })
-            
             gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
         });
         $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');

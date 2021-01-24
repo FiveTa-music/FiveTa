@@ -122,7 +122,7 @@
 
 
 
- 
+
 
 
 
@@ -185,7 +185,7 @@
 
 
 
-
+ 
 
 
 
@@ -273,7 +273,7 @@
 
 
 
- 
+
 
 
 
@@ -308,7 +308,7 @@
 
 
 </div>
- </div>
+</div>
 <div class="col-sm-4">
 <div class="panel panel-default">
 <div class="panel-heading">پیشنهادات</div>
@@ -333,7 +333,7 @@
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/181/%D8%AD%D8%A7%D9%85%D8%AF%20%D8%B4%D8%A7%D8%AF%DA%A9%D9%85%D8%A7%D9%84%DB%8C/%D8%AF%D9%84%D8%AF%D8%A7%D8%AF%D9%87" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50592/Hamed-Shadkamali-Deldadeh_FIVETAMUSIC_.jpg" alt="دلداده حامد شادکمالی FIVETAMUSIC"> </a>
- <div class="media-body"> <a href="/song/181/%D8%AD%D8%A7%D9%85%D8%AF%20%D8%B4%D8%A7%D8%AF%DA%A9%D9%85%D8%A7%D9%84%DB%8C/%D8%AF%D9%84%D8%AF%D8%A7%D8%AF%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دلداده</a>
+<div class="media-body"> <a href="/song/181/%D8%AD%D8%A7%D9%85%D8%AF%20%D8%B4%D8%A7%D8%AF%DA%A9%D9%85%D8%A7%D9%84%DB%8C/%D8%AF%D9%84%D8%AF%D8%A7%D8%AF%D9%87" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">دلداده</a>
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%AD%D8%A7%D9%85%D8%AF%20%D8%B4%D8%A7%D8%AF%DA%A9%D9%85%D8%A7%D9%84%DB%8C" class="text-xs text-muted" asb="boz">حامد شادکمالی</a>
@@ -399,7 +399,7 @@
 <div class="media-body"> <a href="/song/700/%D8%B9%D9%85%D8%B1%D8%A7%D9%86%20%D8%B7%D8%A7%D9%87%D8%B1%DB%8C/%D8%AE%D9%88%D8%A7%D8%A8" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">خواب</a>
 
 <div class="text-xs block m-t-xs">
- <a data-pjax="on" href="/singer/%D8%B9%D9%85%D8%B1%D8%A7%D9%86%20%D8%B7%D8%A7%D9%87%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">عمران طاهری</a>
+<a data-pjax="on" href="/singer/%D8%B9%D9%85%D8%B1%D8%A7%D9%86%20%D8%B7%D8%A7%D9%87%D8%B1%DB%8C" class="text-xs text-muted" asb="boz">عمران طاهری</a>
 </div>
 </div>
 </article>
@@ -429,7 +429,7 @@
 <a data-pjax="on" href="/singer/%D8%A7%D8%B4%DA%A9%D9%85%D9%87%D8%B1" class="text-xs text-muted" asb="boz">اشکمهر</a>
 </div>
 </div>
- </article>
+</article>
 <article class="media">
 <a data-pjax="on" href="/song/909/%D8%A2%D8%B1%D8%B4%20%DA%A9%D8%A7%DB%8C%D8%A7%D9%86/%D8%A2%D8%B0%D8%B1%D8%A8%D8%A7%DB%8C%D8%AC%D8%A7%D9%86%20%D9%85%D8%A7%D8%B1%D8%A7%D9%84%DB%8C" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/50145/Arash-Kayan-Azerbayjan-Marali_FIVETAMUSIC_.jpg" alt="آذربایجان مارالی آرش کایان FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/909/%D8%A2%D8%B1%D8%B4%20%DA%A9%D8%A7%DB%8C%D8%A7%D9%86/%D8%A2%D8%B0%D8%B1%D8%A8%D8%A7%DB%8C%D8%AC%D8%A7%D9%86%20%D9%85%D8%A7%D8%B1%D8%A7%D9%84%DB%8C" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">آذربایجان مارالی</a>
@@ -510,7 +510,7 @@
 
 
 
-</div>
+ </div>
 </div>
 </footer>
 </section>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

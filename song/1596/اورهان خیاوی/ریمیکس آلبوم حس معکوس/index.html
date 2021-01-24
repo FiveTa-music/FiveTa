@@ -160,7 +160,7 @@
 
 
 
- <section>
+<section>
 <section class="vbox" id="bjax-el">
 <section class="scrollable wrapper-lg">
 <div class="row">
@@ -182,7 +182,7 @@
 
 
 
- 
+
 
 
 
@@ -212,31 +212,6 @@
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
@@ -264,7 +239,8 @@
 
 
 
- 
+
+
 
 
 
@@ -296,6 +272,30 @@
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -410,7 +410,7 @@
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D8%B3%D9%87%D8%B1%D8%A7%D8%A8%20%D9%BE%D8%A7%DA%A9%D8%B2%D8%A7%D8%AF" class="text-xs text-muted" asb="boz">سهراب پاکزاد</a>
 </div>
- </div>
+</div>
 </article>
 <article class="media">
 <a data-pjax="on" href="/song/1341/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7%20%D8%AD%D8%A7%D8%AA%D9%85%DB%8C/%D9%86%D8%A8%D8%A7%D8%B4%DB%8C" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/52559/Mohammadreza-Hatami-Nabashi_FIVETAMUSIC_.jpg" alt="نباشی محمدرضا حاتمی FIVETAMUSIC"> </a>
@@ -438,7 +438,7 @@
 <a data-pjax="on" href="/singer/%D8%A7%D9%85%DB%8C%D8%B1%D8%B3%D8%B9%DB%8C%D8%AF" class="text-xs text-muted" asb="boz">امیرسعید</a>
 </div>
 </div>
-</article>
+ </article>
 </div>
 </div>
 </div>
@@ -467,7 +467,7 @@
 </div>
 <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
 <div><a class="" data-toggle="dropdown" data-target="#playlist" asb="boz"><i class="icon-list"></i></a></div>
- <div class="jp-progress hidden-xs">
+<div class="jp-progress hidden-xs">
 <div class="jp-seek-bar dk" style="width: 0%;">
 <div class="jp-play-bar bg-info" style="width: 0%;"></div>
 <div class="jp-title text-lt" style="display: none;">FIVETA</div>
@@ -477,7 +477,7 @@
 </div>
 <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
-<a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
+ <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
 <div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
@@ -500,7 +500,7 @@
 
 
 
- 
+
 
 
 
@@ -511,7 +511,7 @@
 
 
 </div>
-</div>
+ </div>
 </footer>
 </section>
 
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

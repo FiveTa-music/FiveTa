@@ -207,7 +207,7 @@
 <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/762854/0322038fef75951_FIVETAMUSIC_.jpg" alt="موسیقی و من (رمیکس) بیژن مرتضوی FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D8%A8%DB%8C%DA%98%D9%86%20%D9%85%D8%B1%D8%AA%D8%B6%D9%88%DB%8C" class="text-info" asb="boz">بیژن مرتضوی</a>
 
- </div>
+</div>
 </div>
 <div class="m-b-lg">
 <button class="play-now btn btn-lg btn-info lt b-white b-2x btn-block btn-rounded" data-columns="3" data-id="72580" data-title="موسیقی و من (رمیکس)" data-artist="بیژن مرتضوی" data-music="/file/762853/95731-d7235b6311a1aea_FIVETAMUSIC_.mp3" data-photo="/file/762854/0322038fef75951_FIVETAMUSIC_.jpg" onclick="window.open('/file/762853/95731-d7235b6311a1aea_FIVETAMUSIC_.mp3', '_blank')"><i class="fa fa-play-circle  pull-right" style="pointer-events: none;"></i><span class="m-r-n-lg" style="pointer-events: none;">پخش آنلاین</span></button>
@@ -232,7 +232,7 @@
 <div> زمان آهنگ: <a href="#" class="badge bg-light" asb="boz">2 دقیقه و 34 ثانیه</a> </div>
 <div> تاریخ: <a href="#" class="badge bg-light" asb="boz">آبان 27، 1399</a> </div>
 </div>
-</div>
+ </div>
 <div class="m-t">
 <h3>
 <p align="justify">رقصی بکن چرخی بزن به ریتم موسیقی و من
@@ -317,7 +317,7 @@
 
 
 
- 
+
 
 
 
@@ -417,7 +417,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%86%D8%A7%D8%B5%D8%B1%20%D8%B9%D8%A8%D8%AF%D9%84%D9%84%D9%87%DB%8C" class="text-xs text-muted" asb="boz">ناصر عبدللهی</a>
- </div>
+</div>
 </div>
 </article>
 <article class="media">
@@ -488,7 +488,7 @@
 </div>
 </div>
 </section>
- </section>
+</section>
 <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
 </section>
 </section>
@@ -572,15 +572,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

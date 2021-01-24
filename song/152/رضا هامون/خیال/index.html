@@ -165,7 +165,7 @@
 <section class="scrollable wrapper-lg">
 <div class="row">
 <div class="col-sm-8">
- <div class="panel wrapper-lg">
+<div class="panel wrapper-lg">
 <div class="row">
 <div class="col-sm-5"> <img src="/file/753248/Reza-Hamoon-Khiyal_FIVETAMUSIC_.jpg" alt="خیال رضا هامون FIVETAMUSIC" class="img-full m-b"> </div>
 <div class="col-sm-7">
@@ -186,7 +186,7 @@
 
 
 
- 
+
 
 
 
@@ -240,63 +240,6 @@
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -307,7 +250,64 @@
 
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </div>
 </div>
 <div class="col-sm-4">
 <div class="panel panel-default">
@@ -328,7 +328,7 @@
 
 <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%85%D8%A7%D8%AF%D9%88%E2%80%8C%20%D8%A8%D9%86%D8%AF" class="text-xs text-muted" asb="boz">مادو‌ بند</a>
- </div>
+</div>
 </div>
 </article>
 <article class="media">
@@ -441,7 +441,7 @@
 </article>
 </div>
 </div>
- </div>
+</div>
 </div>
 </section>
 </section>
@@ -479,12 +479,12 @@
 <div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
 <a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
 <div class="hidden-xs hidden-sm jp-volume">
- <div class="jp-volume-bar dk">
+<div class="jp-volume-bar dk">
 <div class="jp-volume-bar-value lter" style="width: 28%;"></div>
 </div>
 </div>
 <div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
-<div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
+ <div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
 <div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
 </div>
 </div>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

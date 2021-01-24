@@ -121,7 +121,7 @@
 
 
 
-
+ 
 
 
 
@@ -169,7 +169,7 @@
 <div class="row">
 <div class="col-sm-5"> <img src="/file/50612/Bahador-Delet-Oumad_FIVETAMUSIC_.jpg" alt="دلت اومد بهادر FIVETAMUSIC" class="img-full m-b"> </div>
 <div class="col-sm-7">
- <h1 class="m-t-none text-black">دلت اومد</h1>
+<h1 class="m-t-none text-black">دلت اومد</h1>
 <div class="clearfix m-b-lg">
 <a href="#" class="thumb-sm pull-left m-r" asb="boz"> <img src="/file/50612/Bahador-Delet-Oumad_FIVETAMUSIC_.jpg" alt="دلت اومد بهادر FIVETAMUSIC" class="img-circle"> </a>
 <div class="clear"> <a data-pjax="on" href="/singer/%D8%A8%D9%87%D8%A7%D8%AF%D8%B1" class="text-info" asb="boz">بهادر</a>
@@ -307,7 +307,7 @@
 
 
 
- </div>
+</div>
 </div>
 <div class="col-sm-4">
 <div class="panel panel-default">
@@ -444,7 +444,7 @@
 </div>
 </div>
 </section>
-</section>
+ </section>
 <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html" asb="boz"></a>
 </section>
 </section>
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 

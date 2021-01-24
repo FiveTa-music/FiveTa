@@ -335,7 +335,7 @@
 <a data-pjax="on" href="/song/16741/%D9%BE%D8%B1%D9%88%DB%8C%D8%B2%20%D9%86%D8%AC%D9%81%20%D9%BE%D9%88%D8%B1/TanhaOmidam" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/756171/Parviz1_FIVETAMUSIC_.jpg" alt="TanhaOmidam پرویز نجف پور FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/16741/%D9%BE%D8%B1%D9%88%DB%8C%D8%B2%20%D9%86%D8%AC%D9%81%20%D9%BE%D9%88%D8%B1/TanhaOmidam" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">TanhaOmidam</a>
 
-<div class="text-xs block m-t-xs">
+ <div class="text-xs block m-t-xs">
 <a data-pjax="on" href="/singer/%D9%BE%D8%B1%D9%88%DB%8C%D8%B2%20%D9%86%D8%AC%D9%81%20%D9%BE%D9%88%D8%B1" class="text-xs text-muted" asb="boz">پرویز نجف پور</a>
 </div>
 </div>
@@ -363,7 +363,7 @@
 <div class="media-body"> <a href="/song/25231/%D8%AF%D8%A7%D9%86%DB%8C%D8%A7%D9%84%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%87%DB%8C/%D8%AA%D8%B3%DA%A9%DB%8C%D9%86" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">تسکین</a>
 
 <div class="text-xs block m-t-xs">
- <a data-pjax="on" href="/singer/%D8%AF%D8%A7%D9%86%DB%8C%D8%A7%D9%84%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%87%DB%8C" class="text-xs text-muted" asb="boz">دانیال عبدالهی</a>
+<a data-pjax="on" href="/singer/%D8%AF%D8%A7%D9%86%DB%8C%D8%A7%D9%84%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%87%DB%8C" class="text-xs text-muted" asb="boz">دانیال عبدالهی</a>
 </div>
 </div>
 </article>
@@ -431,7 +431,7 @@
 </div>
 </article>
 <article class="media">
- <a data-pjax="on" href="/song/53093/%D8%AD%D8%B3%DB%8C%D9%86%20%D9%81%D8%B1%DB%8C%D8%AF%D9%85%D9%87%D8%B1/%D8%AF%D8%B1%D9%87%D9%85%DB%8C" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/348552/98127942f15beea_FIVETAMUSIC_.jpg" alt="درهمی حسین فریدمهر FIVETAMUSIC"> </a>
+<a data-pjax="on" href="/song/53093/%D8%AD%D8%B3%DB%8C%D9%86%20%D9%81%D8%B1%DB%8C%D8%AF%D9%85%D9%87%D8%B1/%D8%AF%D8%B1%D9%87%D9%85%DB%8C" class="pull-left thumb-md m-t-xs" asb="boz"> <img src="/file/348552/98127942f15beea_FIVETAMUSIC_.jpg" alt="درهمی حسین فریدمهر FIVETAMUSIC"> </a>
 <div class="media-body"> <a href="/song/53093/%D8%AD%D8%B3%DB%8C%D9%86%20%D9%81%D8%B1%DB%8C%D8%AF%D9%85%D9%87%D8%B1/%D8%AF%D8%B1%D9%87%D9%85%DB%8C" data-pjax="on" data-replace="true" class="font-semibold" asb="boz">درهمی</a>
 
 <div class="text-xs block m-t-xs">
@@ -465,7 +465,7 @@
 <div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
 <div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
 </div>
- <div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
+<div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
 <div><a class="" data-toggle="dropdown" data-target="#playlist" asb="boz"><i class="icon-list"></i></a></div>
 <div class="jp-progress hidden-xs">
 <div class="jp-seek-bar dk" style="width: 0%;">
@@ -497,7 +497,7 @@
 
 
 
- 
+
 
 
 
@@ -528,15 +528,11 @@
 <script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
 <script>
         (function($) {
-            // Backbone code in here
             $.pjax.defaults.timeout = 5678
             $(document).on("pjax:end", function(event) {
-
                 $(event.target).find("script[data-exec-on-popstate]").each(function() {
                     $.globalEval(this.text || this.textContent || this.innerHTML || '');
                 })
-
-
                 gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
             });
 
