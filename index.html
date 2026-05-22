@@ -1,634 +1,1314 @@
 <!DOCTYPE html>
-<html class="app js no-touch no-android no-chrome firefox no-iemobile no-ie no-ie8 no-ie10 no-ie11 no-ios no-ios7 ipad" lang="en">
+<html lang="fa" dir="rtl" id="html-root">
 <head>
-<meta name="theme-color" content="#4cb6cb" />
-
-<meta name="msapplication-navbutton-color" content="#4cb6cb">
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="yandex-verification" content="a2480ff4177e4c07" />
-<title>FiveTa | موسیقی هوشمند</title>
-<meta name="description" content="سامانه هوشمند موسیقی,اپلیکیشن آهنگ,دانلود آهنگ از لینک مستقیم,آهنگ شاد,دانلود آهنگ غمگین">
-<meta name="keywords" content="آهنگ ایرانی, دانلود آلبوم, دانلود آهنگ جدید, دانلود آهنگ غمگین, دانلود آهنگ شاد, دانلود فول آلبوم, دانلود موزیک ویدیو">
-<link rel="canonical" href="https://fiveta.ir" />
-<link rel="next" href="https://fiveta.ir?page=2" />
-<meta name="robots" content="all">
-<meta property="og:title" content="FiveTa | موسیقی هوشمند" />
-<meta property="og:description" content="سامانه هوشمند موسیقی,اپلیکیشن آهنگ,دانلود آهنگ از لینک مستقیم,آهنگ شاد,دانلود آهنگ غمگین" />
-
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="/./assets/jplayer.flat.css" type="text/css">
-<link rel="stylesheet" href="/./assets/app.v1.css" type="text/css">
-<!--[if lt IE 9]>
-    <script src="js/ie/html5shiv.js"></script>
-    <script src="js/ie/respond.min.js"></script>
-    <script src="js/ie/excanvas.js"></script> <![endif]-->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84050407-5"></script>
-<script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-      gtag('config', 'UA-84050407-5');
+    <!-- Primary Meta Tags -->
+    <title>فایو تا موزیک - تجربه نهایی موسیقی آنلاین | Fiveta Music</title>
+    <meta name="title" content="فایو تا موزیک - تجربه نهایی موسیقی آنلاین | Fiveta Music">
+    <meta name="description" content="فایو تا موزیک - دسترسی به میلیون‌ها آهنگ، پادکست و رادیو زنده. پخش آنلاین با کیفیت بالا، پلی‌لیست‌های شخصی‌سازی شده و دانلود آفلاین. بهترین پلتفرم پخش موسیقی فارسی و بین‌المللی.">
+    <meta name="keywords" content="موزیک آنلاین, پخش موسیقی, فایو تا, آهنگ فارسی, پلی لیست, دانلود آهنگ, پادکست فارسی, رادیو آنلاین, موسیقی بی‌کلام, Fiveta Music, Persian music, online streaming">
+    <meta name="author" content="Fiveta Music">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Persian">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://fiveta.ir/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fiveta.ir/">
+    <meta property="og:title" content="فایو تا موزیک - تجربه نهایی موسیقی آنلاین">
+    <meta property="og:description" content="دسترسی به میلیون‌ها آهنگ فارسی و بین‌المللی. پخش آنلاین با کیفیت بالا، پلی‌لیست‌های شخصی‌سازی شده و امکان دانلود آفلاین.">
+    <meta property="og:image" content="https://fiveta.ir/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Fiveta Music">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fiveta.ir/">
+    <meta property="twitter:title" content="فایو تا موزیک - تجربه نهایی موسیقی آنلاین">
+    <meta property="twitter:description" content="دسترسی به میلیون‌ها آهنگ فارسی و بین‌المللی. پخش آنلاین با کیفیت بالا، پلی‌لیست‌های شخصی‌سازی شده و امکان دانلود آفلاین.">
+    <meta property="twitter:image" content="https://fiveta.ir/assets/images/twitter-image.jpg">
+    
+    <!-- Mobile Meta Tags -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Fiveta Music">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Fiveta Music",
+      "alternateName": "فایو تا موزیک",
+      "url": "https://fiveta.ir/",
+      "description": "پلتفرم پخش آنلاین موسیقی با دسترسی به میلیون‌ها آهنگ فارسی و بین‌المللی",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://fiveta.ir/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fiveta Music",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://fiveta.ir/assets/images/logo.png"
+        }
+      }
+    }
     </script>
-<link rel="manifest" href="/manifest.json" />
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="FIVETA">
-<link rel="apple-touch-icon" href="/images/icons/57.png" sizes="57x57">
-<link rel="apple-touch-icon" href="/images/icons/60.png" sizes="60x60">
-<link rel="apple-touch-icon" href="/images/icons/72.png" sizes="72x72">
-<link rel="apple-touch-icon" href="/images/icons/76.png" sizes="76x76">
-<link rel="apple-touch-icon" href="/images/icons/114.png" sizes="114x114">
-<link rel="apple-touch-icon" href="/images/icons/120.png" sizes="120x120">
-<link rel="apple-touch-icon" href="/images/icons/144.png" sizes="144x144">
-<link rel="apple-touch-icon" href="/images/icons/167.png" sizes="167x167">
-<link rel="apple-touch-icon" href="/images/icons/180.png" sizes="180x180">
-<meta name="msapplication-TileImage" content="/src/images/icons/144.png">
-<meta name="msapplication-TileColor" content="#4cb6cb">
-<meta name="theme-color" content="#4cb6cb">
-<meta name="mobile-web-app-capable" content="yes" />
-<meta name="application-name" content="FIVETA" />
-<meta name="msapplication-starturl" content="/" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Fiveta Music",
+      "alternateName": "فایو تا",
+      "url": "https://fiveta.ir/",
+      "logo": "https://fiveta.ir/assets/images/logo.png",
+      "description": "سرویس پخش آنلاین موسیقی با بیش از 50 میلیون آهنگ",
+      "sameAs": [
+        "https://www.facebook.com/fivetamusic",
+        "https://www.twitter.com/fivetamusic",
+        "https://www.instagram.com/fivetamusic",
+        "https://www.youtube.com/fivetamusic"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "10000",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Fiveta Music Platform",
+      "genre": ["Pop", "Rock", "Classical", "Persian Traditional", "Electronic", "Jazz"],
+      "description": "پلتفرم جامع پخش موسیقی آنلاین با انواع سبک‌های موسیقی"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #ec4899;
+            --accent-color: #8b5cf6;
+            --dark-bg: #0f172a;
+            --light-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        /* Persian Font */
+        [dir="rtl"] body {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .animated-bg::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -250px;
+            right: -250px;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .animated-bg::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -200px;
+            left: -200px;
+            animation: float 15s ease-in-out infinite reverse;
+        }
+
+        @keyframes  float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -50px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 1rem 5%;
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .lang-btn.active {
+            background: var(--gradient-1);
+            color: white;
+        }
+
+        .lang-btn:hover:not(.active) {
+            color: var(--text-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            padding: 0.75rem 2rem;
+            background: var(--gradient-1);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            text-align: center;
+            z-index: 10;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes  fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 50px rgba(99, 102, 241, 0.2);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-card:nth-child(2) .feature-icon {
+            background: var(--gradient-2);
+        }
+
+        .feature-card:nth-child(3) .feature-icon {
+            background: var(--gradient-3);
+        }
+
+        .feature-card:nth-child(4) .feature-icon {
+            background: var(--gradient-4);
+        }
+
+        .feature-card:nth-child(5) .feature-icon {
+            background: var(--gradient-2);
+        }
+
+        .feature-card:nth-child(6) .feature-icon {
+            background: var(--gradient-3);
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Playlist Section */
+        .playlists {
+            padding: 8rem 5%;
+            background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.05) 100%);
+        }
+
+        .playlist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .playlist-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .playlist-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .playlist-image {
+            width: 100%;
+            height: 250px;
+            background: var(--gradient-1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .playlist-card:nth-child(2) .playlist-image {
+            background: var(--gradient-2);
+        }
+
+        .playlist-card:nth-child(3) .playlist-image {
+            background: var(--gradient-3);
+        }
+
+        .playlist-card:nth-child(4) .playlist-image {
+            background: var(--gradient-4);
+        }
+
+        .playlist-image i.main-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            opacity: 0.4;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .playlist-image::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .music-notes {
+            position: absolute;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.2);
+            animation: float-notes 3s ease-in-out infinite;
+        }
+
+        .note-1 { top: 20%; left: 15%; animation-delay: 0s; }
+        .note-2 { top: 60%; right: 20%; animation-delay: 0.5s; }
+        .note-3 { bottom: 25%; left: 25%; animation-delay: 1s; }
+
+        @keyframes  float-notes {
+            0%, 100% { transform: translateY(0px); opacity: 0.2; }
+            50% { transform: translateY(-10px); opacity: 0.4; }
+        }
+
+        .play-button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-bg);
+            font-size: 1.2rem;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        .playlist-card:hover .play-button {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .playlist-info {
+            padding: 1.5rem;
+        }
+
+        .playlist-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .playlist-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 8rem 5%;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5rem 3rem;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 30px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes  rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 5%;
+            background: rgba(15, 23, 42, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+            padding-left: 5px;
+        }
+
+        [dir="rtl"] .footer-links a:hover {
+            padding-left: 0;
+            padding-right: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-link:hover {
+            background: var(--gradient-1);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-button {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                height: 100vh;
+                background: rgba(15, 23, 42, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                padding: 5rem 2rem;
+                transition: left 0.3s ease;
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            [dir="rtl"] .nav-links {
+                left: auto;
+                right: -100%;
+                border-right: none;
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            [dir="rtl"] .nav-links.active {
+                left: auto;
+                right: 0;
+            }
+
+            .mobile-menu-button {
+                display: block;
+            }
+
+            .hero {
+                padding: 6rem 5% 3rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features, .playlists, .cta-section {
+                padding: 4rem 5%;
+            }
+
+            .cta-content {
+                padding: 3rem 2rem;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading Animation */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes  fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-<section class="vbox">
-<header class="bg-white-only header header-md navbar navbar-fixed-top-xs">
-<div class="navbar-header navbar-right aside bg-info">
-
-<a data-pjax="on" href="https://FIVETA.ir" class="navbar-brand text-lt" asb="boz"> <i class="icon-earphones"> </i> <span class="hidden-nav-xs m-l-sm">FiveTa</span>
-</a>
-
-</div>
-
-
-
-
-<div class="navbar-form navbar-right input-s-lg m-t m-l-n-xs hidden-xs" role="search">
-<div class="form-group">
-<div class="input-group"><span class="input-group-btn">
-<button id="searchbutton" type="submit" class="btn btn-sm bg-white btn-icon rounded searchbutton" onclick="window.open('/search'+ '/' + document.getElementById('searchtext').value,'_self'); return true;">
-<i class="fa fa-search"></i>
-</button> </span>
-<input type="text" id="searchtext" name="searchtext" class="form-control input-sm no-border rounded" placeholder="Search songs, albums...">
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</header>
-<section>
-<section class="hbox stretch">
-
-<section id="content">
-<section class="vbox">
-
-<section class="w-f-md" id="pcontent">
-<section class="hbox stretch">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<aside class="aside bg-light dk  hidden-xs" id="sidebar">
-<section class="vbox animated fadeInUp">
-<section class="scrollable hover">
-<div class="list-group no-radius no-border no-bg m-t-n-xxs m-b-none auto">
-
-<a href="/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF" class="list-group-item active" asb="boz"> آهنگ شاد </a>
-<a href="/-2-%D8%AA%DA%A9%20%D8%A2%D9%87%D9%86%DA%AF" class="list-group-item active" asb="boz"> تک آهنگ </a>
-<a href="/-3-%D8%A2%D9%87%D9%86%DA%AF%20%D8%BA%D9%85%DA%AF%DB%8C%D9%86" class="list-group-item active" asb="boz"> آهنگ غمگین </a>
-<a href="/-5-%D8%B9%D9%85%D9%88%D9%85%DB%8C" class="list-group-item active" asb="boz"> عمومی </a>
-<a href="/-6-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B3%D9%86%D8%AA%DB%8C" class="list-group-item active" asb="boz"> آهنگ سنتی </a>
-<a href="/-7-%D8%AA%D9%8A%D8%AA%D8%B1%D8%A7%DA%98" class="list-group-item active" asb="boz"> تيتراژ </a>
-<a href="/-9-%D8%B1%D9%85%DB%8C%DA%A9%D8%B3" class="list-group-item active" asb="boz"> رمیکس </a>
-<a href="/-12-%D8%A8%DB%8C%20%DA%A9%D9%84%D8%A7%D9%85" class="list-group-item active" asb="boz"> بی کلام </a>
-<a href="/-14-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B1%D8%A7%DA%A9" class="list-group-item active" asb="boz"> آهنگ راک </a>
-<a href="/-111-%D9%85%D8%AD%D8%A8%D9%88%D8%A8%20%D8%AA%D8%B1%DB%8C%D9%86%20%D8%A2%D9%87%D9%86%DA%AF%20%D9%87%D8%A7" class="list-group-item active" asb="boz"> محبوب ترین آهنگ ها </a>
-<a href="/-211-%D8%A2%D9%87%D9%86%DA%AF%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1%20%D8%B4%D9%86%DB%8C%D8%AF%D9%87%20%D8%B4%D8%AF%D9%87" class="list-group-item active" asb="boz"> آهنگ‌های بیشتر شنیده شده </a>
-<a href="/-308-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86%20%D8%A2%D9%87%D9%86%DA%AF%20%D9%87%D8%A7" class="list-group-item active" asb="boz"> بهترین آهنگ ها </a>
-<a href="/-309-%D8%A8%D8%B1%D8%AA%D8%B1%DB%8C%D9%86%20%D8%A2%D9%87%D9%86%DA%AF%E2%80%8C%D9%87%D8%A7%DB%8C%20%D9%81%D8%B5%D9%84" class="list-group-item active" asb="boz"> برترین آهنگ‌های فصل </a>
-<a href="/-310-%D8%A8%D8%B1%D8%AA%D8%B1%DB%8C%D9%86%20%D8%A2%D9%87%D9%86%DA%AF%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%B3%D8%A7%D9%84" class="list-group-item active" asb="boz"> برترین آهنگ‌های سال </a>
-</div>
-</section>
-</section>
-</aside>
-
-<section>
-<section class="vbox content" id="pcontent0">
-<section class="scrollable padder-lg">
-<h1 class="font-thin m-b"></h1>
-<div class="row row-sm">
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="72737" data-title="بارون دلم خواست" data-artist="شادمهر عقیلی" data-music="/file/763172/95885-26ccf26ac60ef51_FIVETAMUSIC_.mp3" data-photo="/file/763173/2a449b8099a18de_FIVETAMUSIC_.jpg" onclick="window.open('/file/763172/95885-26ccf26ac60ef51_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/72737/%D8%B4%D8%A7%D8%AF%D9%85%D9%87%D8%B1%20%D8%B9%D9%82%DB%8C%D9%84%DB%8C/%D8%A8%D8%A7%D8%B1%D9%88%D9%86%20%D8%AF%D9%84%D9%85%20%D8%AE%D9%88%D8%A7%D8%B3%D8%AA" asb="boz"><img src="/file/763173/2a449b8099a18de_FIVETAMUSIC_.jpg" alt="بارون دلم خواست شادمهر عقیلی FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/72737/%D8%B4%D8%A7%D8%AF%D9%85%D9%87%D8%B1%20%D8%B9%D9%82%DB%8C%D9%84%DB%8C/%D8%A8%D8%A7%D8%B1%D9%88%D9%86%20%D8%AF%D9%84%D9%85%20%D8%AE%D9%88%D8%A7%D8%B3%D8%AA" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">بارون دلم خواست</a>
-<a data-pjax="on" href="/singer/%D8%B4%D8%A7%D8%AF%D9%85%D9%87%D8%B1%20%D8%B9%D9%82%DB%8C%D9%84%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">شادمهر عقیلی</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73188" data-title="همگونه" data-artist="سوگند" data-music="/file/774215/96330-31b49e8f205b8bb_FIVETAMUSIC_.mp3" data-photo="/file/774216/a9e08862b599096_FIVETAMUSIC_.jpg" onclick="window.open('/file/774215/96330-31b49e8f205b8bb_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73188/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D9%87%D9%85%DA%AF%D9%88%D9%86%D9%87" asb="boz"><img src="/file/774216/a9e08862b599096_FIVETAMUSIC_.jpg" alt="همگونه سوگند FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73188/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D9%87%D9%85%DA%AF%D9%88%D9%86%D9%87" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">همگونه</a>
-<a data-pjax="on" href="/singer/%D8%B3%D9%88%DA%AF%D9%86%D8%AF" class="text-ellipsis text-xs text-muted" asb="boz">سوگند</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73124" data-title="مو مشکی (فت ونک)" data-artist="خ بند" data-music="/file/773830/96265-2e0797ba4156b9f_FIVETAMUSIC_.mp3" data-photo="/file/773831/35086b7929a63e6_FIVETAMUSIC_.jpg" onclick="window.open('/file/773830/96265-2e0797ba4156b9f_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73124/%D8%AE%20%D8%A8%D9%86%D8%AF/%D9%85%D9%88%20%D9%85%D8%B4%DA%A9%DB%8C%20%28%D9%81%D8%AA%20%D9%88%D9%86%DA%A9%29" asb="boz"><img src="/file/773831/35086b7929a63e6_FIVETAMUSIC_.jpg" alt="مو مشکی (فت ونک) خ بند FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73124/%D8%AE%20%D8%A8%D9%86%D8%AF/%D9%85%D9%88%20%D9%85%D8%B4%DA%A9%DB%8C%20%28%D9%81%D8%AA%20%D9%88%D9%86%DA%A9%29" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">مو مشکی (فت ونک)</a>
-<a data-pjax="on" href="/singer/%D8%AE%20%D8%A8%D9%86%D8%AF" class="text-ellipsis text-xs text-muted" asb="boz">خ بند</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="72857" data-title="تهران" data-artist="سوگند" data-music="/file/763416/96006-10d72653aaa8a4c_FIVETAMUSIC_.mp3" data-photo="/file/763417/c738cfeabf69e50_FIVETAMUSIC_.jpg" onclick="window.open('/file/763416/96006-10d72653aaa8a4c_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/72857/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AA%D9%87%D8%B1%D8%A7%D9%86" asb="boz"><img src="/file/763417/c738cfeabf69e50_FIVETAMUSIC_.jpg" alt="تهران سوگند FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/72857/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AA%D9%87%D8%B1%D8%A7%D9%86" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">تهران</a>
-<a data-pjax="on" href="/singer/%D8%B3%D9%88%DA%AF%D9%86%D8%AF" class="text-ellipsis text-xs text-muted" asb="boz">سوگند</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73185" data-title="دلخور" data-artist="سوگند" data-music="/file/774203/96327-c387ff5699e15db_FIVETAMUSIC_.mp3" data-photo="/file/774204/c2ff0249b2fd7d9_FIVETAMUSIC_.jpg" onclick="window.open('/file/774203/96327-c387ff5699e15db_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73185/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AF%D9%84%D8%AE%D9%88%D8%B1" asb="boz"><img src="/file/774204/c2ff0249b2fd7d9_FIVETAMUSIC_.jpg" alt="دلخور سوگند FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
- <a href="/song/73185/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AF%D9%84%D8%AE%D9%88%D8%B1" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">دلخور</a>
-<a data-pjax="on" href="/singer/%D8%B3%D9%88%DA%AF%D9%86%D8%AF" class="text-ellipsis text-xs text-muted" asb="boz">سوگند</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="72488" data-title="من معذرت میخوام" data-artist="مسیح &amp; آرش آپ" data-music="/file/762658/95639-a19bc5ba6fa207f_FIVETAMUSIC_.mp3" data-photo="/file/762659/e983d3e9f956714_FIVETAMUSIC_.jpg" onclick="window.open('/file/762658/95639-a19bc5ba6fa207f_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/72488/%D9%85%D8%B3%DB%8C%D8%AD%20&amp;%20%D8%A2%D8%B1%D8%B4%20%D8%A2%D9%BE/%D9%85%D9%86%20%D9%85%D8%B9%D8%B0%D8%B1%D8%AA%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%D9%85" asb="boz"><img src="/file/762659/e983d3e9f956714_FIVETAMUSIC_.jpg" alt="من معذرت میخوام مسیح &amp; آرش آپ FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/72488/%D9%85%D8%B3%DB%8C%D8%AD%20&amp;%20%D8%A2%D8%B1%D8%B4%20%D8%A2%D9%BE/%D9%85%D9%86%20%D9%85%D8%B9%D8%B0%D8%B1%D8%AA%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%D9%85" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">من معذرت میخوام</a>
-<a data-pjax="on" href="/singer/%D9%85%D8%B3%DB%8C%D8%AD%20&amp;%20%D8%A2%D8%B1%D8%B4%20%D8%A2%D9%BE" class="text-ellipsis text-xs text-muted" asb="boz">مسیح &amp; آرش آپ</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
- <div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73271" data-title="غلبه بنفش (فت ی.ده)" data-artist="علی اردوان &amp; سپهر خلسه" data-music="/file/774604/96413-447734aa4a362c3_FIVETAMUSIC_.mp3" data-photo="/file/774605/aa43bf66563a23b_FIVETAMUSIC_.jpg" onclick="window.open('/file/774604/96413-447734aa4a362c3_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73271/%D8%B9%D9%84%DB%8C%20%D8%A7%D8%B1%D8%AF%D9%88%D8%A7%D9%86%20&amp;%20%D8%B3%D9%BE%D9%87%D8%B1%20%D8%AE%D9%84%D8%B3%D9%87/%D8%BA%D9%84%D8%A8%D9%87%20%D8%A8%D9%86%D9%81%D8%B4%20%28%D9%81%D8%AA%20%DB%8C.%D8%AF%D9%87%29" asb="boz"><img src="/file/774605/aa43bf66563a23b_FIVETAMUSIC_.jpg" alt="غلبه بنفش (فت ی.ده) علی اردوان &amp; سپهر خلسه FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73271/%D8%B9%D9%84%DB%8C%20%D8%A7%D8%B1%D8%AF%D9%88%D8%A7%D9%86%20&amp;%20%D8%B3%D9%BE%D9%87%D8%B1%20%D8%AE%D9%84%D8%B3%D9%87/%D8%BA%D9%84%D8%A8%D9%87%20%D8%A8%D9%86%D9%81%D8%B4%20%28%D9%81%D8%AA%20%DB%8C.%D8%AF%D9%87%29" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">غلبه بنفش (فت ی.ده)</a>
-<a data-pjax="on" href="/singer/%D8%B9%D9%84%DB%8C%20%D8%A7%D8%B1%D8%AF%D9%88%D8%A7%D9%86%20&amp;%20%D8%B3%D9%BE%D9%87%D8%B1%20%D8%AE%D9%84%D8%B3%D9%87" class="text-ellipsis text-xs text-muted" asb="boz">علی اردوان &amp; سپهر خلسه</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73040" data-title="قرار" data-artist="سحر" data-music="/file/763815/96188-2a92a672e85a88c_FIVETAMUSIC_.mp3" data-photo="/file/763816/2c81a59692e810f_FIVETAMUSIC_.jpg" onclick="window.open('/file/763815/96188-2a92a672e85a88c_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73040/%D8%B3%D8%AD%D8%B1/%D9%82%D8%B1%D8%A7%D8%B1" asb="boz"><img src="/file/763816/2c81a59692e810f_FIVETAMUSIC_.jpg" alt="قرار سحر FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73040/%D8%B3%D8%AD%D8%B1/%D9%82%D8%B1%D8%A7%D8%B1" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">قرار</a>
-<a data-pjax="on" href="/singer/%D8%B3%D8%AD%D8%B1" class="text-ellipsis text-xs text-muted" asb="boz">سحر</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73186" data-title="توپ (فت زخمی &amp; بهزاد لیتو)" data-artist="سوگند" data-music="/file/774207/96328-bbc5e664cda7e2c_FIVETAMUSIC_.mp3" data-photo="/file/774208/4da2f0ed24e03eb_FIVETAMUSIC_.jpg" onclick="window.open('/file/774207/96328-bbc5e664cda7e2c_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73186/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AA%D9%88%D9%BE%20%28%D9%81%D8%AA%20%D8%B2%D8%AE%D9%85%DB%8C%20&amp;%20%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%84%DB%8C%D8%AA%D9%88%29" asb="boz"><img src="/file/774208/4da2f0ed24e03eb_FIVETAMUSIC_.jpg" alt="توپ (فت زخمی &amp; بهزاد لیتو) سوگند FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73186/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AA%D9%88%D9%BE%20%28%D9%81%D8%AA%20%D8%B2%D8%AE%D9%85%DB%8C%20&amp;%20%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%84%DB%8C%D8%AA%D9%88%29" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">توپ (فت زخمی &amp; بهزاد لیتو)</a>
-<a data-pjax="on" href="/singer/%D8%B3%D9%88%DA%AF%D9%86%D8%AF" class="text-ellipsis text-xs text-muted" asb="boz">سوگند</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73107" data-title="گله مریم" data-artist="رضا بهرام" data-music="/file/773689/96248-349553be6788ec0_FIVETAMUSIC_.mp3" data-photo="/file/773690/0c0835f3d610090_FIVETAMUSIC_.jpg" onclick="window.open('/file/773689/96248-349553be6788ec0_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73107/%D8%B1%D8%B6%D8%A7%20%D8%A8%D9%87%D8%B1%D8%A7%D9%85/%DA%AF%D9%84%D9%87%20%D9%85%D8%B1%DB%8C%D9%85" asb="boz"><img src="/file/773690/0c0835f3d610090_FIVETAMUSIC_.jpg" alt="گله مریم رضا بهرام FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73107/%D8%B1%D8%B6%D8%A7%20%D8%A8%D9%87%D8%B1%D8%A7%D9%85/%DA%AF%D9%84%D9%87%20%D9%85%D8%B1%DB%8C%D9%85" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">گله مریم</a>
-<a data-pjax="on" href="/singer/%D8%B1%D8%B6%D8%A7%20%D8%A8%D9%87%D8%B1%D8%A7%D9%85" class="text-ellipsis text-xs text-muted" asb="boz">رضا بهرام</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73014" data-title="ننال (فت کورش" data-artist="آرتا" data-music="/file/763763/96162-5328fce74104e4f_FIVETAMUSIC_.mp3" data-photo="/file/763764/d27f06b3cd4d467_FIVETAMUSIC_.jpg" onclick="window.open('/file/763763/96162-5328fce74104e4f_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73014/%D8%A2%D8%B1%D8%AA%D8%A7/%D9%86%D9%86%D8%A7%D9%84%20%28%D9%81%D8%AA%20%DA%A9%D9%88%D8%B1%D8%B4" asb="boz"><img src="/file/763764/d27f06b3cd4d467_FIVETAMUSIC_.jpg" alt="ننال (فت کورش آرتا FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73014/%D8%A2%D8%B1%D8%AA%D8%A7/%D9%86%D9%86%D8%A7%D9%84%20%28%D9%81%D8%AA%20%DA%A9%D9%88%D8%B1%D8%B4" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">ننال (فت کورش</a>
-<a data-pjax="on" href="/singer/%D8%A2%D8%B1%D8%AA%D8%A7" class="text-ellipsis text-xs text-muted" asb="boz">آرتا</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
- <i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73151" data-title="دونه دونه ۲" data-artist="محسن ابراهیمزاده" data-music="/file/774002/96293-c1a7c0208c5d041_FIVETAMUSIC_.mp3" data-photo="/file/774003/20082c5c881276f_FIVETAMUSIC_.jpg" onclick="window.open('/file/774002/96293-c1a7c0208c5d041_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73151/%D9%85%D8%AD%D8%B3%D9%86%20%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85%D8%B2%D8%A7%D8%AF%D9%87/%D8%AF%D9%88%D9%86%D9%87%20%D8%AF%D9%88%D9%86%D9%87%20%DB%B2" asb="boz"><img src="/file/774003/20082c5c881276f_FIVETAMUSIC_.jpg" alt="دونه دونه ۲ محسن ابراهیمزاده FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73151/%D9%85%D8%AD%D8%B3%D9%86%20%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85%D8%B2%D8%A7%D8%AF%D9%87/%D8%AF%D9%88%D9%86%D9%87%20%D8%AF%D9%88%D9%86%D9%87%20%DB%B2" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">دونه دونه ۲</a>
-<a data-pjax="on" href="/singer/%D9%85%D8%AD%D8%B3%D9%86%20%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85%D8%B2%D8%A7%D8%AF%D9%87" class="text-ellipsis text-xs text-muted" asb="boz">محسن ابراهیمزاده</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="72904" data-title="پاشو بیا" data-artist="شهاب موزاففری" data-music="/file/763513/96052-277d5c4c68cd25e_FIVETAMUSIC_.mp3" data-photo="/file/763514/41c84c9e0fc0dd1_FIVETAMUSIC_.jpg" onclick="window.open('/file/763513/96052-277d5c4c68cd25e_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/72904/%D8%B4%D9%87%D8%A7%D8%A8%20%D9%85%D9%88%D8%B2%D8%A7%D9%81%D9%81%D8%B1%DB%8C/%D9%BE%D8%A7%D8%B4%D9%88%20%D8%A8%DB%8C%D8%A7" asb="boz"><img src="/file/763514/41c84c9e0fc0dd1_FIVETAMUSIC_.jpg" alt="پاشو بیا شهاب موزاففری FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/72904/%D8%B4%D9%87%D8%A7%D8%A8%20%D9%85%D9%88%D8%B2%D8%A7%D9%81%D9%81%D8%B1%DB%8C/%D9%BE%D8%A7%D8%B4%D9%88%20%D8%A8%DB%8C%D8%A7" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">پاشو بیا</a>
-<a data-pjax="on" href="/singer/%D8%B4%D9%87%D8%A7%D8%A8%20%D9%85%D9%88%D8%B2%D8%A7%D9%81%D9%81%D8%B1%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">شهاب موزاففری</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73558" data-title="دیره دیگه" data-artist="پوبون" data-music="/file/775864/96704-431913e581656aa_FIVETAMUSIC_.mp3" data-photo="/file/775865/71ea2a49ced7e93_FIVETAMUSIC_.jpg" onclick="window.open('/file/775864/96704-431913e581656aa_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73558/%D9%BE%D9%88%D8%A8%D9%88%D9%86/%D8%AF%DB%8C%D8%B1%D9%87%20%D8%AF%DB%8C%DA%AF%D9%87" asb="boz"><img src="/file/775865/71ea2a49ced7e93_FIVETAMUSIC_.jpg" alt="دیره دیگه پوبون FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73558/%D9%BE%D9%88%D8%A8%D9%88%D9%86/%D8%AF%DB%8C%D8%B1%D9%87%20%D8%AF%DB%8C%DA%AF%D9%87" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">دیره دیگه</a>
-<a data-pjax="on" href="/singer/%D9%BE%D9%88%D8%A8%D9%88%D9%86" class="text-ellipsis text-xs text-muted" asb="boz">پوبون</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73312" data-title="بارون" data-artist="گرشا رضایی" data-music="/file/774802/96455-16b89443ead9718_FIVETAMUSIC_.mp3" data-photo="/file/774803/a9c1fd8f74a2066_FIVETAMUSIC_.jpg" onclick="window.open('/file/774802/96455-16b89443ead9718_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73312/%DA%AF%D8%B1%D8%B4%D8%A7%20%D8%B1%D8%B6%D8%A7%DB%8C%DB%8C/%D8%A8%D8%A7%D8%B1%D9%88%D9%86" asb="boz"><img src="/file/774803/a9c1fd8f74a2066_FIVETAMUSIC_.jpg" alt="بارون گرشا رضایی FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73312/%DA%AF%D8%B1%D8%B4%D8%A7%20%D8%B1%D8%B6%D8%A7%DB%8C%DB%8C/%D8%A8%D8%A7%D8%B1%D9%88%D9%86" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">بارون</a>
-<a data-pjax="on" href="/singer/%DA%AF%D8%B1%D8%B4%D8%A7%20%D8%B1%D8%B6%D8%A7%DB%8C%DB%8C" class="text-ellipsis text-xs text-muted" asb="boz">گرشا رضایی</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
- <div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73031" data-title="دیدی" data-artist="مهراد جام" data-music="/file/763797/96179-0c741302dabbd86_FIVETAMUSIC_.mp3" data-photo="/file/763798/de1a57918d767c8_FIVETAMUSIC_.jpg" onclick="window.open('/file/763797/96179-0c741302dabbd86_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73031/%D9%85%D9%87%D8%B1%D8%A7%D8%AF%20%D8%AC%D8%A7%D9%85/%D8%AF%DB%8C%D8%AF%DB%8C" asb="boz"><img src="/file/763798/de1a57918d767c8_FIVETAMUSIC_.jpg" alt="دیدی مهراد جام FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73031/%D9%85%D9%87%D8%B1%D8%A7%D8%AF%20%D8%AC%D8%A7%D9%85/%D8%AF%DB%8C%D8%AF%DB%8C" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">دیدی</a>
-<a data-pjax="on" href="/singer/%D9%85%D9%87%D8%B1%D8%A7%D8%AF%20%D8%AC%D8%A7%D9%85" class="text-ellipsis text-xs text-muted" asb="boz">مهراد جام</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73386" data-title="فقط با من (فت هومان)" data-artist="بهزاد لیتو" data-music="/file/775134/96529-993a9d1f43760b9_FIVETAMUSIC_.mp3" data-photo="/file/775135/bdf4b60f23ebb72_FIVETAMUSIC_.jpg" onclick="window.open('/file/775134/96529-993a9d1f43760b9_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73386/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%84%DB%8C%D8%AA%D9%88/%D9%81%D9%82%D8%B7%20%D8%A8%D8%A7%20%D9%85%D9%86%20%28%D9%81%D8%AA%20%D9%87%D9%88%D9%85%D8%A7%D9%86%29" asb="boz"><img src="/file/775135/bdf4b60f23ebb72_FIVETAMUSIC_.jpg" alt="فقط با من (فت هومان) بهزاد لیتو FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73386/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%84%DB%8C%D8%AA%D9%88/%D9%81%D9%82%D8%B7%20%D8%A8%D8%A7%20%D9%85%D9%86%20%28%D9%81%D8%AA%20%D9%87%D9%88%D9%85%D8%A7%D9%86%29" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">فقط با من (فت هومان)</a>
-<a data-pjax="on" href="/singer/%D8%A8%D9%87%D8%B2%D8%A7%D8%AF%20%D9%84%DB%8C%D8%AA%D9%88" class="text-ellipsis text-xs text-muted" asb="boz">بهزاد لیتو</a>
-</div>
-</div>
-</div>
-<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-<div class="item">
-<div class="pos-rlt">
-<div class="item-overlay opacity r r-2x bg-black">
-<div class="center text-center m-t-n"><a href="javascript:void(0)" asb="boz">
-<i class="play-now fa fa-play-circle i-2x" data-columns="3" data-id="73187" data-title="دردسر" data-artist="سوگند" data-music="/file/774211/96329-21937aa9c5aee15_FIVETAMUSIC_.mp3" data-photo="/file/774212/7e2c6be8dccc9bf_FIVETAMUSIC_.jpg" onclick="window.open('/file/774211/96329-21937aa9c5aee15_FIVETAMUSIC_.mp3', '_blank')">
-</i>
-</a>
-</div>
-</div>
-<a href="/song/73187/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AF%D8%B1%D8%AF%D8%B3%D8%B1" asb="boz"><img src="/file/774212/7e2c6be8dccc9bf_FIVETAMUSIC_.jpg" alt="دردسر سوگند FIVETAMUSIC" class="r r-2x img-full"></a></div>
-<div class="padder-v">
-<a href="/song/73187/%D8%B3%D9%88%DA%AF%D9%86%D8%AF/%D8%AF%D8%B1%D8%AF%D8%B3%D8%B1" data-pjax="on" data-replace="true" class="text-ellipsis" asb="boz">دردسر</a>
-<a data-pjax="on" href="/singer/%D8%B3%D9%88%DA%AF%D9%86%D8%AF" class="text-ellipsis text-xs text-muted" asb="boz">سوگند</a>
-</div>
-</div>
-</div>
-</div>
-<ul class="pagination">
-<li class="page-item disabled"><span class="page-link">&lsaquo;</span></li>
-<li class="page-item active"><span class="page-link">1</span></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=2">2</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=3">3</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=4">4</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=5">5</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=6">6</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=7">7</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=8">8</a></li>
-<li class="page-item disabled"><span class="page-link">...</span></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=4029">4029</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=4030">4030</a></li>
-<li class="page-item"><a class="page-link" href="https://fiveta.ir?page=2" rel="next">&rsaquo;</a></li>
-</ul>
-</section>
-</section>
-</section>
-</section>
-</section>
-<footer class="footer bg-info dker">
-<div id="jp_container_N" class="jp-video-270p">
-<div class="jp-type-playlist">
-<div id="jplayer_N" class="jp-jplayer hide" style="width: 480px; height: 270px;">
-
-
-
-</div>
-<div class="jp-gui">
-<div class="jp-video-play hide" style="display: block;"><a class="jp-video-play-icon" asb="boz">play</a></div>
-<div class="jp-interface">
-<div class="jp-controls">
-<div><a class="jp-previous" asb="boz"><i class="icon-control-rewind i-lg"></i></a></div>
-<div><a class="jp-play" style="display: inline-block;" asb="boz"><i class="icon-control-play i-2x"></i></a> <a class="jp-pause hid" style="display: none;" asb="boz"><i class="icon-control-pause i-2x"></i></a></div>
-<div><a class="jp-next" asb="boz"><i class="icon-control-forward i-lg"></i></a>
-</div>
-<div class="hide"><a class="jp-stop" asb="boz"><i class="fa fa-stop"></i></a></div>
-<div><a class="" data-toggle="dropdown" data-target="#playlist" asb="boz"><i class="icon-list"></i></a></div>
-<div class="jp-progress hidden-xs">
-<div class="jp-seek-bar dk" style="width: 0%;">
-<div class="jp-play-bar bg-info" style="width: 0%;"></div>
-<div class="jp-title text-lt" style="display: none;">FIVETA</div>
-</div>
-</div>
-<div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:00
-</div>
-<div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:00</div>
-<div class="hidden-xs hidden-sm"><a class="jp-mute" title="mute" asb="boz"><i class="icon-volume-2"></i></a>
-<a class="jp-unmute hid" title="unmute" style="display: none;" asb="boz"><i class="icon-volume-off"></i></a></div>
-<div class="hidden-xs hidden-sm jp-volume">
-<div class="jp-volume-bar dk">
-<div class="jp-volume-bar-value lter" style="width: 28%;"></div>
-</div>
-</div>
-<div><a class="jp-shuffle" title="shuffle" asb="boz"><i class="icon-shuffle text-muted"></i></a> <a class="jp-shuffle-off hid" title="shuffle off" style="display: none;" asb="boz"><i class="icon-shuffle text-lt"></i></a></div>
-<div><a class="jp-repeat" title="repeat" asb="boz"><i class="icon-loop text-muted"></i></a> <a class="jp-repeat-off hid" title="repeat off" style="display: none;" asb="boz"><i class="icon-loop text-lt"></i></a></div>
-<div class="hide"><a class="jp-full-screen" title="full screen" asb="boz"><i class="fa fa-expand"></i></a> <a class="jp-restore-screen" title="restore screen" style="display: none;" asb="boz"><i class="fa fa-compress text-lt"></i></a></div>
-</div>
-</div>
-</div>
-<div class="jp-playlist dropup" id="playlist">
-<ul class="dropdown-menu aside-xl dker" style="display: block;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ul>
-</div>
-
-
-
-</div>
-</div>
-</footer>
-</section>
-
-</section>
-</section>
-</section>
-</section>
-
-
-<script src="/static_assets/app_002.js"></script>
-<script type="text/javascript" src="/static_assets/jquery.js"></script>
-<script type="text/javascript" src="/static_assets/jplayer.js"></script>
-<script type="text/javascript" src="/static_assets/demo.js"></script>
-<script type="text/javascript" src="/static_assets/jquery.pjax.min.js"></script>
-<script>
-    (function($) {
-        $.pjax.defaults.timeout = 5678
-        $(document).on("pjax:end", function(event) {
-            $(event.target).find("script[data-exec-on-popstate]").each(function() {
-                $.globalEval(this.text || this.textContent || this.innerHTML || '');
-            })
-            gtag('config', 'UA-84050407-5', {'page_path': window.location.pathname + window.location.search});
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <span>🎵</span>
+            <span data-en="Fiveta Music" data-fa="فایو تا">فایو تا</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-en="Home" data-fa="خانه">خانه</a></li>
+            <li><a href="#features" data-en="Features" data-fa="ویژگی‌ها">ویژگی‌ها</a></li>
+            <li><a href="#playlists" data-en="Playlists" data-fa="پلی‌لیست‌ها">پلی‌لیست‌ها</a></li>
+            <li><a href="#about" data-en="About" data-fa="درباره ما">درباره ما</a></li>
+            
+        </ul>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn active" data-lang="fa">فا</button>
+            </div>
+                            <button class="cta-button" onclick="window.location.href='/register'" data-en="Get Started" data-fa="شروع کنید">شروع کنید</button>
+                    </div>
+        <button class="mobile-menu-button" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Experience Music Like Never Before" data-fa="موسیقی را متفاوت تجربه کنید">موسیقی را متفاوت تجربه کنید</h1>
+            <p class="hero-subtitle" data-en="Discover millions of songs, create playlists, and enjoy high-quality streaming with Fiveta Music. Your ultimate music companion." data-fa="میلیون‌ها آهنگ را کشف کنید، پلی‌لیست بسازید و از پخش با کیفیت بالا لذت ببرید. همراه نهایی موسیقی شما.">میلیون‌ها آهنگ را کشف کنید، پلی‌لیست بسازید و از پخش با کیفیت بالا لذت ببرید. همراه نهایی موسیقی شما.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="window.location.href='/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF'">
+                    <i class="fas fa-play"></i>
+                    <span data-en="Start Listening Free" data-fa="شروع گوش دادن رایگان">شروع گوش دادن رایگان</span>
+                </button>
+                <button class="btn-secondary" onclick="document.querySelector('#features').scrollIntoView({ behavior: 'smooth', block: 'start' })">
+                    <i class="fas fa-info-circle"></i>
+                    <span data-en="Learn More" data-fa="اطلاعات بیشتر">اطلاعات بیشتر</span>
+                </button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card fade-in">
+                    <div class="stat-number">50M+</div>
+                    <div class="stat-label" data-en="Songs" data-fa="آهنگ">آهنگ</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">10M+</div>
+                    <div class="stat-label" data-en="Active Users" data-fa="کاربر فعال">کاربر فعال</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">100K+</div>
+                    <div class="stat-label" data-en="Artists" data-fa="هنرمند">هنرمند</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label" data-en="Rating" data-fa="امتیاز">امتیاز</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2 class="section-title" data-en="Why Choose Fiveta Music?" data-fa="چرا فایو تا؟">Why Choose Fiveta Music?</h2>
+            <p class="section-subtitle" data-en="Powerful features designed to enhance your music listening experience" data-fa="ویژگی‌های قدرتمند طراحی شده برای بهبود تجربه گوش دادن به موسیقی">Powerful features designed to enhance your music listening experience</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3 class="feature-title" data-en="Unlimited Streaming" data-fa="پخش نامحدود">Unlimited Streaming</h3>
+                <p class="feature-description" data-en="Access millions of songs with high-quality audio streaming. No limits, no interruptions." data-fa="دسترسی به میلیون‌ها آهنگ با پخش صوتی با کیفیت بالا. بدون محدودیت، بدون وقفه.">Access millions of songs with high-quality audio streaming. No limits, no interruptions.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="feature-title" data-en="Personalized Playlists" data-fa="پلی‌لیست‌های شخصی">Personalized Playlists</h3>
+                <p class="feature-description" data-en="AI-powered recommendations based on your listening habits and preferences." data-fa="پیشنهادات هوشمند بر اساس عادات و ترجیحات گوش دادن شما.">AI-powered recommendations based on your listening habits and preferences.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h3 class="feature-title" data-en="Offline Mode" data-fa="حالت آفلاین">Offline Mode</h3>
+                <p class="feature-description" data-en="Download your favorite tracks and listen anywhere, anytime without internet." data-fa="آهنگ‌های مورد علاقه خود را دانلود کنید و در هر کجا و هر زمان بدون اینترنت گوش دهید.">Download your favorite tracks and listen anywhere, anytime without internet.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-podcast"></i>
+                </div>
+                <h3 class="feature-title" data-en="Podcasts & Radio" data-fa="پادکست و رادیو">Podcasts & Radio</h3>
+                <p class="feature-description" data-en="Explore trending podcasts and live radio stations from around the world." data-fa="کشف پادکست‌های ترند و ایستگاه‌های رادیویی زنده از سراسر جهان.">Explore trending podcasts and live radio stations from around the world.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="feature-title" data-en="Social Features" data-fa="امکانات اجتماعی">Social Features</h3>
+                <p class="feature-description" data-en="Share your playlists, follow friends, and discover what others are listening to." data-fa="پلی‌لیست‌های خود را به اشتراک بگذارید، دوستان را دنبال کنید و کشف کنید دیگران به چه چیزی گوش می‌دهند.">Share your playlists, follow friends, and discover what others are listening to.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="feature-title" data-en="Cross-Platform" data-fa="چند پلتفرمی">Cross-Platform</h3>
+                <p class="feature-description" data-en="Seamless experience across all your devices - mobile, desktop, and web." data-fa="تجربه یکپارچه در تمام دستگاه‌های شما - موبایل، دسکتاپ و وب.">Seamless experience across all your devices - mobile, desktop, and web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playlists Section -->
+    <section class="playlists" id="playlists">
+        <div class="section-header">
+            <h2 class="section-title" data-en="Trending Playlists" data-fa="پلی‌لیست‌های پرطرفدار">Trending Playlists</h2>
+            <p class="section-subtitle" data-en="Curated playlists for every mood and moment" data-fa="پلی‌لیست‌های منتخب برای هر حال و هوا">Curated playlists for every mood and moment</p>
+        </div>
+
+        <div class="playlist-grid">
+            <div class="playlist-card">
+                <div class="playlist-image">
+                    <i class="fas fa-fire main-icon"></i>
+                    <i class="fas fa-music music-notes note-1"></i>
+                    <i class="fas fa-music music-notes note-2"></i>
+                    <i class="fas fa-music music-notes note-3"></i>
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="playlist-info">
+                    <h3 class="playlist-title" data-en="Today's Top Hits" data-fa="برترین آهنگ‌های امروز">Today's Top Hits</h3>
+                    <p class="playlist-description" data-en="The hottest tracks right now" data-fa="داغ‌ترین آهنگ‌های این لحظه">The hottest tracks right now</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <div class="playlist-image">
+                    <i class="fas fa-headphones main-icon"></i>
+                    <i class="fas fa-heart music-notes note-1"></i>
+                    <i class="fas fa-compact-disc music-notes note-2"></i>
+                    <i class="fas fa-music music-notes note-3"></i>
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="playlist-info">
+                    <h3 class="playlist-title" data-en="Chill Vibes" data-fa="حال آرامش">Chill Vibes</h3>
+                    <p class="playlist-description" data-en="Relax and unwind with these tracks" data-fa="با این آهنگ‌ها آرام بگیرید">Relax and unwind with these tracks</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <div class="playlist-image">
+                    <i class="fas fa-dumbbell main-icon"></i>
+                    <i class="fas fa-bolt music-notes note-1"></i>
+                    <i class="fas fa-running music-notes note-2"></i>
+                    <i class="fas fa-heartbeat music-notes note-3"></i>
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="playlist-info">
+                    <h3 class="playlist-title" data-en="Workout Mix" data-fa="میکس ورزشی">Workout Mix</h3>
+                    <p class="playlist-description" data-en="High energy beats for your fitness" data-fa="ریتم‌های پرانرژی برای تمرین شما">High energy beats for your fitness</p>
+                </div>
+            </div>
+
+            <div class="playlist-card">
+                <div class="playlist-image">
+                    <i class="fas fa-moon main-icon"></i>
+                    <i class="fas fa-star music-notes note-1"></i>
+                    <i class="fas fa-star music-notes note-2"></i>
+                    <i class="fas fa-cloud music-notes note-3"></i>
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="playlist-info">
+                    <h3 class="playlist-title" data-en="Night Owl" data-fa="شب‌نشینی">Night Owl</h3>
+                    <p class="playlist-description" data-en="Perfect for late night listening" data-fa="عالی برای شب‌های دیروقت">Perfect for late night listening</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title" data-en="Ready to Start Your Music Journey?" data-fa="آماده شروع سفر موسیقی خود هستید؟">Ready to Start Your Music Journey?</h2>
+            <p class="cta-text" data-en="Join millions of music lovers and experience the best streaming platform today." data-fa="به میلیون‌ها علاقه‌مند به موسیقی بپیوندید و بهترین پلتفرم پخش را امروز تجربه کنید.">Join millions of music lovers and experience the best streaming platform today.</p>
+            <button class="btn-primary" onclick="window.location.href='/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF'">
+                <i class="fas fa-rocket"></i>
+                <span data-en="Get Started for Free" data-fa="شروع رایگان">Get Started for Free</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-en="Fiveta Music" data-fa="فایو تا">Fiveta Music</h3>
+                <p style="color: var(--text-secondary); line-height: 1.8;" data-en="Your ultimate destination for music streaming. Discover, create, and share the music you love." data-fa="مقصد نهایی شما برای پخش موسیقی. کشف کنید، بسازید و موسیقی مورد علاقه خود را به اشتراک بگذارید.">
+                    Your ultimate destination for music streaming. Discover, create, and share the music you love.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-en="Product" data-fa="محصول">Product</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-en="Features" data-fa="ویژگی‌ها">Features</a></li>
+                    <li><a href="#" data-en="Premium" data-fa="پرمیوم">Premium</a></li>
+                    <li><a href="#" data-en="Download" data-fa="دانلود">Download</a></li>
+                    <li><a href="#" data-en="Mobile App" data-fa="اپلیکیشن موبایل">Mobile App</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-en="Company" data-fa="شرکت">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-en="About Us" data-fa="درباره ما">About Us</a></li>
+                    <li><a href="#" data-en="Careers" data-fa="فرصت‌های شغلی">Careers</a></li>
+                    <li><a href="#" data-en="Press" data-fa="مطبوعات">Press</a></li>
+                    <li><a href="#" data-en="Contact" data-fa="تماس">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-en="Support" data-fa="پشتیبانی">Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-en="Help Center" data-fa="مرکز راهنما">Help Center</a></li>
+                    <li><a href="#" data-en="Terms of Service" data-fa="شرایط خدمات">Terms of Service</a></li>
+                    <li><a href="#" data-en="Privacy Policy" data-fa="حریم خصوصی">Privacy Policy</a></li>
+                    <li><a href="#" data-en="Cookie Policy" data-fa="سیاست کوکی">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-en="&copy; 2025 Fiveta Music. All rights reserved. Made with ❤️ for music lovers." data-fa="&copy; 2025 فایو تا. تمامی حقوق محفوظ است. ساخته شده با ❤️ برای عاشقان موسیقی.">&copy; 2025 Fiveta Music. All rights reserved. Made with ❤️ for music lovers.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Switcher
+        let currentLang = localStorage.getItem('language') || 'fa';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            
+            // Update HTML dir and lang attributes
+            const html = document.getElementById('html-root');
+            html.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+            html.setAttribute('lang', lang === 'fa' ? 'fa' : 'en');
+            
+            // Update all text elements
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) {
+                    // For input elements
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.placeholder = text;
+                    } else {
+                        element.innerHTML = text;
+                    }
+                }
+            });
+            
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+            
+            // Add click handlers to language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    setLanguage(lang);
+                });
+            });
         });
-        $(document).pjax('a[data-pjax], a.page-link, a.list-group-item, a.navbar-heade, a.text-success', '#pcontent');
 
-    })(jQuery);
-</script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            const icon = this.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards
+        document.querySelectorAll('.feature-card, .playlist-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Counter animation for stats
+        function animateCounter(element, target, suffix) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + suffix;
+                }
+            }, 20);
+        }
+
+        // Trigger counter animation when stats are visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumber = entry.target.querySelector('.stat-number');
+                    const text = statNumber.textContent;
+                    const number = parseInt(text.match(/\d+/)[0]);
+                    const suffix = text.replace(/\d+/g, ''); // Extract suffix like "M+", "K+", "★"
+                    animateCounter(statNumber, number, suffix);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-card').forEach(card => {
+            statsObserver.observe(card);
+        });
+    </script>
 </body>
 </html>
