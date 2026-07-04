@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="html-root">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>پرمیوم - فایو تا موزیک | Fiveta Music Premium</title>
+    <meta name="title" content="پرمیوم - فایو تا موزیک | Fiveta Music Premium">
+    <meta name="description" content="ارتقا به پرمیوم و از تمام ویژگی‌های منحصر به فرد لذت ببرید - بدون تبلیغات، پخش نامحدود، کیفیت بالا.">
+    <meta name="keywords" content="پرمیوم موزیک، اشتراک موزیک، فایو تا">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #ec4899;
+            --accent-color: #8b5cf6;
+            --dark-bg: #0f172a;
+            --light-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+        [dir="rtl"] body { font-family: 'Vazirmatn', sans-serif; }
+        
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .lang-btn.active {
+            background: var(--gradient-1);
+            color: white;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button {
+            padding: 0.75rem 2rem;
+            background: var(--gradient-1);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 5% 3rem;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .section {
+            padding: 6rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+        
+        .pricing-card {
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .pricing-card.featured {
+            border-color: rgba(99, 102, 241, 0.5);
+            background: rgba(99, 102, 241, 0.05);
+            transform: scaleY(1.05);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .plan-period {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .plan-features li {
+            padding: 0.8rem 0;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .plan-features li i {
+            color: var(--primary-color);
+        }
+        
+        .plan-button {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: var(--gradient-1);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .plan-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            padding: 4rem 5%;
+            background: rgba(15, 23, 42, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+
+    <nav id="navbar">
+        <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+            <span>🎵</span>
+            <span data-en="Fiveta Music" data-fa="فایو تا">فایو تا</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
+            <li><a href="features.html" data-en="Features" data-fa="ویژگی‌ها">Features</a></li>
+            <li><a href="premium.html" data-en="Premium" data-fa="پرمیوم">Premium</a></li>
+        </ul>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fa">فا</button>
+            </div>
+            <button class="cta-button" onclick="window.location.href='index.html'" data-en="Home" data-fa="خانه">Home</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Premium Plans" data-fa="پلن‌های پرمیوم">Premium Plans</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 1rem;" data-en="Choose the perfect plan for you" data-fa="بهترین پلن را برای خود انتخاب کنید">Choose the perfect plan for you</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3 class="plan-name" data-en="Free" data-fa="رایگان">Free</h3>
+                <div class="plan-price">$0</div>
+                <div class="plan-period" data-en="Forever" data-fa="برای همیشه">Forever</div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i><span data-en="Access to millions of songs" data-fa="دسترسی به میلیون‌ها آهنگ">Access to millions of songs</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Standard audio quality" data-fa="کیفیت صوتی استاندارد">Standard audio quality</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Create playlists" data-fa="ایجاد پلی‌لیست">Create playlists</span></li>
+                    <li><i class="fas fa-times"></i><span style="text-decoration: line-through;" data-en="Ad-free listening" data-fa="بدون تبلیغات">Ad-free listening</span></li>
+                    <li><i class="fas fa-times"></i><span style="text-decoration: line-through;" data-en="Offline downloads" data-fa="دانلود آفلاین">Offline downloads</span></li>
+                </ul>
+                <button class="plan-button" data-en="Get Started" data-fa="شروع کنید">Get Started</button>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="featured-badge" data-en="Most Popular" data-fa="محبوب‌ترین">Most Popular</div>
+                <h3 class="plan-name" data-en="Premium" data-fa="پرمیوم">Premium</h3>
+                <div class="plan-price">$9.99</div>
+                <div class="plan-period" data-en="Per month" data-fa="در ماه">Per month</div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i><span data-en="All Free features" data-fa="تمام ویژگی‌های رایگان">All Free features</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Ad-free listening" data-fa="بدون تبلیغات">Ad-free listening</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="High audio quality" data-fa="کیفیت صوتی بالا">High audio quality</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Offline downloads" data-fa="دانلود آفلاین">Offline downloads</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Mobile & Web access" data-fa="دسترسی موبایل و وب">Mobile & Web access</span></li>
+                </ul>
+                <button class="plan-button" data-en="Subscribe Now" data-fa="اشتراک بگذارید">Subscribe Now</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="plan-name" data-en="Family" data-fa="خانوادگی">Family</h3>
+                <div class="plan-price">$14.99</div>
+                <div class="plan-period" data-en="Per month" data-fa="در ماه">Per month</div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i><span data-en="Up to 6 accounts" data-fa="تا 6 حساب">Up to 6 accounts</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="All Premium features" data-fa="تمام ویژگی‌های پرمیوم">All Premium features</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Family Mix playlist" data-fa="پلی‌لیست خانوادگی">Family Mix playlist</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Parental controls" data-fa="کنترل والدین">Parental controls</span></li>
+                    <li><i class="fas fa-check"></i><span data-en="Explicit content filter" data-fa="فیلتر محتوای صریح">Explicit content filter</span></li>
+                </ul>
+                <button class="plan-button" data-en="Subscribe Now" data-fa="اشتراک بگذارید">Subscribe Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-en="Fiveta Music" data-fa="فایو تا">Fiveta Music</h3>
+                <p style="color: var(--text-secondary);" data-en="Your ultimate destination for music streaming." data-fa="مقصد نهایی شما برای پخش موسیقی.">Your ultimate destination for music streaming.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-en="Product" data-fa="محصول">Product</h3>
+                <ul class="footer-links">
+                    <li><a href="features.html" data-en="Features" data-fa="ویژگی‌ها">Features</a></li>
+                    <li><a href="premium.html" data-en="Premium" data-fa="پرمیوم">Premium</a></li>
+                    <li><a href="download.html" data-en="Download" data-fa="دانلود">Download</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-en="Company" data-fa="شرکت">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html" data-en="About Us" data-fa="درباره ما">About Us</a></li>
+                    <li><a href="careers.html" data-en="Careers" data-fa="شغلی">Careers</a></li>
+                    <li><a href="contact.html" data-en="Contact" data-fa="تماس">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 data-en="Support" data-fa="پشتیبانی">Support</h3>
+                <ul class="footer-links">
+                    <li><a href="help.html" data-en="Help Center" data-fa="مرکز راهنما">Help Center</a></li>
+                    <li><a href="privacy.html" data-en="Privacy Policy" data-fa="حریم خصوصی">Privacy Policy</a></li>
+                    <li><a href="terms.html" data-en="Terms" data-fa="شرایط">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-en="&copy; 2026 Fiveta Music. All rights reserved." data-fa="&copy; 2026 فایو تا. تمامی حقوق محفوظ است.">&copy; 2026 Fiveta Music. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentLang = localStorage.getItem('language') || 'en';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            
+            const html = document.getElementById('html-root');
+            html.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+            html.setAttribute('lang', lang === 'fa' ? 'fa' : 'en');
+            
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) element.innerHTML = text;
+            });
+            
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) btn.classList.add('active');
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    setLanguage(this.getAttribute('data-lang'));
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="html-root">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile App - Fiveta Music | اپلیکیشن موبایل - فایو تا</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-color: #6366f1;
+            --dark-bg: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        body { font-family: 'Poppins', sans-serif; background: var(--dark-bg); color: var(--text-primary); overflow-x: hidden; }
+        [dir="rtl"] body { font-family: 'Vazirmatn', sans-serif; }
+        .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        nav { position: fixed; top: 0; width: 100%; padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .logo { font-size: 1.8rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+        .lang-switcher { display: flex; gap: 0.5rem; background: rgba(255, 255, 255, 0.05); padding: 0.5rem; border-radius: 25px; }
+        .lang-btn { padding: 0.5rem 1rem; background: transparent; border: none; color: var(--text-secondary); cursor: pointer; border-radius: 20px; font-weight: 600; }
+        .lang-btn.active { background: var(--gradient-1); color: white; }
+        .hero { min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 6rem 5% 3rem; }
+        .hero-title { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .section { padding: 4rem 5%; max-width: 1400px; margin: 0 auto; }
+        .features-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .feature-item { padding: 2rem; background: rgba(255, 255, 255, 0.03); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .feature-item i { font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem; }
+        .feature-item h3 { margin: 1rem 0 0.5rem; }
+        footer { padding: 3rem 5%; background: rgba(15, 23, 42, 0.5); border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+            <span>🎵</span>
+            <span data-en="Fiveta Music" data-fa="فایو تا">Fiveta Music</span>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn active" data-lang="fa">فا</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div style="text-align: center;">
+            <h1 class="hero-title" data-en="Mobile App" data-fa="اپلیکیشن موبایل">Mobile App</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 1rem;" data-en="Take music everywhere with you" data-fa="موسیقی را همیشه با خود ببرید">Take music everywhere with you</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem;" data-en="App Features" data-fa="ویژگی‌های اپلیکیشن">App Features</h2>
+        <div class="features-list">
+            <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3 data-en="Optimized Interface" data-fa="رابط کاربری بهینه">Optimized Interface</h3>
+                <p style="color: var(--text-secondary);" data-en="Clean and user-friendly design" data-fa="طراحی تمیز و کاربر‌پسند">Clean and user-friendly design</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-download"></i>
+                <h3 data-en="Offline Downloads" data-fa="دانلود آفلاین">Offline Downloads</h3>
+                <p style="color: var(--text-secondary);" data-en="Download music to listen later" data-fa="موسیقی را دانلود کنید و بعداً گوش دهید">Download music to listen later</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-battery-full"></i>
+                <h3 data-en="Battery Optimization" data-fa="بهینه‌سازی باتری">Battery Optimization</h3>
+                <p style="color: var(--text-secondary);" data-en="Lower battery consumption" data-fa="مصرف باتری پایین‌تر">Lower battery consumption</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-cloud"></i>
+                <h3 data-en="Cloud Sync" data-fa="تزامن ابری">Cloud Sync</h3>
+                <p style="color: var(--text-secondary);" data-en="Sync across all your devices" data-fa="در تمام دستگاه‌ها تزامن شود">Sync across all your devices</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p data-en="&copy; 2026 Fiveta Music. All rights reserved." data-fa="&copy; 2026 فایو تا. تمامی حقوق محفوظ است.">&copy; 2026 Fiveta Music. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentLang = localStorage.getItem('language') || 'fa';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            
+            const html = document.getElementById('html-root');
+            html.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+            html.setAttribute('lang', lang === 'fa' ? 'fa' : 'en');
+            
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) element.innerHTML = text;
+            });
+            
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) btn.classList.add('active');
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    setLanguage(this.getAttribute('data-lang'));
+                });
+            });
+        });
+    </script>
+</body>
+</html>

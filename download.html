@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" id="html-root">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>دانلود - فایو تا موزیک | Fiveta Music Download</title>
+    <meta name="title" content="دانلود - فایو تا موزیک | Fiveta Music Download">
+    <meta name="description" content="فایو تا را دانلود کنید و موسیقی را در هر کجا پخش کنید - iOS, Android, Windows, Mac.">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary-color: #6366f1;
+            --dark-bg: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+        [dir="rtl"] body { font-family: 'Vazirmatn', sans-serif; }
+        
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem;
+            border-radius: 25px;
+        }
+        
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        .lang-btn.active {
+            background: var(--gradient-1);
+            color: white;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .cta-button {
+            padding: 0.75rem 2rem;
+            background: var(--gradient-1);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 5% 3rem;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .section {
+            padding: 4rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .download-card {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .download-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        
+        .download-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .download-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.8rem;
+            background: var(--gradient-1);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        footer {
+            padding: 3rem 5%;
+            background: rgba(15, 23, 42, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+            <span>🎵</span>
+            <span data-en="Fiveta Music" data-fa="فایو تا">فایو تا</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-en="Home" data-fa="خانه">Home</a></li>
+            <li><a href="features.html" data-en="Features" data-fa="ویژگی‌ها">Features</a></li>
+        </ul>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fa">فا</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div style="text-align: center;">
+            <h1 class="hero-title" data-en="Download Fiveta Music" data-fa="دانلود فایو تا">Download Fiveta Music</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 1rem;" data-en="Available on all your devices" data-fa="در تمام دستگاه‌های شما موجود">Available on all your devices</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="download-grid">
+            <div class="download-card">
+                <div class="download-icon"><i class="fab fa-apple"></i></div>
+                <h3 class="download-title" data-en="iOS" data-fa="iOS">iOS</h3>
+                <p style="color: var(--text-secondary); margin: 1rem 0;" data-en="iPhone and iPad" data-fa="آیفون و آیپد">iPhone and iPad</p>
+                <a href="#" class="download-btn" data-en="Download" data-fa="دانلود">Download</a>
+            </div>
+
+            <div class="download-card">
+                <div class="download-icon"><i class="fab fa-android"></i></div>
+                <h3 class="download-title" data-en="Android" data-fa="Android">Android</h3>
+                <p style="color: var(--text-secondary); margin: 1rem 0;" data-en="Android devices" data-fa="دستگاه‌های Android">Android devices</p>
+                <a href="#" class="download-btn" data-en="Download" data-fa="دانلود">Download</a>
+            </div>
+
+            <div class="download-card">
+                <div class="download-icon"><i class="fab fa-windows"></i></div>
+                <h3 class="download-title" data-en="Windows" data-fa="Windows">Windows</h3>
+                <p style="color: var(--text-secondary); margin: 1rem 0;" data-en="Windows 10 and later" data-fa="Windows 10 و بالاتر">Windows 10 and later</p>
+                <a href="#" class="download-btn" data-en="Download" data-fa="دانلود">Download</a>
+            </div>
+
+            <div class="download-card">
+                <div class="download-icon"><i class="fab fa-apple"></i></div>
+                <h3 class="download-title" data-en="macOS" data-fa="macOS">macOS</h3>
+                <p style="color: var(--text-secondary); margin: 1rem 0;" data-en="Mac computers" data-fa="کامپیوتر‌های Mac">Mac computers</p>
+                <a href="#" class="download-btn" data-en="Download" data-fa="دانلود">Download</a>
+            </div>
+
+            <div class="download-card">
+                <div class="download-icon"><i class="fab fa-chrome"></i></div>
+                <h3 class="download-title" data-en="Web App" data-fa="برنامه وب">Web App</h3>
+                <p style="color: var(--text-secondary); margin: 1rem 0;" data-en="Any web browser" data-fa="هر مرورگر">Any web browser</p>
+                <a href="#" class="download-btn" data-en="Visit Web" data-fa="رفتن به وب">Visit Web</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p data-en="&copy; 2026 Fiveta Music. All rights reserved." data-fa="&copy; 2026 فایو تا. تمامی حقوق محفوظ است.">&copy; 2026 Fiveta Music. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentLang = localStorage.getItem('language') || 'en';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            document.getElementById('html-root').setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.innerHTML = el.getAttribute(`data-${lang}`);
+            });
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) btn.classList.add('active');
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    setLanguage(this.getAttribute('data-lang'));
+                });
+            });
+        });
+    </script>
+</body>
+</html>

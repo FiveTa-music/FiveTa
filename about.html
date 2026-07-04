@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>درباره ما - فایو تا | Fiveta Music About Us</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary-color: #6366f1; --dark-bg: #0f172a; --text-primary: #f8fafc; --text-secondary: #cbd5e1; --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        body { font-family: 'Poppins', sans-serif; background: var(--dark-bg); color: var(--text-primary); overflow-x: hidden; }
+        [dir="rtl"] body { font-family: 'Vazirmatn', sans-serif; }
+        .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        nav { position: fixed; top: 0; width: 100%; padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .logo { font-size: 1.8rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; cursor: pointer; }
+        .hero { min-height: 60vh; display: flex; align-items: center; justify-content: center; padding: 6rem 5% 3rem; }
+        .hero-title { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; margin-bottom: 1.5rem; background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .section { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section-text { font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 2rem; }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .value-card { padding: 2rem; background: rgba(255, 255, 255, 0.03); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .value-card i { font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem; }
+        footer { padding: 3rem 5%; background: rgba(15, 23, 42, 0.5); text-align: center; color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+            <span>🎵</span>
+            <span data-en="Fiveta Music" data-fa="فایو تا">Fiveta Music</span>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="lang-switcher" style="display: flex; gap: 0.5rem; background: rgba(255, 255, 255, 0.05); padding: 0.5rem; border-radius: 25px;">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fa" style="background: transparent; border: none; color: var(--text-secondary); cursor: pointer; border-radius: 20px; font-weight: 600; padding: 0.5rem 1rem;">فا</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div style="text-align: center; max-width: 800px;">
+            <h1 class="hero-title">درباره فایو تا</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 1rem;">پلتفرم موسیقی نسل جدید</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem;">داستان ما</h2>
+        <p class="section-text">
+            فایو تا در سال ۱۴۰۰ با هدف تغییر نحوه گوش دادن مردم به موسیقی تأسیس شد. ما باور داریم که موسیقی برای همه باید قابل دسترس و لذت‌بخش باشد.
+        </p>
+        <p class="section-text">
+            امروزه ما میلیون‌ها کاربر در سراسر جهان را خدمت می‌دهیم و به عنوان یکی از بزرگ‌ترین پلتفرم‌های موسیقی شناخته می‌شویم.
+        </p>
+
+        <h2 style="font-size: 2rem; margin: 3rem 0 2rem;">ارزش‌های ما</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>عشق به موسیقی</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">موسیقی در قلب تمام کاری است که ما انجام می‌دهیم</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>تمرکز بر کاربر</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">تجربه کاربر بهترین اولویت ما است</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>نوآوری</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">ما به طور مداوم تکنولوژی را بهتر می‌کنیم</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Fiveta Music</p>
+    </footer>
+</body>
+</html>

@@ -88,12 +88,13 @@
       "url": "https://fiveta.ir/",
       "logo": "https://fiveta.ir/assets/images/logo.png",
       "description": "سرویس پخش آنلاین موسیقی با بیش از 50 میلیون آهنگ",
-      "sameAs": [
-        "https://www.facebook.com/fivetamusic",
-        "https://www.twitter.com/fivetamusic",
-        "https://www.instagram.com/fivetamusic",
-        "https://www.youtube.com/fivetamusic"
-      ],
+            "sameAs": [
+                "https://www.facebook.com/fivetamusic",
+                "https://www.twitter.com/fivetamusic",
+                "https://www.instagram.com/fiveta_music",
+                "https://www.aparat.com/FiveTa",
+                "https://www.youtube.com/fivetamusic"
+            ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -690,6 +691,7 @@
             backdrop-filter: blur(10px);
             position: relative;
             overflow: hidden;
+            z-index: 1;
         }
 
         .cta-content::before {
@@ -701,6 +703,8 @@
             height: 200%;
             background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
             animation: rotate 20s linear infinite;
+            pointer-events: none;
+            z-index: 0;
         }
 
         @keyframes  rotate {
@@ -722,6 +726,11 @@
             margin-bottom: 2.5rem;
             position: relative;
             z-index: 1;
+        }
+
+        .cta-content .btn-primary {
+            position: relative;
+            z-index: 2;
         }
 
         /* Footer */
@@ -915,7 +924,7 @@
                 <button class="lang-btn" data-lang="en">EN</button>
                 <button class="lang-btn active" data-lang="fa">فا</button>
             </div>
-                            <button class="cta-button" onclick="window.location.href='/register'" data-en="Get Started" data-fa="شروع کنید">شروع کنید</button>
+                            <button class="cta-button" onclick="window.location.href='https://fiveta.ir/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF'" data-en="Get Started" data-fa="شروع کنید">شروع کنید</button>
                     </div>
         <button class="mobile-menu-button" id="mobileMenuBtn">
             <i class="fas fa-bars"></i>
@@ -929,7 +938,7 @@
             <p class="hero-subtitle" data-en="Discover millions of songs, create playlists, and enjoy high-quality streaming with Fiveta Music. Your ultimate music companion." data-fa="میلیون‌ها آهنگ را کشف کنید، پلی‌لیست بسازید و از پخش با کیفیت بالا لذت ببرید. همراه نهایی موسیقی شما.">میلیون‌ها آهنگ را کشف کنید، پلی‌لیست بسازید و از پخش با کیفیت بالا لذت ببرید. همراه نهایی موسیقی شما.</p>
             
             <div class="hero-buttons">
-                <button class="btn-primary" onclick="window.location.href='/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF'">
+                <button class="btn-primary" onclick="window.location.href='https://fiveta.ir/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF'">
                     <i class="fas fa-play"></i>
                     <span data-en="Start Listening Free" data-fa="شروع گوش دادن رایگان">شروع گوش دادن رایگان</span>
                 </button>
@@ -941,15 +950,15 @@
 
             <div class="stats">
                 <div class="stat-card fade-in">
-                    <div class="stat-number">50M+</div>
+                    <div class="stat-number">500K+</div>
                     <div class="stat-label" data-en="Songs" data-fa="آهنگ">آهنگ</div>
                 </div>
                 <div class="stat-card fade-in">
-                    <div class="stat-number">10M+</div>
+                    <div class="stat-number">10K+</div>
                     <div class="stat-label" data-en="Active Users" data-fa="کاربر فعال">کاربر فعال</div>
                 </div>
                 <div class="stat-card fade-in">
-                    <div class="stat-number">100K+</div>
+                    <div class="stat-number">20K+</div>
                     <div class="stat-label" data-en="Artists" data-fa="هنرمند">هنرمند</div>
                 </div>
                 <div class="stat-card fade-in">
@@ -1026,7 +1035,7 @@
         </div>
 
         <div class="playlist-grid">
-            <div class="playlist-card">
+            <div class="playlist-card" onclick="window.location.href='https://fiveta.ir/-310-%D8%A8%D8%B1%D8%AA%D8%B1%DB%8C%D9%86%20%D8%A2%D9%87%D9%86%DA%AF%E2%80%8C%D9%87%D8%A7%DB%8C%20%D8%B3%D8%A7%D9%84'">
                 <div class="playlist-image">
                     <i class="fas fa-fire main-icon"></i>
                     <i class="fas fa-music music-notes note-1"></i>
@@ -1042,7 +1051,7 @@
                 </div>
             </div>
 
-            <div class="playlist-card">
+            <div class="playlist-card" onclick="window.location.href='https://fiveta.ir/-9-%D8%B1%D9%85%DB%8C%DA%A9%D8%B3'">
                 <div class="playlist-image">
                     <i class="fas fa-headphones main-icon"></i>
                     <i class="fas fa-heart music-notes note-1"></i>
@@ -1058,7 +1067,7 @@
                 </div>
             </div>
 
-            <div class="playlist-card">
+            <div class="playlist-card" onclick="window.location.href='https://fiveta.ir/-308-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86%20%D8%A2%D9%87%D9%86%DA%AF%20%D9%87%D8%A7'">
                 <div class="playlist-image">
                     <i class="fas fa-dumbbell main-icon"></i>
                     <i class="fas fa-bolt music-notes note-1"></i>
@@ -1074,7 +1083,7 @@
                 </div>
             </div>
 
-            <div class="playlist-card">
+            <div class="playlist-card" onclick="window.location.href='https://fiveta.ir/-309-%D8%A8%D8%B1%D8%AA%D8%B1%DB%8C%D9%86%20%D8%A2%D9%87%D9%86%DA%AF%E2%80%8C%D9%87%D8%A7%DB%8C%20%D9%81%D8%B5%D9%84'">
                 <div class="playlist-image">
                     <i class="fas fa-moon main-icon"></i>
                     <i class="fas fa-star music-notes note-1"></i>
@@ -1097,7 +1106,7 @@
         <div class="cta-content">
             <h2 class="cta-title" data-en="Ready to Start Your Music Journey?" data-fa="آماده شروع سفر موسیقی خود هستید؟">Ready to Start Your Music Journey?</h2>
             <p class="cta-text" data-en="Join millions of music lovers and experience the best streaming platform today." data-fa="به میلیون‌ها علاقه‌مند به موسیقی بپیوندید و بهترین پلتفرم پخش را امروز تجربه کنید.">Join millions of music lovers and experience the best streaming platform today.</p>
-            <button class="btn-primary" onclick="window.location.href='/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF'">
+            <button class="btn-primary" onclick="window.location.href='https://fiveta.ir/-1-%D8%A2%D9%87%D9%86%DA%AF%20%D8%B4%D8%A7%D8%AF'">
                 <i class="fas fa-rocket"></i>
                 <span data-en="Get Started for Free" data-fa="شروع رایگان">Get Started for Free</span>
             </button>
@@ -1112,47 +1121,54 @@
                 <p style="color: var(--text-secondary); line-height: 1.8;" data-en="Your ultimate destination for music streaming. Discover, create, and share the music you love." data-fa="مقصد نهایی شما برای پخش موسیقی. کشف کنید، بسازید و موسیقی مورد علاقه خود را به اشتراک بگذارید.">
                     Your ultimate destination for music streaming. Discover, create, and share the music you love.
                 </p>
+                <p style="margin-top:1rem;color: var(--text-secondary);">
+                    <strong data-en="Contact" data-fa="تماس">Contact</strong>: <a href="mailto:info@fiveta.ir">info@fiveta.ir</a>
+                    &nbsp;&bull;&nbsp;
+                    <!-- <a href="https://www.aparat.com/FiveTa" target="_blank" rel="noopener">Aparat</a>
+                    &nbsp;&bull;&nbsp;
+                    <a href="https://www.instagram.com/fiveta_music" target="_blank" rel="noopener">@fiveta_music</a> -->
+                </p>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="mailto:info@fiveta.ir" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.aparat.com/FiveTa" class="social-link" target="_blank" rel="noopener" aria-label="Aparat"><i class="fas fa-play-circle"></i></a>
+                    <a href="https://www.instagram.com/fiveta_music" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/fivetamusic" class="social-link" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
             <div class="footer-section">
                 <h3 data-en="Product" data-fa="محصول">Product</h3>
                 <ul class="footer-links">
-                    <li><a href="#" data-en="Features" data-fa="ویژگی‌ها">Features</a></li>
-                    <li><a href="#" data-en="Premium" data-fa="پرمیوم">Premium</a></li>
-                    <li><a href="#" data-en="Download" data-fa="دانلود">Download</a></li>
-                    <li><a href="#" data-en="Mobile App" data-fa="اپلیکیشن موبایل">Mobile App</a></li>
+                    <li><a href="features.html" data-en="Features" data-fa="ویژگی‌ها">Features</a></li>
+                    <li><a href="premium.html" data-en="Premium" data-fa="پرمیوم">Premium</a></li>
+                    <li><a href="download.html" data-en="Download" data-fa="دانلود">Download</a></li>
+                    <li><a href="mobile-app.html" data-en="Mobile App" data-fa="اپلیکیشن موبایل">Mobile App</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h3 data-en="Company" data-fa="شرکت">Company</h3>
                 <ul class="footer-links">
-                    <li><a href="#" data-en="About Us" data-fa="درباره ما">About Us</a></li>
-                    <li><a href="#" data-en="Careers" data-fa="فرصت‌های شغلی">Careers</a></li>
-                    <li><a href="#" data-en="Press" data-fa="مطبوعات">Press</a></li>
-                    <li><a href="#" data-en="Contact" data-fa="تماس">Contact</a></li>
+                    <li><a href="about.html" data-en="About Us" data-fa="درباره ما">About Us</a></li>
+                    <li><a href="careers.html" data-en="Careers" data-fa="فرصت‌های شغلی">Careers</a></li>
+                    <li><a href="press.html" data-en="Press" data-fa="مطبوعات">Press</a></li>
+                    <li><a href="mailto:info@fiveta.ir" data-en="Contact" data-fa="تماس">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h3 data-en="Support" data-fa="پشتیبانی">Support</h3>
                 <ul class="footer-links">
-                    <li><a href="#" data-en="Help Center" data-fa="مرکز راهنما">Help Center</a></li>
-                    <li><a href="#" data-en="Terms of Service" data-fa="شرایط خدمات">Terms of Service</a></li>
-                    <li><a href="#" data-en="Privacy Policy" data-fa="حریم خصوصی">Privacy Policy</a></li>
-                    <li><a href="#" data-en="Cookie Policy" data-fa="سیاست کوکی">Cookie Policy</a></li>
+                    <li><a href="help.html" data-en="Help Center" data-fa="مرکز راهنما">Help Center</a></li>
+                    <li><a href="terms.html" data-en="Terms of Service" data-fa="شرایط خدمات">Terms of Service</a></li>
+                    <li><a href="privacy.html" data-en="Privacy Policy" data-fa="حریم خصوصی">Privacy Policy</a></li>
+                    <li><a href="cookie-policy.html" data-en="Cookie Policy" data-fa="سیاست کوکی">Cookie Policy</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p data-en="&copy; 2025 Fiveta Music. All rights reserved. Made with ❤️ for music lovers." data-fa="&copy; 2025 فایو تا. تمامی حقوق محفوظ است. ساخته شده با ❤️ برای عاشقان موسیقی.">&copy; 2025 Fiveta Music. All rights reserved. Made with ❤️ for music lovers.</p>
+            <p data-en="&copy; 2026 Fiveta Music. All rights reserved. Made with ❤️ for music lovers." data-fa="&copy; 2026 فایو تا. تمامی حقوق محفوظ است. ساخته شده با ❤️ برای عاشقان موسیقی.">&copy; 2026 Fiveta Music. All rights reserved. Made with ❤️ for music lovers.</p>
         </div>
     </footer>
 

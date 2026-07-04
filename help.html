@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مرکز راهنما - فایو تا | Help Center</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary-color: #6366f1; --dark-bg: #0f172a; --text-primary: #f8fafc; --text-secondary: #cbd5e1; --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        body { font-family: 'Poppins', sans-serif; background: var(--dark-bg); color: var(--text-primary); overflow-x: hidden; }
+        [dir="rtl"] body { font-family: 'Vazirmatn', sans-serif; }
+        .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        nav { position: fixed; top: 0; width: 100%; padding: 1.5rem 5%; display: flex; justify-content: space-between; z-index: 1000; background: rgba(15, 23, 42, 0.8); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .logo { font-size: 1.8rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; cursor: pointer; }
+        .hero { min-height: 50vh; display: flex; align-items: center; justify-content: center; padding: 6rem 5% 3rem; }
+        .hero-title { font-size: clamp(2rem, 8vw, 4rem); font-weight: 800; background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .section { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .faq-item { margin-bottom: 2rem; }
+        .faq-question { padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border-radius: 12px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.3s ease; }
+        .faq-question:hover { border-color: rgba(99, 102, 241, 0.3); }
+        .faq-question h3 { font-size: 1.1rem; }
+        .faq-answer { padding: 1rem 1.5rem 0; color: var(--text-secondary); display: none; }
+        .faq-item.active .faq-answer { display: block; }
+        footer { padding: 3rem 5%; background: rgba(15, 23, 42, 0.5); text-align: center; color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <nav>
+        <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+            <span>🎵</span>
+            <span data-en="FiveTa" data-fa="فایو تا">FiveTa</span>
+        </div>
+        <div class="lang-switcher" style="display: flex; gap: 0.5rem;">
+            <button class="lang-btn active" data-lang="en" style="padding: 0.5rem 1rem; background: rgba(99, 102, 241, 0.2); border: 1px solid rgba(99, 102, 241, 0.5); border-radius: 8px; color: var(--text-primary); cursor: pointer; font-weight: 600; transition: all 0.3s ease;">EN</button>
+            <button class="lang-btn" data-lang="fa" style="padding: 0.5rem 1rem; background: transparent; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: var(--text-primary); cursor: pointer; font-weight: 600; transition: all 0.3s ease;">فا</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div style="text-align: center;">
+            <h1 class="hero-title" data-en="Help Center" data-fa="مرکز راهنما">Help Center</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem;" data-en="Frequently Asked Questions" data-fa="سؤالات متکرر">Frequently Asked Questions</h2>
+        
+        <div class="faq-item active">
+            <div class="faq-question">
+                <h3 data-en="How do I get started?" data-fa="چگونه شروع کنم؟">How do I get started?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p data-en="Download the app, create an account, and start listening to your favorite music." data-fa="برای شروع، نرم‌افزار را دانلود کنید و حساب کاربری بسازید. سپس می‌توانید شروع به گوش دادن کنید.">Download the app, create an account, and start listening to your favorite music.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3 data-en="Is FiveTa free?" data-fa="آیا فایو تا رایگان است؟">Is FiveTa free?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p data-en="Yes, we offer a free tier with basic features. Premium subscription unlocks all features." data-fa="بله، نسخه رایگان وجود دارد. اما برای دسترسی به تمام ویژگی‌ها می‌توانید عضویت پرمیوم بگیرید.">Yes, we offer a free tier with basic features. Premium subscription unlocks all features.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3 data-en="How do I download music?" data-fa="چگونه می‌توانم موسیقی را دانلود کنم؟">How do I download music?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p data-en="With a premium subscription, right-click any song and select 'Download'." data-fa="عضویت پرمیوم دارید؟ روی آهنگ کلیک راست کنید و گزینه دانلود را انتخاب کنید.">With a premium subscription, right-click any song and select 'Download'.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3 data-en="Is there customer support?" data-fa="آیا تماس پشتیبانی وجود دارد؟">Is there customer support?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p data-en="Yes, you can reach us at info@fiveta.ir for any questions." data-fa="بله، می‌توانید از طریق info@fiveta.ir با ما تماس بگیرید.">Yes, you can reach us at info@fiveta.ir for any questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Fiveta Music</p>
+    </footer>
+
+    <script>
+        let currentLang = localStorage.getItem('language') || 'en';
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('language', lang);
+            const html = document.getElementById('html-root');
+            html.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+            html.setAttribute('lang', lang);
+            document.querySelectorAll('[data-en]').forEach(element => {
+                const text = element.getAttribute(`data-${lang}`);
+                if (text) element.innerHTML = text;
+            });
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) btn.classList.add('active');
+            });
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            setLanguage(currentLang);
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    setLanguage(this.getAttribute('data-lang'));
+                });
+            });
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const item = this.parentElement;
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
